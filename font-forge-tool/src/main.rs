@@ -34,20 +34,34 @@ fn gen_nasin_nanpa(variation: NasinNanpaVariation) -> std::io::Result<()> {
             String::new(),                                     // ZWSP
             String::new(),                                     // ZWNJ
             "ampersand".to_string(),                           // ZWJ
-            "comma".to_string(),                               // 1 tick
-            "comma comma".to_string(),                         // 2 ticks
-            "comma comma comma".to_string(),                   // 3 ticks
-            "comma comma comma comma".to_string(),             // 4 ticks
-            "comma comma comma comma comma".to_string(),       // 5 ticks
-            "comma comma comma comma comma comma".to_string(), // 6 ticks
-            "quotesingle".to_string(),                         // top tick
-            "quotesingle quotesingle".to_string(),
-            "quotesingle quotesingle quotesingle".to_string(),
-            "quotesingle quotesingle quotesingle quotesingle".to_string(),
-            "quotesingle quotesingle quotesingle quotesingle quotesingle".to_string(),
-            "quotesingle quotesingle quotesingle quotesingle quotesingle quotesingle".to_string(),
-            "quotedbl".to_string(), // dakuten
-            "asterisk".to_string(), // handakuten
+            String::new(),                               // 1 tick
+            String::new(),                         // 2 ticks
+            String::new(),                   // 3 ticks
+            String::new(),             // 4 ticks
+            String::new(),       // 5 ticks
+            String::new(), // 6 ticks
+            String::new(),                         // top tick
+            String::new(),
+            String::new(),
+            String::new(),
+            String::new(),
+            String::new(),
+            String::new(), // dakuten
+            String::new(), // handakuten
+            // "comma".to_string(),                               // 1 tick
+            // "comma comma".to_string(),                         // 2 ticks
+            // "comma comma comma".to_string(),                   // 3 ticks
+            // "comma comma comma comma".to_string(),             // 4 ticks
+            // "comma comma comma comma comma".to_string(),       // 5 ticks
+            // "comma comma comma comma comma comma".to_string(), // 6 ticks
+            // "quotesingle".to_string(),                         // top tick
+            // "quotesingle quotesingle".to_string(),
+            // "quotesingle quotesingle quotesingle".to_string(),
+            // "quotesingle quotesingle quotesingle quotesingle".to_string(),
+            // "quotesingle quotesingle quotesingle quotesingle quotesingle".to_string(),
+            // "quotesingle quotesingle quotesingle quotesingle quotesingle quotesingle".to_string(),
+            // "quotedbl".to_string(), // dakuten
+            // "asterisk".to_string(), // handakuten
             String::new(),          // combCartExtHalfTok
             String::new(),          // combContExtHalfTok
             String::new(),          // combCartExtNoneTok
@@ -540,10 +554,13 @@ fn gen_nasin_nanpa(variation: NasinNanpaVariation) -> std::io::Result<()> {
         };
 
         let cart = put_in_class(format!(
-            "{} {} {}",
+            "{} {} {} {}",
             "combCartExtHalfTok combCartExtNoneTok",
-            (1..=8)
+            (1..=6)
                 .map(|x| format!("combCartExt{}TickTok", x))
+                .join(" "),
+            (1..=6)
+                .map(|x| format!("combCartExt{}TopTickTok", x))
                 .join(" "),
             "startCartTok combCartExtTok startCartAltTok startCartCombTok"
         ));

@@ -424,14 +424,13 @@ r#"Ligature2: "'liga' VAR" meliTok ZWJ kuleTok ZWJ kuleTok
                 } else { String::new() };
 
                 let latin = if variation == NasinNanpaVariation::Main && do_it {
-                    if word.eq("space space") {
-                        format!(
+                    if word.eq("space space") { format!(
 r#"Ligature2: "'liga' SPACE" {word}
 Ligature2: "'liga' SPACE" z z space
 Ligature2: "'liga' SPACE" z z
 Ligature2: "'liga' SPACE" bar space
 Ligature2: "'liga' SPACE" bar 
-"#                      )
+"# )
 
                     } else if word.eq("arrow") {
                         let convert = |c: char| match c {
@@ -461,11 +460,11 @@ r#"Ligature2: "'liga' WORD" bar
 "#                      )
 
                     } else if word.contains("CartAlt") {
-                            format!(
+                        let which = if word.contains("start") { "startCart" } else { "endCart" };
+                        format!(
 r#"Ligature2: "'liga' VAR" {which}Tok VAR01
 Ligature2: "'liga' VAR" {which}Tok one
-"#,                             which = if word.contains("start") { "startCart" } else { "endCart" }
-                            )
+"#)
 
                     } else {
                         format!(
@@ -553,18 +552,23 @@ r#"Ligature2: "'liga' VAR" {name}_VAR0{n} VAR0{sel}
                 // special cases
                 let special = if full_name.eq("aTok_VAR02") {
 r#"Ligature2: "'liga' VAR" aTok ZWJ aTok
-"#              } else if full_name.eq("aTok_VAR03") {
+"#
+                } else if full_name.eq("aTok_VAR03") {
 r#"Ligature2: "'liga' VAR" aTok ZWJ aTok ZWJ aTok
-"#              } else if full_name.eq("aTok_VAR04") {
+"#
+                } else if full_name.eq("aTok_VAR04") {
 r#"Ligature2: "'liga' VAR" semeTok ZWJ aTok
 Ligature2: "'liga' VAR" aTok ZWJ semeTok
-"#              } else if full_name.eq("aTok_VAR05")
+"#
+                } else if full_name.eq("aTok_VAR05")
                        && variation == NasinNanpaVariation::Main {
 r#"Ligature2: "'liga' VAR" aTok exclam question
 Ligature2: "'liga' VAR" aTok question exclam
-"#              } else if full_name.eq("muteTok_VAR02") {
+"#
+                } else if full_name.eq("muteTok_VAR02") {
 r#"Ligature2: "'liga' VAR" lukaTok ZWJ lukaTok ZWJ lukaTok ZWJ lukaTok
-"#              } else { "" };
+"#
+                } else { "" };
 
                 // exclude digit-based ligs in UCSUR version of font
                 if variation == NasinNanpaVariation::Ucsur {
@@ -604,16 +608,21 @@ Ligature2: "'liga' CC CLEANUP" combContExtTok {full_name}
         }; // end let latin_ligs
 
         let rand = if full_name.eq("jakiTok") {
+            let vars = (2..10)
+                .map(|n| format!(" jakiTok_VAR0{n}"))
+                .collect::<String>();
             format!(
 r#"AlternateSubs2: "'rand' RAND VARIATIONS"{vars}
-"#,             vars = (2..10).map(|n| format!(" jakiTok_VAR0{n}")).collect::<String>(),
-            )
+"#)
 
         } else if full_name.eq("koTok") {
+            let vars = (2..10)
+                .map(|n| format!(" koTok_VAR0{n}"))
+                .collect::<String>();
             format!(
 r#"AlternateSubs2: "'rand' RAND VARIATIONS"{vars}
-"#,             vars = (2..10).map(|n| format!(" koTok_VAR0{n}")).collect::<String>(),
-            )
+"#)
+
         } else { String::new() }; // end let rand
 
         format!("{latin_ligs}{rand}")
@@ -630,43 +639,61 @@ pub enum Cc {
 impl Cc {
     pub fn gen(&self, full_name: String) -> String {
         match self {
+
             Cc::Full => format!(
 r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtTok
 MultipleSubs2: "'cc02' CONT" {full_name} combContExtTok
 "#),
 
-            Cc::Half => if full_name.eq("comma") {
+
+            Cc::Half =>
+                if full_name.eq("comma") {
 r#"MultipleSubs2: "'cc01' CART" combCartExt1TickTok
 MultipleSubs2: "'cc02' CONT" combContExtHalfTok
 "#.to_string()
 
-            } else if full_name.eq("quotesingle") {
+                } else if full_name.eq("quotesingle") {
 r#"MultipleSubs2: "'cc01' CART" combCartExt1TopTickTok
 MultipleSubs2: "'cc02' CONT" combContExtHalfTok
 "#.to_string()
 
-            } else {
-                format!(
+                } else { format!(
 r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtHalfTok
 MultipleSubs2: "'cc02' CONT" {full_name} combContExtHalfTok
+"#)},
+
+            Cc::Participant =>
+                if full_name.contains("Tick") {
+                    let top = if full_name.contains("Top") {
+                        "Top"
+                    } else { "" };
+                    let num = full_name
+                        .chars()
+                        .nth(11)
+                        .expect("expect there to be an 11th char")
+                        .to_string()
+                        .parse()
+                        .expect("expect tick glyph to specify how many ticks");
+                    let repeat = format!("combCartExt1{top}TickTok ").repeat(num);
+                    let repeat_trim = repeat.trim_end();
+                    let cleanup = if num > 1 {
+                        format!(r#"
+Ligature2: "'liga' CC CLEANUP" {repeat_trim}"#)
+                    } else { String::new() };
+
+                    format!(
+r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtNoneTok{cleanup}
 "#)
-            },
-            
-            Cc::Participant => if full_name.contains("Tick") {
-                format!(
-r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtNoneTok
-"#)
-            } else if full_name.contains("dakuten") {
-                format!(
+
+                } else if full_name.contains("dakuten") { format!(
 r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtHalfTok
 "#)
-            } else {
-                format!(
+
+                } else { format!(
 r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtNoneTok
 MultipleSubs2: "'cc02' CONT" {full_name} combContExtNoneTok
-"#)
-            },
-            
+"#)},
+
             Cc::None => String::new(),
         }
     }
@@ -732,18 +759,29 @@ impl<'a> GlyphFull<'a> {
         let name = &self.glyph.name;
         let encoding = self.encoding.gen();
         let color = format!("Colour: {color}");
-        if name.contains("empty") {
-            return format!(
-                "\nStartChar: {name}\n{encoding}\nWidth: 0\nLayerCount: 2\n{color}\nEndChar\n"
-            );
-        }
+
+        if name.contains("empty") { return format!(
+r#"
+StartChar: {name}
+{encoding}
+Width: 0
+LayerCount: 2
+{color}
+EndChar
+"#); }
+
         let full_name = format!("{}{}{}", prefix, name, suffix);
+
         let width = self.glyph.width;
+
         let representation = self.glyph.rep.gen();
+
         let lookups = self
             .lookups
             .gen(name.to_string(), full_name.clone(), variation);
+
         let cc_subs = self.cc_subs.gen(full_name.clone());
+
         let flags = if full_name.eq("ZWSP")
             || full_name.eq("ZWNJ")
             || full_name.eq("ZWJ")
@@ -757,12 +795,18 @@ impl<'a> GlyphFull<'a> {
             || full_name.ends_with("Rad")
         {
             "Flags: W\n"
-        } else {
-            ""
-        };
+        } else { "" };
+
         let anchor = if let Some(anchor) = &self.glyph.anchor { anchor.gen() } else { String::new() };
         let anchor2 = if let Some(anchor2) = &self.glyph.anchor2 { anchor2.gen() } else { String::new() };
-        format!("\nStartChar: {full_name}\n{encoding}\nWidth: {width}\n{flags}{anchor2}{anchor}LayerCount: 2\n{representation}{lookups}{cc_subs}{color}\nEndChar\n")
+        format!(r#"
+StartChar: {full_name}
+{encoding}
+Width: {width}
+{flags}{anchor2}{anchor}LayerCount: 2
+{representation}{lookups}{cc_subs}{color}
+EndChar
+"#)
     }
 }
 
