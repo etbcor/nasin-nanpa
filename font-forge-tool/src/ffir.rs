@@ -630,17 +630,14 @@ MultipleSubs2: "'cc02' CONT" combContExtHalfTok
 "#.to_string()
 
             } else if full_name.eq("quotesingle") {
-r#"MultipleSubs2: "'cc01' CART" combCartExt5TickTok
+r#"MultipleSubs2: "'cc01' CART" combCartExt1TopTickTok
 MultipleSubs2: "'cc02' CONT" combContExtHalfTok
 "#.to_string()
 
             } else {
-                let sqsh = if full_name.eq("space") {
-r#"Position2: "'sqsh' SPACE SHIFT" dx=0 dy=0 dh=-500 dv=0
-"#              } else { "" };
 
                 format!(
-r#"{sqsh}MultipleSubs2: "'cc01' CART" {full_name} combCartExtHalfTok
+r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtHalfTok
 MultipleSubs2: "'cc02' CONT" {full_name} combContExtHalfTok
 "#)
             },

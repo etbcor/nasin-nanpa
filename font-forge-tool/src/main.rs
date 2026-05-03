@@ -30,42 +30,46 @@ fn gen_nasin_nanpa(variation: NasinNanpaVariation) -> std::io::Result<()> {
         &mut ff_pos,
         &ctrl_temp,
         LookupsMode::WordLigManual(vec![
-            String::new(),
-            String::new(),
-            String::new(),
-            "ampersand".to_string(),
-            "arrow".to_string(),
-            "arrow".to_string(),
-            "arrow".to_string(),
-            "arrow".to_string(),
-            "arrow".to_string(),
-            "arrow".to_string(),
-            "arrow".to_string(),
-            "arrow".to_string(),
-            "combCartExtTok comma".to_string(),
-            "comma comma".to_string(),
-            "comma comma comma".to_string(),
-            "comma comma comma comma".to_string(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            "combCartExtTok quotesingle".to_string(),
+            String::new(),                                     // NUL
+            String::new(),                                     // ZWSP
+            String::new(),                                     // ZWNJ
+            "ampersand".to_string(),                           // ZWJ
+            "comma".to_string(),                               // 1 tick
+            "comma comma".to_string(),                         // 2 ticks
+            "comma comma comma".to_string(),                   // 3 ticks
+            "comma comma comma comma".to_string(),             // 4 ticks
+            "comma comma comma comma comma".to_string(),       // 5 ticks
+            "comma comma comma comma comma comma".to_string(), // 6 ticks
+            "quotesingle".to_string(),                         // top tick
             "quotesingle quotesingle".to_string(),
             "quotesingle quotesingle quotesingle".to_string(),
             "quotesingle quotesingle quotesingle quotesingle".to_string(),
-            String::new(),
-            String::new(),
-            "quotedbl".to_string(),
-            "asterisk".to_string(),
+            "quotesingle quotesingle quotesingle quotesingle quotesingle".to_string(),
+            "quotesingle quotesingle quotesingle quotesingle quotesingle quotesingle".to_string(),
+            "quotedbl".to_string(), // dakuten
+            "asterisk".to_string(), // handakuten
+            String::new(),          // combCartExtHalfTok
+            String::new(),          // combContExtHalfTok
+            String::new(),          // combCartExtNoneTok
+            String::new(),          // combContExtNoneTok
+            String::new(),          // VAR01
+            String::new(),          // VAR02
+            String::new(),          // VAR03
+            String::new(),          // VAR04
+            String::new(),          // VAR05
+            String::new(),          // VAR06
+            String::new(),          // VAR07
+            String::new(),          // VAR08
+            String::new(),          // VAR09
+            String::new(),          // VAR256
+            "arrow".to_string(),    // arrowW
+            "arrow".to_string(),    // arrowN
+            "arrow".to_string(),    // arrowE
+            "arrow".to_string(),    // arrowS
+            "arrow".to_string(),    // arrowNW
+            "arrow".to_string(),    // arrowNE
+            "arrow".to_string(),    // arrowSE
+            "arrow".to_string(),    // arrowSW
         ]),
         Cc::Participant,
         "",
