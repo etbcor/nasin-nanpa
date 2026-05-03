@@ -30,60 +30,46 @@ fn gen_nasin_nanpa(variation: NasinNanpaVariation) -> std::io::Result<()> {
         &mut ff_pos,
         &ctrl_temp,
         LookupsMode::WordLigManual(vec![
-            String::new(),                                     // NUL
-            String::new(),                                     // ZWSP
-            String::new(),                                     // ZWNJ
-            "ampersand".to_string(),                           // ZWJ
-            String::new(),                               // 1 tick
-            String::new(),                         // 2 ticks
-            String::new(),                   // 3 ticks
-            String::new(),             // 4 ticks
-            String::new(),       // 5 ticks
-            String::new(), // 6 ticks
-            String::new(),                         // top tick
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(),
-            String::new(), // dakuten
-            String::new(), // handakuten
-            // "comma".to_string(),                               // 1 tick
-            // "comma comma".to_string(),                         // 2 ticks
-            // "comma comma comma".to_string(),                   // 3 ticks
-            // "comma comma comma comma".to_string(),             // 4 ticks
-            // "comma comma comma comma comma".to_string(),       // 5 ticks
-            // "comma comma comma comma comma comma".to_string(), // 6 ticks
-            // "quotesingle".to_string(),                         // top tick
-            // "quotesingle quotesingle".to_string(),
-            // "quotesingle quotesingle quotesingle".to_string(),
-            // "quotesingle quotesingle quotesingle quotesingle".to_string(),
-            // "quotesingle quotesingle quotesingle quotesingle quotesingle".to_string(),
-            // "quotesingle quotesingle quotesingle quotesingle quotesingle quotesingle".to_string(),
-            // "quotedbl".to_string(), // dakuten
-            // "asterisk".to_string(), // handakuten
-            String::new(),          // combCartExtHalfTok
-            String::new(),          // combContExtHalfTok
-            String::new(),          // combCartExtNoneTok
-            String::new(),          // combContExtNoneTok
-            String::new(),          // VAR01
-            String::new(),          // VAR02
-            String::new(),          // VAR03
-            String::new(),          // VAR04
-            String::new(),          // VAR05
-            String::new(),          // VAR06
-            String::new(),          // VAR07
-            String::new(),          // VAR08
-            String::new(),          // VAR09
-            String::new(),          // VAR256
-            "arrow".to_string(),    // arrowW
-            "arrow".to_string(),    // arrowN
-            "arrow".to_string(),    // arrowE
-            "arrow".to_string(),    // arrowS
-            "arrow".to_string(),    // arrowNW
-            "arrow".to_string(),    // arrowNE
-            "arrow".to_string(),    // arrowSE
-            "arrow".to_string(),    // arrowSW
+            String::new(),           // NUL
+            String::new(),           // ZWSP
+            String::new(),           // ZWNJ
+            "ampersand".to_string(), // ZWJ
+            String::new(),           // 1 tick
+            String::new(),           // 2 ticks
+            String::new(),           // 3 ticks
+            String::new(),           // 4 ticks
+            String::new(),           // 5 ticks
+            String::new(),           // 6 ticks
+            String::new(),           // 1 top tick
+            String::new(),           // 2 top tick
+            String::new(),           // 3 top tick
+            String::new(),           // 4 top tick
+            String::new(),           // 5 top tick
+            String::new(),           // 6 top tick
+            String::new(),           // dakuten
+            String::new(),           // handakuten
+            String::new(),           // combCartExtHalfTok
+            String::new(),           // combContExtHalfTok
+            String::new(),           // combCartExtNoneTok
+            String::new(),           // combContExtNoneTok
+            String::new(),           // VAR01
+            String::new(),           // VAR02
+            String::new(),           // VAR03
+            String::new(),           // VAR04
+            String::new(),           // VAR05
+            String::new(),           // VAR06
+            String::new(),           // VAR07
+            String::new(),           // VAR08
+            String::new(),           // VAR09
+            String::new(),           // VAR256
+            "arrow".to_string(),     // arrowW
+            "arrow".to_string(),     // arrowN
+            "arrow".to_string(),     // arrowE
+            "arrow".to_string(),     // arrowS
+            "arrow".to_string(),     // arrowNW
+            "arrow".to_string(),     // arrowNE
+            "arrow".to_string(),     // arrowSE
+            "arrow".to_string(),     // arrowSW
         ]),
         Cc::Participant,
         "",
@@ -562,7 +548,7 @@ fn gen_nasin_nanpa(variation: NasinNanpaVariation) -> std::io::Result<()> {
             (1..=6)
                 .map(|x| format!("combCartExt{}TopTickTok", x))
                 .join(" "),
-            "startCartTok combCartExtTok startCartAltTok startCartCombTok"
+            "dakuten handakuten startCartTok combCartExtTok startCartAltTok startCartCombTok"
         ));
 
         let cont = {

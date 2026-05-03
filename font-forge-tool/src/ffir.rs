@@ -657,6 +657,16 @@ r#"MultipleSubs2: "'cc01' CART" combCartExt1TopTickTok
 MultipleSubs2: "'cc02' CONT" combContExtHalfTok
 "#.to_string()
 
+                } else if full_name.eq("quotedbl") {
+r#"MultipleSubs2: "'cc01' CART" dakuten combCartExtHalfTok
+MultipleSubs2: "'cc02' CONT" combContExtHalfTok
+"#.to_string()
+
+                } else if full_name.eq("asterisk") {
+r#"MultipleSubs2: "'cc01' CART" handakuten combCartExtHalfTok
+MultipleSubs2: "'cc02' CONT" combContExtHalfTok
+"#.to_string()
+
                 } else { format!(
 r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtHalfTok
 MultipleSubs2: "'cc02' CONT" {full_name} combContExtHalfTok
@@ -677,8 +687,7 @@ MultipleSubs2: "'cc02' CONT" {full_name} combContExtHalfTok
                     let repeat = format!("combCartExt1{top}TickTok ").repeat(num);
                     let repeat_trim = repeat.trim_end();
                     let cleanup = if num > 1 {
-                        format!(r#"
-Ligature2: "'liga' CC CLEANUP" {repeat_trim}"#)
+                        format!("\nLigature2: \"'liga' CC CLEANUP\" {repeat_trim}")
                     } else { String::new() };
 
                     format!(
