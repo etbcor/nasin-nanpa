@@ -4387,7 +4387,7 @@ r#"
  -406 494 l 1
  -406 494 l 1"#,
 ),
-GlyphDescriptor::new_with_anchor("koTok_VAR02", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
+GlyphDescriptor::new_with_anchor("koTok_VAR03", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
 r#"
 -526 589 m 1
  -509 599 -489 621 -446 621 c 0
@@ -4432,7 +4432,7 @@ r#"
  -545 488 -562 496 -581 496 c 0
  -593 496 -595 497 -595 481 c 0"#,
 ),
-GlyphDescriptor::new_with_anchor("koTok_VAR03", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
+GlyphDescriptor::new_with_anchor("koTok_VAR04", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
 r#"
 -462 177 m 0
  -517 177 -552 208 -565 254 c 1
@@ -4471,7 +4471,7 @@ r#"
  -510 439 -540 421 -574 421 c 0
  -594 421 -606 428 -619 428 c 0"#,
 ),
-GlyphDescriptor::new_with_anchor("koTok_VAR04", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
+GlyphDescriptor::new_with_anchor("koTok_VAR05", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
 r#"
 -572 269 m 1
  -590 264 -610 250 -636 250 c 0
@@ -4513,7 +4513,7 @@ r#"
  -409 298 l 1
  -409 298 l 1"#,
 ),
-GlyphDescriptor::new_with_anchor("koTok_VAR05", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
+GlyphDescriptor::new_with_anchor("koTok_VAR06", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
 r#"
 -485 605 m 0
  -412 605 -339 584 -304 544 c 0
@@ -4547,7 +4547,7 @@ r#"
  -436 356 -435 402 -401 443 c 0
  -384 463 -380 476 -380 479 c 0"#,
 ),
-GlyphDescriptor::new_with_anchor("koTok_VAR06", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
+GlyphDescriptor::new_with_anchor("koTok_VAR07", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
 r#"
 -486 600 m 4
  -469 600 -454 602 -435 602 c 4
@@ -4585,7 +4585,7 @@ r#"
  -399 406 -395 410 -393 413 c 4
  -387 421 -385 441 -385 452 c 4"#,
 ),
-GlyphDescriptor::new_with_anchor("koTok_VAR07", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
+GlyphDescriptor::new_with_anchor("koTok_VAR08", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
 r#"
 -570 302 m 1
  -543 304 -495 334 -443 334 c 0
@@ -4617,7 +4617,7 @@ r#"
  -325 440 -304 431 -287 400 c 0
  -279 385 -274 366 -274 347 c 0"#,
 ),
-GlyphDescriptor::new_with_anchor("koTok_VAR08", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
+GlyphDescriptor::new_with_anchor("koTok_VAR09", Anchor::new_scale(AnchorType::Mark, (-500, 400)),
 r#"
 -357 283 m 0
  -357 234 -393 204 -440 204 c 0
