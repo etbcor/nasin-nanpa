@@ -312,16 +312,16 @@ impl Lookups {
 
         let to_digits = |number: &str| -> (&str, &str) {
             match number {
-                "1" | "VAR01" | "arrowW"  => ("one", "zero one"),
-                "2" | "VAR02" | "arrowN"  => ("two", "zero two"),
-                "3" | "VAR03" | "arrowE"  => ("three", "zero three"),
-                "4" | "VAR04" | "arrowS"  => ("four", "zero four"),
-                "5" | "VAR05" | "arrowNW" => ("five", "zero five"),
+                "1" | "VAR01" | "arrowS"  => ("one", "zero one"),
+                "2" | "VAR02" | "arrowE"  => ("two", "zero two"),
+                "3" | "VAR03" | "arrowN"  => ("three", "zero three"),
+                "4" | "VAR04" | "arrowW"  => ("four", "zero four"),
+                "5" | "VAR05" | "arrowSE" => ("five", "zero five"),
                 "6" | "VAR06" | "arrowNE" => ("six", "zero six"),
-                "7" | "VAR07" | "arrowSE" => ("seven", "zero seven"),
+                "7" | "VAR07" | "arrowNW" => ("seven", "zero seven"),
                 "8" | "VAR08" | "arrowSW" => ("eight", "zero eight"),
                 "9" | "VAR09"             => ("nine", "zero nine"),
-                "VAR256"            => ("two five six", "zero two five six"),
+                "VAR256" => ("two five six", "zero two five six"),
                 _ => panic!("{}", number),
             }
         };
@@ -355,6 +355,13 @@ Ligature2: "'liga' VAR" {full_name}_VAR0{n} one
 Ligature2: "'liga' VAR" {full_name}_VAR0{n} zero one
 "#                      )
                     ).collect::<String>()
+
+                } else if full_name.eq("niTok") {
+r#"Ligature2: "'liga' VAR" niTok arrowS
+Ligature2: "'liga' VAR" niTok ZWJ arrowS
+Ligature2: "'liga' VAR" niTok one
+Ligature2: "'liga' VAR" niTok zero one
+"#.to_string()
 
                 } else {
                     let alts: HashSet<char> = BASE_ALT.iter().filter_map(|g|
@@ -425,6 +432,7 @@ Ligature2: "'liga' SPACE" z z
 Ligature2: "'liga' SPACE" bar space
 Ligature2: "'liga' SPACE" bar 
 "#                      )
+
                     } else if word.eq("arrow") {
                         let convert = |c: char| match c {
                             'W' => "less",
@@ -446,16 +454,19 @@ Ligature2: "'liga' WORD" {dir2} {dir1}
 r#"Ligature2: "'liga' WORD" {dir1}
 "#                          )
                         }
+
                     } else if word.eq("bar") {
                         format!(
 r#"Ligature2: "'liga' WORD" bar
 "#                      )
+
                     } else if word.contains("CartAlt") {
                             format!(
 r#"Ligature2: "'liga' VAR" {which}Tok VAR01
 Ligature2: "'liga' VAR" {which}Tok one
 "#,                             which = if word.contains("start") { "startCart" } else { "endCart" }
                             )
+
                     } else {
                         format!(
 r#"Ligature2: "'liga' WORD" {word}
@@ -623,7 +634,7 @@ impl Cc {
 r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtTok
 MultipleSubs2: "'cc02' CONT" {full_name} combContExtTok
 "#),
-            
+
             Cc::Half => if full_name.eq("comma") {
 r#"MultipleSubs2: "'cc01' CART" combCartExt1TickTok
 MultipleSubs2: "'cc02' CONT" combContExtHalfTok
@@ -635,7 +646,6 @@ MultipleSubs2: "'cc02' CONT" combContExtHalfTok
 "#.to_string()
 
             } else {
-
                 format!(
 r#"MultipleSubs2: "'cc01' CART" {full_name} combCartExtHalfTok
 MultipleSubs2: "'cc02' CONT" {full_name} combContExtHalfTok
