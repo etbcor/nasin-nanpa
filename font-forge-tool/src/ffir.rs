@@ -430,8 +430,11 @@ Ligature2: "'liga' SPACE" z z space
 Ligature2: "'liga' SPACE" z z
 Ligature2: "'liga' SPACE" bar space
 Ligature2: "'liga' SPACE" bar 
-"# )
+"#)
 
+                    } else if word.eq("halfSpace") {
+r#"Ligature2: "'half' RESTORE SPACE" space
+"#.to_string()
                     } else if word.eq("arrow") {
                         let convert = |c: char| match c {
                             'W' => "less",

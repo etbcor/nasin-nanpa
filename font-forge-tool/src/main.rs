@@ -157,6 +157,7 @@ fn gen_nasin_nanpa(variation: NasinNanpaVariation) -> std::io::Result<()> {
             "middleDotTok middleDotTok".to_string(),
             "middleDotTok middleDotTok middleDotTok".to_string(),
             "space space".to_string(),
+            "halfSpace".to_string(),
             "i t a n".to_string(),
             "l i p a m a n k a".to_string(),
             "l e p e k a".to_string(),

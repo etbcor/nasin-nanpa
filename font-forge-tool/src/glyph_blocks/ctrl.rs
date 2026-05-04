@@ -3377,7 +3377,7 @@ pub const LATN: [GlyphDescriptor; 95] = [
     ),
 ];
 
-pub const TOK_NO_COMB: [GlyphDescriptor; 10] = [
+pub const TOK_NO_COMB: [GlyphDescriptor; 11] = [
     GlyphDescriptor::new(
         "middleDot",
         r#"
@@ -3435,6 +3435,7 @@ pub const TOK_NO_COMB: [GlyphDescriptor; 10] = [
  555 500 600 455 600 400 c 0"#,
     ),
     GlyphDescriptor::new("space", ""),
+    GlyphDescriptor::new_with_width("spaceHalf", 500, ""),
     GlyphDescriptor::new(
         "itan",
         r#"
