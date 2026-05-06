@@ -611,6 +611,6 @@ EndSplineFont"#
 fn main() -> std::io::Result<()> {
     println!("");
     gen_nasin_nanpa(NasinNanpaVariation::Main)?;
-    gen_nasin_nanpa(NasinNanpaVariation::Ucsur)?;
+    // gen_nasin_nanpa(NasinNanpaVariation::Ucsur)?;
     Ok(())
 }

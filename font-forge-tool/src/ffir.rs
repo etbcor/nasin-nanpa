@@ -338,7 +338,7 @@ r#"Ligature2: "'liga' WORD" a l i
 "#.to_string()
                 } else { String::new() };
 
-                let blank_alts = if full_name.eq("jakiTok") {
+                let alts = if full_name.eq("jakiTok") {
                     (2..10).map(|n|
                         format!(
 r#"Ligature2: "'liga' VAR" {full_name}_VAR0{n} VAR01
@@ -362,9 +362,22 @@ Ligature2: "'liga' VAR" niTok ZWJ arrowS
 Ligature2: "'liga' VAR" niTok one
 Ligature2: "'liga' VAR" niTok zero one
 "#.to_string()
+                } else if full_name.eq("akesiTok")
+                  ||      full_name.eq("namakoTok") {
+
+                    let blanks = HashSet::from(['1', '3', '4', '5', '6', '7', '8', '9']);
+                    blanks.into_iter().sorted().map(|b| {
+                        let (digit, mut padded_digit) = to_digits(&b.to_string()); 
+                        if digit.eq("one") { padded_digit = "zero two"; }
+                        format!(
+r#"Ligature2: "'liga' VAR" {full_name} VAR0{b}
+Ligature2: "'liga' VAR" {full_name} {digit}
+Ligature2: "'liga' VAR" {full_name} {padded_digit}
+"#                      )
+                    }).collect::<String>()
 
                 } else {
-                    let alts: HashSet<char> = BASE_ALT.iter().filter_map(|g|
+                    let find_alts: HashSet<char> = BASE_ALT.iter().sorted_by(|&a, &b| Ord::cmp(a.name, b.name)).filter_map(|g|
                         if g.name.starts_with(&name) {
                             Some(g.name
                                 .chars()
@@ -376,8 +389,8 @@ Ligature2: "'liga' VAR" niTok zero one
                             )
                         } else { None }
                     ).collect();
-                    let range = HashSet::from(['1', '2', '3', '4', '5', '6', '7', '8', '9']);
-                    let blanks = range.difference(&alts);
+                    let domain = HashSet::from(['1', '2', '3', '4', '5', '6', '7', '8', '9']);
+                    let blanks = domain.difference(&find_alts);
                     blanks.into_iter().map(|b| {
                         let (digit, padded_digit) = to_digits(&b.to_string()); 
                         format!(
@@ -386,11 +399,11 @@ Ligature2: "'liga' VAR" {full_name} {digit}
 Ligature2: "'liga' VAR" {full_name} {padded_digit}
 "#,                      )
                     }).collect::<String>()
-                };
+                }; // end let blank_alts
 
                 format!(
 r#"Ligature2: "'liga' WORD" {lig}
-{ali}{blank_alts}"#
+{ali}{alts}"#
                 )
             }
 
@@ -521,11 +534,21 @@ r#"Ligature2: "'liga' VAR" {glyph} ZWJ {sel}
                 } else { String::new() };
 
                 // determine what digit(s) should lead to this glyph
-                let mut digits = if full_name.contains("VAR0") || full_name.contains("niTok_arrow") {
-                    format!(
+                let mut digits =
+                 if full_name.contains("VAR0") || full_name.contains("niTok_arrow") {
+                     if full_name.starts_with("akesiTok")
+                     || full_name.starts_with("namakoTok") {
+                         format!(
+r#"Ligature2: "'liga' VAR" {glyph} VAR02
+Ligature2: "'liga' VAR" {glyph} two
+Ligature2: "'liga' VAR" {glyph} zero one
+"#)
+                     } else {
+                         format!(
 r#"Ligature2: "'liga' VAR" {glyph} {digit}
 Ligature2: "'liga' VAR" {glyph} {padded_digit}
-"#                  )
+"#                       )
+                    }
                 } else { String::new() };
 
                 let rerand = if full_name.contains("jakiTok") || full_name.contains("koTok") {
