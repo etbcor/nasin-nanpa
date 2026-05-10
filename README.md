@@ -73,6 +73,7 @@ This table describes both the ligatures in nasin nanpa and the AutoHotKey script
 | **U+FE00** -<br>**U+FE07** | `1` - `8` | `VARIATION SELECTOR 1` (`VAR01`) - `VARIATION SELECTOR 8` (`VAR08`) |
 | **U+200C** | `\|` | `ZERO WIDTH NON JOINER` (`ZWNJ`) |
 | **U+200D** | `&` | `ZERO WIDTH JOINER` (`ZWJ`) |
+| (none) | `,` | tally marks for nasin sitelen kalama pi linja lili |
 | (none) | `itan` | jan Itan's personal glyph |
 | (none) | `lepeka` | jan Lepeka's personal glyph |
 | (none) | `lipamanka` | lipamanka's personal glyph |
