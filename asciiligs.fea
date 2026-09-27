@@ -1,0 +1,2488 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+
+# GSUB 
+
+
+lookup ligaLatintoTP {
+  lookupflag 0;
+    sub \a  by \aTok;
+    sub \a \k \e \s \i  by \akesiTok;
+    sub \a \l \a  by \alaTok;
+    sub \a \l \a \s \a  by \alasaTok;
+    sub \a \l \e  by \aleTok;
+    sub \a \l \i  by \aleTok;
+    sub \a \n \p \a  by \anpaTok;
+    sub \a \n \t \e  by \anteTok;
+    sub \a \n \u  by \anuTok;
+    sub \a \w \e \n  by \awenTok;
+    sub \e  by \eTok;
+    sub \e \s \u \n  by \esunTok;
+    sub \i \j \o  by \ijoTok;
+    sub \i \k \e  by \ikeTok;
+    sub \i \l \o  by \iloTok;
+    sub \i \n \s \a  by \insaTok;
+    sub \j \a \k \i  by \jakiTok;
+    sub \j \a \n  by \janTok;
+    sub \j \e \l \o  by \jeloTok;
+    sub \j \o  by \joTok;
+    sub \k \a \l \a  by \kalaTok;
+    sub \k \a \l \a \m \a  by \kalamaTok;
+    sub \k \a \m \a  by \kamaTok;
+    sub \k \a \s \i  by \kasiTok;
+    sub \k \e \n  by \kenTok;
+    sub \k \e \p \e \k \e \n  by \kepekenTok;
+    sub \k \i \l \i  by \kiliTok;
+    sub \k \i \w \e \n  by \kiwenTok;
+    sub \k \o  by \koTok;
+    sub \k \o \n  by \konTok;
+    sub \k \u \l \e  by \kuleTok;
+    sub \k \u \l \u \p \u  by \kulupuTok;
+    sub \k \u \t \e  by \kuteTok;
+    sub \l \a  by \laTok;
+    sub \l \a \p \e  by \lapeTok;
+    sub \l \a \s \o  by \lasoTok;
+    sub \l \a \w \a  by \lawaTok;
+    sub \l \e \n  by \lenTok;
+    sub \l \e \t \e  by \leteTok;
+    sub \l \i  by \liTok;
+    sub \l \i \l \i  by \liliTok;
+    sub \l \i \n \j \a  by \linjaTok;
+    sub \l \i \p \u  by \lipuTok;
+    sub \l \o \j \e  by \lojeTok;
+    sub \l \o \n  by \lonTok;
+    sub \l \u \k \a  by \lukaTok;
+    sub \l \u \k \i \n  by \lukinTok;
+    sub \l \u \p \a  by \lupaTok;
+    sub \m \a  by \maTok;
+    sub \m \a \m \a  by \mamaTok;
+    sub \m \a \n \i  by \maniTok;
+    sub \m \e \l \i  by \meliTok;
+    sub \m \i  by \miTok;
+    sub \m \i \j \e  by \mijeTok;
+    sub \m \o \k \u  by \mokuTok;
+    sub \m \o \l \i  by \moliTok;
+    sub \m \o \n \s \i  by \monsiTok;
+    sub \m \u  by \muTok;
+    sub \m \u \n  by \munTok;
+    sub \m \u \s \i  by \musiTok;
+    sub \m \u \t \e  by \muteTok;
+    sub \n \a \n \p \a  by \nanpaTok;
+    sub \n \a \s \a  by \nasaTok;
+    sub \n \a \s \i \n  by \nasinTok;
+    sub \n \e \n \a  by \nenaTok;
+    sub \n \i  by \niTok;
+    sub \n \i \m \i  by \nimiTok;
+    sub \n \o \k \a  by \nokaTok;
+    sub \o  by \oTok;
+    sub \o \l \i \n  by \olinTok;
+    sub \o \n \a  by \onaTok;
+    sub \o \p \e \n  by \openTok;
+    sub \p \a \k \a \l \a  by \pakalaTok;
+    sub \p \a \l \i  by \paliTok;
+    sub \p \a \l \i \s \a  by \palisaTok;
+    sub \p \a \n  by \panTok;
+    sub \p \a \n \a  by \panaTok;
+    sub \p \i  by \piTok;
+    sub \p \i \l \i \n  by \pilinTok;
+    sub \p \i \m \e \j \a  by \pimejaTok;
+    sub \p \i \n \i  by \piniTok;
+    sub \p \i \p \i  by \pipiTok;
+    sub \p \o \k \a  by \pokaTok;
+    sub \p \o \k \i  by \pokiTok;
+    sub \p \o \n \a  by \ponaTok;
+    sub \p \u  by \puTok;
+    sub \s \a \m \a  by \samaTok;
+    sub \s \e \l \i  by \seliTok;
+    sub \s \e \l \o  by \seloTok;
+    sub \s \e \m \e  by \semeTok;
+    sub \s \e \w \i  by \sewiTok;
+    sub \s \i \j \e \l \o  by \sijeloTok;
+    sub \s \i \k \e  by \sikeTok;
+    sub \s \i \n  by \sinTok;
+    sub \s \i \n \a  by \sinaTok;
+    sub \s \i \n \p \i \n  by \sinpinTok;
+    sub \s \i \t \e \l \e \n  by \sitelenTok;
+    sub \s \o \n \a  by \sonaTok;
+    sub \s \o \w \e \l \i  by \soweliTok;
+    sub \s \u \l \i  by \suliTok;
+    sub \s \u \n \o  by \sunoTok;
+    sub \s \u \p \a  by \supaTok;
+    sub \s \u \w \i  by \suwiTok;
+    sub \t \a \n  by \tanTok;
+    sub \t \a \s \o  by \tasoTok;
+    sub \t \a \w \a  by \tawaTok;
+    sub \t \e \l \o  by \teloTok;
+    sub \t \e \n \p \o  by \tenpoTok;
+    sub \t \o \k \i  by \tokiTok;
+    sub \t \o \m \o  by \tomoTok;
+    sub \t \u  by \tuTok;
+    sub \u \n \p \a  by \unpaTok;
+    sub \u \t \a  by \utaTok;
+    sub \u \t \a \l \a  by \utalaTok;
+    sub \w \a \l \o  by \waloTok;
+    sub \w \a \n  by \wanTok;
+    sub \w \a \s \o  by \wasoTok;
+    sub \w \a \w \a  by \wawaTok;
+    sub \w \e \k \a  by \wekaTok;
+    sub \w \i \l \e  by \wileTok;
+    sub \n \a \m \a \k \o  by \namakoTok;
+    sub \k \i \n  by \kinTok;
+    sub \o \k \o  by \okoTok;
+    sub \k \i \p \i \s \i  by \kipisiTok;
+    sub \l \e \k \o  by \lekoTok;
+    sub \m \o \n \s \u \t \a  by \monsutaTok;
+    sub \t \o \n \s \i  by \tonsiTok;
+    sub \j \a \s \i \m \a  by \jasimaTok;
+    sub \k \i \j \e \t \e \s \a \n \t \a \k \a \l \u  by \kijetesantakaluTok;
+    sub \s \o \k \o  by \sokoTok;
+    sub \m \e \s \o  by \mesoTok;
+    sub \e \p \i \k \u  by \epikuTok;
+    sub \k \o \k \o \s \i \l \a  by \kokosilaTok;
+    sub \l \a \n \p \a \n  by \lanpanTok;
+    sub \n  by \nTok;
+    sub \m \i \s \i \k \e \k \e  by \misikekeTok;
+    sub \k \u  by \kuTok;
+    sub \period  by \middleDotTok;
+    sub \p \a \k \e  by \pakeTok;
+    sub \a \p \e \j \a  by \apejaTok;
+    sub \m \a \j \u \n \a  by \majunaTok;
+    sub \p \o \w \e  by \poweTok;
+} ligaLatintoTP;
+
+lookup ligaAlternatives {
+  lookupflag 0;
+    sub \middleDotTok \middleDotTok  by \middleDotTok2;
+    sub \middleDotTok \middleDotTok \middleDotTok  by \middleDotTok3;
+    sub \ijoTok \tanTok \anpaTok \nanpaTok \var1Tok  by \itanTok;
+    sub \kulupuTok \kasiTok \var1Tok  by \kulupuKasiTok;
+    sub \meliTok \kuleTok \kuleTok \var1Tok  by \lepekaTok;
+    sub \kalaTok \var1Tok  by \kala1Tok;
+    sub \meliTok \var1Tok  by \meli1Tok;
+    sub \mijeTok \var1Tok  by \mije1Tok;
+    sub \olinTok \var1Tok  by \olin1Tok;
+    sub \sewiTok \var1Tok  by \sewi1Tok;
+    sub \utaTok \var1Tok  by \uta1Tok;
+    sub \wileTok \var1Tok  by \wile1Tok;
+    sub \namakoTok \var1Tok  by \namako1Tok;
+    sub \muTok \var1Tok  by \mu1Tok;
+} ligaAlternatives;
+
+lookup ligaContainerStartCombination {
+  lookupflag 0;
+    sub \piTok \contStartCombTok  by \piTok_contStartCombTok;
+    sub \tawaTok \contStartCombTok  by \tawaTok_contStartCombTok;
+    sub \lonTok \contStartCombTok  by \lonTok_contStartCombTok;
+} ligaContainerStartCombination;
+
+lookup ligaZWJtojoinStack {
+  lookupflag 0;
+    sub \ZWJ  by \joinStackTok;
+} ligaZWJtojoinStack;
+
+lookup ligaStep1 {
+  lookupflag 0;
+    sub \aTok \joinStackTok  by \aTok_joinStackTok;
+    sub \akesiTok \joinStackTok  by \akesiTok_joinStackTok;
+    sub \alaTok \joinStackTok  by \alaTok_joinStackTok;
+    sub \alasaTok \joinStackTok  by \alasaTok_joinStackTok;
+    sub \aleTok \joinStackTok  by \aleTok_joinStackTok;
+    sub \anpaTok \joinStackTok  by \anpaTok_joinStackTok;
+    sub \anteTok \joinStackTok  by \anteTok_joinStackTok;
+    sub \anuTok \joinStackTok  by \anuTok_joinStackTok;
+    sub \awenTok \joinStackTok  by \awenTok_joinStackTok;
+    sub \eTok \joinStackTok  by \eTok_joinStackTok;
+    sub \enTok \joinStackTok  by \enTok_joinStackTok;
+    sub \esunTok \joinStackTok  by \esunTok_joinStackTok;
+    sub \ijoTok \joinStackTok  by \ijoTok_joinStackTok;
+    sub \ikeTok \joinStackTok  by \ikeTok_joinStackTok;
+    sub \iloTok \joinStackTok  by \iloTok_joinStackTok;
+    sub \insaTok \joinStackTok  by \insaTok_joinStackTok;
+    sub \jakiTok \joinStackTok  by \jakiTok_joinStackTok;
+    sub \janTok \joinStackTok  by \janTok_joinStackTok;
+    sub \jeloTok \joinStackTok  by \jeloTok_joinStackTok;
+    sub \joTok \joinStackTok  by \joTok_joinStackTok;
+    sub \kalaTok \joinStackTok  by \kalaTok_joinStackTok;
+    sub \kalamaTok \joinStackTok  by \kalamaTok_joinStackTok;
+    sub \kamaTok \joinStackTok  by \kamaTok_joinStackTok;
+    sub \kasiTok \joinStackTok  by \kasiTok_joinStackTok;
+    sub \kenTok \joinStackTok  by \kenTok_joinStackTok;
+    sub \kepekenTok \joinStackTok  by \kepekenTok_joinStackTok;
+    sub \kiliTok \joinStackTok  by \kiliTok_joinStackTok;
+    sub \kiwenTok \joinStackTok  by \kiwenTok_joinStackTok;
+    sub \koTok \joinStackTok  by \koTok_joinStackTok;
+    sub \konTok \joinStackTok  by \konTok_joinStackTok;
+    sub \kuleTok \joinStackTok  by \kuleTok_joinStackTok;
+    sub \kulupuTok \joinStackTok  by \kulupuTok_joinStackTok;
+    sub \kuteTok \joinStackTok  by \kuteTok_joinStackTok;
+    sub \laTok \joinStackTok  by \laTok_joinStackTok;
+    sub \lapeTok \joinStackTok  by \lapeTok_joinStackTok;
+    sub \lasoTok \joinStackTok  by \lasoTok_joinStackTok;
+    sub \lawaTok \joinStackTok  by \lawaTok_joinStackTok;
+    sub \lenTok \joinStackTok  by \lenTok_joinStackTok;
+    sub \leteTok \joinStackTok  by \leteTok_joinStackTok;
+    sub \liTok \joinStackTok  by \liTok_joinStackTok;
+    sub \liliTok \joinStackTok  by \liliTok_joinStackTok;
+    sub \linjaTok \joinStackTok  by \linjaTok_joinStackTok;
+    sub \lipuTok \joinStackTok  by \lipuTok_joinStackTok;
+    sub \lojeTok \joinStackTok  by \lojeTok_joinStackTok;
+    sub \lonTok \joinStackTok  by \lonTok_joinStackTok;
+    sub \lukaTok \joinStackTok  by \lukaTok_joinStackTok;
+    sub \lukinTok \joinStackTok  by \lukinTok_joinStackTok;
+    sub \lupaTok \joinStackTok  by \lupaTok_joinStackTok;
+    sub \maTok \joinStackTok  by \maTok_joinStackTok;
+    sub \mamaTok \joinStackTok  by \mamaTok_joinStackTok;
+    sub \maniTok \joinStackTok  by \maniTok_joinStackTok;
+    sub \meliTok \joinStackTok  by \meliTok_joinStackTok;
+    sub \miTok \joinStackTok  by \miTok_joinStackTok;
+    sub \mijeTok \joinStackTok  by \mijeTok_joinStackTok;
+    sub \mokuTok \joinStackTok  by \mokuTok_joinStackTok;
+    sub \moliTok \joinStackTok  by \moliTok_joinStackTok;
+    sub \monsiTok \joinStackTok  by \monsiTok_joinStackTok;
+    sub \muTok \joinStackTok  by \muTok_joinStackTok;
+    sub \munTok \joinStackTok  by \munTok_joinStackTok;
+    sub \musiTok \joinStackTok  by \musiTok_joinStackTok;
+    sub \muteTok \joinStackTok  by \muteTok_joinStackTok;
+    sub \nanpaTok \joinStackTok  by \nanpaTok_joinStackTok;
+    sub \nasaTok \joinStackTok  by \nasaTok_joinStackTok;
+    sub \nasinTok \joinStackTok  by \nasinTok_joinStackTok;
+    sub \nenaTok \joinStackTok  by \nenaTok_joinStackTok;
+    sub \niTok \joinStackTok  by \niTok_joinStackTok;
+    sub \nimiTok \joinStackTok  by \nimiTok_joinStackTok;
+    sub \nokaTok \joinStackTok  by \nokaTok_joinStackTok;
+    sub \oTok \joinStackTok  by \oTok_joinStackTok;
+    sub \olinTok \joinStackTok  by \olinTok_joinStackTok;
+    sub \onaTok \joinStackTok  by \onaTok_joinStackTok;
+    sub \openTok \joinStackTok  by \openTok_joinStackTok;
+    sub \pakalaTok \joinStackTok  by \pakalaTok_joinStackTok;
+    sub \paliTok \joinStackTok  by \paliTok_joinStackTok;
+    sub \palisaTok \joinStackTok  by \palisaTok_joinStackTok;
+    sub \panTok \joinStackTok  by \panTok_joinStackTok;
+    sub \panaTok \joinStackTok  by \panaTok_joinStackTok;
+    sub \piTok \joinStackTok  by \piTok_joinStackTok;
+    sub \pilinTok \joinStackTok  by \pilinTok_joinStackTok;
+    sub \pimejaTok \joinStackTok  by \pimejaTok_joinStackTok;
+    sub \piniTok \joinStackTok  by \piniTok_joinStackTok;
+    sub \pipiTok \joinStackTok  by \pipiTok_joinStackTok;
+    sub \pokaTok \joinStackTok  by \pokaTok_joinStackTok;
+    sub \pokiTok \joinStackTok  by \pokiTok_joinStackTok;
+    sub \ponaTok \joinStackTok  by \ponaTok_joinStackTok;
+    sub \puTok \joinStackTok  by \puTok_joinStackTok;
+    sub \samaTok \joinStackTok  by \samaTok_joinStackTok;
+    sub \seliTok \joinStackTok  by \seliTok_joinStackTok;
+    sub \seloTok \joinStackTok  by \seloTok_joinStackTok;
+    sub \semeTok \joinStackTok  by \semeTok_joinStackTok;
+    sub \sewiTok \joinStackTok  by \sewiTok_joinStackTok;
+    sub \sijeloTok \joinStackTok  by \sijeloTok_joinStackTok;
+    sub \sikeTok \joinStackTok  by \sikeTok_joinStackTok;
+    sub \sinTok \joinStackTok  by \sinTok_joinStackTok;
+    sub \sinaTok \joinStackTok  by \sinaTok_joinStackTok;
+    sub \sinpinTok \joinStackTok  by \sinpinTok_joinStackTok;
+    sub \sitelenTok \joinStackTok  by \sitelenTok_joinStackTok;
+    sub \sonaTok \joinStackTok  by \sonaTok_joinStackTok;
+    sub \soweliTok \joinStackTok  by \soweliTok_joinStackTok;
+    sub \suliTok \joinStackTok  by \suliTok_joinStackTok;
+    sub \sunoTok \joinStackTok  by \sunoTok_joinStackTok;
+    sub \supaTok \joinStackTok  by \supaTok_joinStackTok;
+    sub \suwiTok \joinStackTok  by \suwiTok_joinStackTok;
+    sub \tanTok \joinStackTok  by \tanTok_joinStackTok;
+    sub \tasoTok \joinStackTok  by \tasoTok_joinStackTok;
+    sub \tawaTok \joinStackTok  by \tawaTok_joinStackTok;
+    sub \teloTok \joinStackTok  by \teloTok_joinStackTok;
+    sub \tenpoTok \joinStackTok  by \tenpoTok_joinStackTok;
+    sub \tokiTok \joinStackTok  by \tokiTok_joinStackTok;
+    sub \tomoTok \joinStackTok  by \tomoTok_joinStackTok;
+    sub \tuTok \joinStackTok  by \tuTok_joinStackTok;
+    sub \unpaTok \joinStackTok  by \unpaTok_joinStackTok;
+    sub \utaTok \joinStackTok  by \utaTok_joinStackTok;
+    sub \utalaTok \joinStackTok  by \utalaTok_joinStackTok;
+    sub \waloTok \joinStackTok  by \waloTok_joinStackTok;
+    sub \wanTok \joinStackTok  by \wanTok_joinStackTok;
+    sub \wasoTok \joinStackTok  by \wasoTok_joinStackTok;
+    sub \wawaTok \joinStackTok  by \wawaTok_joinStackTok;
+    sub \wekaTok \joinStackTok  by \wekaTok_joinStackTok;
+    sub \wileTok \joinStackTok  by \wileTok_joinStackTok;
+    sub \namakoTok \joinStackTok  by \namakoTok_joinStackTok;
+    sub \kinTok \joinStackTok  by \kinTok_joinStackTok;
+    sub \okoTok \joinStackTok  by \okoTok_joinStackTok;
+    sub \kipisiTok \joinStackTok  by \kipisiTok_joinStackTok;
+    sub \lekoTok \joinStackTok  by \lekoTok_joinStackTok;
+    sub \monsutaTok \joinStackTok  by \monsutaTok_joinStackTok;
+    sub \tonsiTok \joinStackTok  by \tonsiTok_joinStackTok;
+    sub \jasimaTok \joinStackTok  by \jasimaTok_joinStackTok;
+    sub \kijetesantakaluTok \joinStackTok  by \kijetesantakaluTok_joinStackTok;
+    sub \sokoTok \joinStackTok  by \sokoTok_joinStackTok;
+    sub \mesoTok \joinStackTok  by \mesoTok_joinStackTok;
+    sub \epikuTok \joinStackTok  by \epikuTok_joinStackTok;
+    sub \kokosilaTok \joinStackTok  by \kokosilaTok_joinStackTok;
+    sub \lanpanTok \joinStackTok  by \lanpanTok_joinStackTok;
+    sub \nTok \joinStackTok  by \nTok_joinStackTok;
+    sub \misikekeTok \joinStackTok  by \misikekeTok_joinStackTok;
+    sub \kuTok \joinStackTok  by \kuTok_joinStackTok;
+    sub \pakeTok \joinStackTok  by \pakeTok_joinStackTok;
+    sub \apejaTok \joinStackTok  by \apejaTok_joinStackTok;
+    sub \majunaTok \joinStackTok  by \majunaTok_joinStackTok;
+    sub \poweTok \joinStackTok  by \poweTok_joinStackTok;
+    sub \aTok \joinScaleTok  by \aTok_joinScaleTok;
+    sub \akesiTok \joinScaleTok  by \akesiTok_joinScaleTok;
+    sub \alaTok \joinScaleTok  by \alaTok_joinScaleTok;
+    sub \alasaTok \joinScaleTok  by \alasaTok_joinScaleTok;
+    sub \aleTok \joinScaleTok  by \aleTok_joinScaleTok;
+    sub \anpaTok \joinScaleTok  by \anpaTok_joinScaleTok;
+    sub \anteTok \joinScaleTok  by \anteTok_joinScaleTok;
+    sub \anuTok \joinScaleTok  by \anuTok_joinScaleTok;
+    sub \awenTok \joinScaleTok  by \awenTok_joinScaleTok;
+    sub \eTok \joinScaleTok  by \eTok_joinScaleTok;
+    sub \enTok \joinScaleTok  by \enTok_joinScaleTok;
+    sub \esunTok \joinScaleTok  by \esunTok_joinScaleTok;
+    sub \ijoTok \joinScaleTok  by \ijoTok_joinScaleTok;
+    sub \ikeTok \joinScaleTok  by \ikeTok_joinScaleTok;
+    sub \iloTok \joinScaleTok  by \iloTok_joinScaleTok;
+    sub \insaTok \joinScaleTok  by \insaTok_joinScaleTok;
+    sub \jakiTok \joinScaleTok  by \jakiTok_joinScaleTok;
+    sub \janTok \joinScaleTok  by \janTok_joinScaleTok;
+    sub \jeloTok \joinScaleTok  by \jeloTok_joinScaleTok;
+    sub \joTok \joinScaleTok  by \joTok_joinScaleTok;
+    sub \kalaTok \joinScaleTok  by \kalaTok_joinScaleTok;
+    sub \kalamaTok \joinScaleTok  by \kalamaTok_joinScaleTok;
+    sub \kamaTok \joinScaleTok  by \kamaTok_joinScaleTok;
+    sub \kasiTok \joinScaleTok  by \kasiTok_joinScaleTok;
+    sub \kenTok \joinScaleTok  by \kenTok_joinScaleTok;
+    sub \kepekenTok \joinScaleTok  by \kepekenTok_joinScaleTok;
+    sub \kiliTok \joinScaleTok  by \kiliTok_joinScaleTok;
+    sub \kiwenTok \joinScaleTok  by \kiwenTok_joinScaleTok;
+    sub \koTok \joinScaleTok  by \koTok_joinScaleTok;
+    sub \konTok \joinScaleTok  by \konTok_joinScaleTok;
+    sub \kuleTok \joinScaleTok  by \kuleTok_joinScaleTok;
+    sub \kulupuTok \joinScaleTok  by \kulupuTok_joinScaleTok;
+    sub \kuteTok \joinScaleTok  by \kuteTok_joinScaleTok;
+    sub \laTok \joinScaleTok  by \laTok_joinScaleTok;
+    sub \lapeTok \joinScaleTok  by \lapeTok_joinScaleTok;
+    sub \lasoTok \joinScaleTok  by \lasoTok_joinScaleTok;
+    sub \lawaTok \joinScaleTok  by \lawaTok_joinScaleTok;
+    sub \lenTok \joinScaleTok  by \lenTok_joinScaleTok;
+    sub \leteTok \joinScaleTok  by \leteTok_joinScaleTok;
+    sub \liTok \joinScaleTok  by \liTok_joinScaleTok;
+    sub \liliTok \joinScaleTok  by \liliTok_joinScaleTok;
+    sub \linjaTok \joinScaleTok  by \linjaTok_joinScaleTok;
+    sub \lipuTok \joinScaleTok  by \lipuTok_joinScaleTok;
+    sub \lojeTok \joinScaleTok  by \lojeTok_joinScaleTok;
+    sub \lonTok \joinScaleTok  by \lonTok_joinScaleTok;
+    sub \lukaTok \joinScaleTok  by \lukaTok_joinScaleTok;
+    sub \lukinTok \joinScaleTok  by \lukinTok_joinScaleTok;
+    sub \lupaTok \joinScaleTok  by \lupaTok_joinScaleTok;
+    sub \maTok \joinScaleTok  by \maTok_joinScaleTok;
+    sub \mamaTok \joinScaleTok  by \mamaTok_joinScaleTok;
+    sub \maniTok \joinScaleTok  by \maniTok_joinScaleTok;
+    sub \meliTok \joinScaleTok  by \meliTok_joinScaleTok;
+    sub \miTok \joinScaleTok  by \miTok_joinScaleTok;
+    sub \mijeTok \joinScaleTok  by \mijeTok_joinScaleTok;
+    sub \mokuTok \joinScaleTok  by \mokuTok_joinScaleTok;
+    sub \moliTok \joinScaleTok  by \moliTok_joinScaleTok;
+    sub \monsiTok \joinScaleTok  by \monsiTok_joinScaleTok;
+    sub \muTok \joinScaleTok  by \muTok_joinScaleTok;
+    sub \munTok \joinScaleTok  by \munTok_joinScaleTok;
+    sub \musiTok \joinScaleTok  by \musiTok_joinScaleTok;
+    sub \muteTok \joinScaleTok  by \muteTok_joinScaleTok;
+    sub \nanpaTok \joinScaleTok  by \nanpaTok_joinScaleTok;
+    sub \nasaTok \joinScaleTok  by \nasaTok_joinScaleTok;
+    sub \nasinTok \joinScaleTok  by \nasinTok_joinScaleTok;
+    sub \nenaTok \joinScaleTok  by \nenaTok_joinScaleTok;
+    sub \niTok \joinScaleTok  by \niTok_joinScaleTok;
+    sub \nimiTok \joinScaleTok  by \nimiTok_joinScaleTok;
+    sub \nokaTok \joinScaleTok  by \nokaTok_joinScaleTok;
+    sub \oTok \joinScaleTok  by \oTok_joinScaleTok;
+    sub \olinTok \joinScaleTok  by \olinTok_joinScaleTok;
+    sub \onaTok \joinScaleTok  by \onaTok_joinScaleTok;
+    sub \openTok \joinScaleTok  by \openTok_joinScaleTok;
+    sub \pakalaTok \joinScaleTok  by \pakalaTok_joinScaleTok;
+    sub \paliTok \joinScaleTok  by \paliTok_joinScaleTok;
+    sub \palisaTok \joinScaleTok  by \palisaTok_joinScaleTok;
+    sub \panTok \joinScaleTok  by \panTok_joinScaleTok;
+    sub \panaTok \joinScaleTok  by \panaTok_joinScaleTok;
+    sub \piTok \joinScaleTok  by \piTok_joinScaleTok;
+    sub \pilinTok \joinScaleTok  by \pilinTok_joinScaleTok;
+    sub \pimejaTok \joinScaleTok  by \pimejaTok_joinScaleTok;
+    sub \piniTok \joinScaleTok  by \piniTok_joinScaleTok;
+    sub \pipiTok \joinScaleTok  by \pipiTok_joinScaleTok;
+    sub \pokaTok \joinScaleTok  by \pokaTok_joinScaleTok;
+    sub \pokiTok \joinScaleTok  by \pokiTok_joinScaleTok;
+    sub \ponaTok \joinScaleTok  by \ponaTok_joinScaleTok;
+    sub \puTok \joinScaleTok  by \puTok_joinScaleTok;
+    sub \samaTok \joinScaleTok  by \samaTok_joinScaleTok;
+    sub \seliTok \joinScaleTok  by \seliTok_joinScaleTok;
+    sub \seloTok \joinScaleTok  by \seloTok_joinScaleTok;
+    sub \semeTok \joinScaleTok  by \semeTok_joinScaleTok;
+    sub \sewiTok \joinScaleTok  by \sewiTok_joinScaleTok;
+    sub \sijeloTok \joinScaleTok  by \sijeloTok_joinScaleTok;
+    sub \sikeTok \joinScaleTok  by \sikeTok_joinScaleTok;
+    sub \sinTok \joinScaleTok  by \sinTok_joinScaleTok;
+    sub \sinaTok \joinScaleTok  by \sinaTok_joinScaleTok;
+    sub \sinpinTok \joinScaleTok  by \sinpinTok_joinScaleTok;
+    sub \sitelenTok \joinScaleTok  by \sitelenTok_joinScaleTok;
+    sub \sonaTok \joinScaleTok  by \sonaTok_joinScaleTok;
+    sub \soweliTok \joinScaleTok  by \soweliTok_joinScaleTok;
+    sub \suliTok \joinScaleTok  by \suliTok_joinScaleTok;
+    sub \sunoTok \joinScaleTok  by \sunoTok_joinScaleTok;
+    sub \supaTok \joinScaleTok  by \supaTok_joinScaleTok;
+    sub \suwiTok \joinScaleTok  by \suwiTok_joinScaleTok;
+    sub \tanTok \joinScaleTok  by \tanTok_joinScaleTok;
+    sub \tasoTok \joinScaleTok  by \tasoTok_joinScaleTok;
+    sub \tawaTok \joinScaleTok  by \tawaTok_joinScaleTok;
+    sub \teloTok \joinScaleTok  by \teloTok_joinScaleTok;
+    sub \tenpoTok \joinScaleTok  by \tenpoTok_joinScaleTok;
+    sub \tokiTok \joinScaleTok  by \tokiTok_joinScaleTok;
+    sub \tomoTok \joinScaleTok  by \tomoTok_joinScaleTok;
+    sub \tuTok \joinScaleTok  by \tuTok_joinScaleTok;
+    sub \unpaTok \joinScaleTok  by \unpaTok_joinScaleTok;
+    sub \utaTok \joinScaleTok  by \utaTok_joinScaleTok;
+    sub \utalaTok \joinScaleTok  by \utalaTok_joinScaleTok;
+    sub \waloTok \joinScaleTok  by \waloTok_joinScaleTok;
+    sub \wanTok \joinScaleTok  by \wanTok_joinScaleTok;
+    sub \wasoTok \joinScaleTok  by \wasoTok_joinScaleTok;
+    sub \wawaTok \joinScaleTok  by \wawaTok_joinScaleTok;
+    sub \wekaTok \joinScaleTok  by \wekaTok_joinScaleTok;
+    sub \wileTok \joinScaleTok  by \wileTok_joinScaleTok;
+    sub \namakoTok \joinScaleTok  by \namakoTok_joinScaleTok;
+    sub \kinTok \joinScaleTok  by \kinTok_joinScaleTok;
+    sub \okoTok \joinScaleTok  by \okoTok_joinScaleTok;
+    sub \kipisiTok \joinScaleTok  by \kipisiTok_joinScaleTok;
+    sub \lekoTok \joinScaleTok  by \lekoTok_joinScaleTok;
+    sub \monsutaTok \joinScaleTok  by \monsutaTok_joinScaleTok;
+    sub \tonsiTok \joinScaleTok  by \tonsiTok_joinScaleTok;
+    sub \jasimaTok \joinScaleTok  by \jasimaTok_joinScaleTok;
+    sub \kijetesantakaluTok \joinScaleTok  by \kijetesantakaluTok_joinScaleTok;
+    sub \sokoTok \joinScaleTok  by \sokoTok_joinScaleTok;
+    sub \mesoTok \joinScaleTok  by \mesoTok_joinScaleTok;
+    sub \epikuTok \joinScaleTok  by \epikuTok_joinScaleTok;
+    sub \kokosilaTok \joinScaleTok  by \kokosilaTok_joinScaleTok;
+    sub \lanpanTok \joinScaleTok  by \lanpanTok_joinScaleTok;
+    sub \nTok \joinScaleTok  by \nTok_joinScaleTok;
+    sub \misikekeTok \joinScaleTok  by \misikekeTok_joinScaleTok;
+    sub \kuTok \joinScaleTok  by \kuTok_joinScaleTok;
+    sub \pakeTok \joinScaleTok  by \pakeTok_joinScaleTok;
+    sub \apejaTok \joinScaleTok  by \apejaTok_joinScaleTok;
+    sub \majunaTok \joinScaleTok  by \majunaTok_joinScaleTok;
+    sub \poweTok \joinScaleTok  by \poweTok_joinScaleTok;
+    sub \kala1Tok \joinStackTok  by \kala1Tok_joinStackTok;
+    sub \kala1Tok \joinScaleTok  by \kala1Tok_joinScaleTok;
+    sub \meli1Tok \joinStackTok  by \meli1Tok_joinStackTok;
+    sub \meli1Tok \joinScaleTok  by \meli1Tok_joinScaleTok;
+    sub \mije1Tok \joinStackTok  by \mije1Tok_joinStackTok;
+    sub \mije1Tok \joinScaleTok  by \mije1Tok_joinScaleTok;
+    sub \olin1Tok \joinStackTok  by \olin1Tok_joinStackTok;
+    sub \olin1Tok \joinScaleTok  by \olin1Tok_joinScaleTok;
+    sub \sewi1Tok \joinStackTok  by \sewi1Tok_joinStackTok;
+    sub \sewi1Tok \joinScaleTok  by \sewi1Tok_joinScaleTok;
+    sub \uta1Tok \joinStackTok  by \uta1Tok_joinStackTok;
+    sub \uta1Tok \joinScaleTok  by \uta1Tok_joinScaleTok;
+    sub \wile1Tok \joinStackTok  by \wile1Tok_joinStackTok;
+    sub \wile1Tok \joinScaleTok  by \wile1Tok_joinScaleTok;
+    sub \namako1Tok \joinStackTok  by \namako1Tok_joinStackTok;
+    sub \namako1Tok \joinScaleTok  by \namako1Tok_joinScaleTok;
+    sub \mu1Tok \joinStackTok  by \mu1Tok_joinStackTok;
+    sub \mu1Tok \joinScaleTok  by \mu1Tok_joinScaleTok;
+} ligaStep1;
+
+lookup ccmpStep2 {
+  lookupflag 0;
+    sub \aTok_joinStackTok by \aTok_joinStackTok \joinStackTok ;
+    sub \akesiTok_joinStackTok by \akesiTok_joinStackTok \joinStackTok ;
+    sub \alaTok_joinStackTok by \alaTok_joinStackTok \joinStackTok ;
+    sub \alasaTok_joinStackTok by \alasaTok_joinStackTok \joinStackTok ;
+    sub \aleTok_joinStackTok by \aleTok_joinStackTok \joinStackTok ;
+    sub \anpaTok_joinStackTok by \anpaTok_joinStackTok \joinStackTok ;
+    sub \anteTok_joinStackTok by \anteTok_joinStackTok \joinStackTok ;
+    sub \anuTok_joinStackTok by \anuTok_joinStackTok \joinStackTok ;
+    sub \awenTok_joinStackTok by \awenTok_joinStackTok \joinStackTok ;
+    sub \eTok_joinStackTok by \eTok_joinStackTok \joinStackTok ;
+    sub \enTok_joinStackTok by \enTok_joinStackTok \joinStackTok ;
+    sub \esunTok_joinStackTok by \esunTok_joinStackTok \joinStackTok ;
+    sub \ijoTok_joinStackTok by \ijoTok_joinStackTok \joinStackTok ;
+    sub \ikeTok_joinStackTok by \ikeTok_joinStackTok \joinStackTok ;
+    sub \iloTok_joinStackTok by \iloTok_joinStackTok \joinStackTok ;
+    sub \insaTok_joinStackTok by \insaTok_joinStackTok \joinStackTok ;
+    sub \jakiTok_joinStackTok by \jakiTok_joinStackTok \joinStackTok ;
+    sub \janTok_joinStackTok by \janTok_joinStackTok \joinStackTok ;
+    sub \jeloTok_joinStackTok by \jeloTok_joinStackTok \joinStackTok ;
+    sub \joTok_joinStackTok by \joTok_joinStackTok \joinStackTok ;
+    sub \kalaTok_joinStackTok by \kalaTok_joinStackTok \joinStackTok ;
+    sub \kalamaTok_joinStackTok by \kalamaTok_joinStackTok \joinStackTok ;
+    sub \kamaTok_joinStackTok by \kamaTok_joinStackTok \joinStackTok ;
+    sub \kasiTok_joinStackTok by \kasiTok_joinStackTok \joinStackTok ;
+    sub \kenTok_joinStackTok by \kenTok_joinStackTok \joinStackTok ;
+    sub \kepekenTok_joinStackTok by \kepekenTok_joinStackTok \joinStackTok ;
+    sub \kiliTok_joinStackTok by \kiliTok_joinStackTok \joinStackTok ;
+    sub \kiwenTok_joinStackTok by \kiwenTok_joinStackTok \joinStackTok ;
+    sub \koTok_joinStackTok by \koTok_joinStackTok \joinStackTok ;
+    sub \konTok_joinStackTok by \konTok_joinStackTok \joinStackTok ;
+    sub \kuleTok_joinStackTok by \kuleTok_joinStackTok \joinStackTok ;
+    sub \kulupuTok_joinStackTok by \kulupuTok_joinStackTok \joinStackTok ;
+    sub \kuteTok_joinStackTok by \kuteTok_joinStackTok \joinStackTok ;
+    sub \laTok_joinStackTok by \laTok_joinStackTok \joinStackTok ;
+    sub \lapeTok_joinStackTok by \lapeTok_joinStackTok \joinStackTok ;
+    sub \lasoTok_joinStackTok by \lasoTok_joinStackTok \joinStackTok ;
+    sub \lawaTok_joinStackTok by \lawaTok_joinStackTok \joinStackTok ;
+    sub \lenTok_joinStackTok by \lenTok_joinStackTok \joinStackTok ;
+    sub \leteTok_joinStackTok by \leteTok_joinStackTok \joinStackTok ;
+    sub \liTok_joinStackTok by \liTok_joinStackTok \joinStackTok ;
+    sub \liliTok_joinStackTok by \liliTok_joinStackTok \joinStackTok ;
+    sub \linjaTok_joinStackTok by \linjaTok_joinStackTok \joinStackTok ;
+    sub \lipuTok_joinStackTok by \lipuTok_joinStackTok \joinStackTok ;
+    sub \lojeTok_joinStackTok by \lojeTok_joinStackTok \joinStackTok ;
+    sub \lonTok_joinStackTok by \lonTok_joinStackTok \joinStackTok ;
+    sub \lukaTok_joinStackTok by \lukaTok_joinStackTok \joinStackTok ;
+    sub \lukinTok_joinStackTok by \lukinTok_joinStackTok \joinStackTok ;
+    sub \lupaTok_joinStackTok by \lupaTok_joinStackTok \joinStackTok ;
+    sub \maTok_joinStackTok by \maTok_joinStackTok \joinStackTok ;
+    sub \mamaTok_joinStackTok by \mamaTok_joinStackTok \joinStackTok ;
+    sub \maniTok_joinStackTok by \maniTok_joinStackTok \joinStackTok ;
+    sub \meliTok_joinStackTok by \meliTok_joinStackTok \joinStackTok ;
+    sub \miTok_joinStackTok by \miTok_joinStackTok \joinStackTok ;
+    sub \mijeTok_joinStackTok by \mijeTok_joinStackTok \joinStackTok ;
+    sub \mokuTok_joinStackTok by \mokuTok_joinStackTok \joinStackTok ;
+    sub \moliTok_joinStackTok by \moliTok_joinStackTok \joinStackTok ;
+    sub \monsiTok_joinStackTok by \monsiTok_joinStackTok \joinStackTok ;
+    sub \muTok_joinStackTok by \muTok_joinStackTok \joinStackTok ;
+    sub \munTok_joinStackTok by \munTok_joinStackTok \joinStackTok ;
+    sub \musiTok_joinStackTok by \musiTok_joinStackTok \joinStackTok ;
+    sub \muteTok_joinStackTok by \muteTok_joinStackTok \joinStackTok ;
+    sub \nanpaTok_joinStackTok by \nanpaTok_joinStackTok \joinStackTok ;
+    sub \nasaTok_joinStackTok by \nasaTok_joinStackTok \joinStackTok ;
+    sub \nasinTok_joinStackTok by \nasinTok_joinStackTok \joinStackTok ;
+    sub \nenaTok_joinStackTok by \nenaTok_joinStackTok \joinStackTok ;
+    sub \niTok_joinStackTok by \niTok_joinStackTok \joinStackTok ;
+    sub \nimiTok_joinStackTok by \nimiTok_joinStackTok \joinStackTok ;
+    sub \nokaTok_joinStackTok by \nokaTok_joinStackTok \joinStackTok ;
+    sub \oTok_joinStackTok by \oTok_joinStackTok \joinStackTok ;
+    sub \olinTok_joinStackTok by \olinTok_joinStackTok \joinStackTok ;
+    sub \onaTok_joinStackTok by \onaTok_joinStackTok \joinStackTok ;
+    sub \openTok_joinStackTok by \openTok_joinStackTok \joinStackTok ;
+    sub \pakalaTok_joinStackTok by \pakalaTok_joinStackTok \joinStackTok ;
+    sub \paliTok_joinStackTok by \paliTok_joinStackTok \joinStackTok ;
+    sub \palisaTok_joinStackTok by \palisaTok_joinStackTok \joinStackTok ;
+    sub \panTok_joinStackTok by \panTok_joinStackTok \joinStackTok ;
+    sub \panaTok_joinStackTok by \panaTok_joinStackTok \joinStackTok ;
+    sub \piTok_joinStackTok by \piTok_joinStackTok \joinStackTok ;
+    sub \pilinTok_joinStackTok by \pilinTok_joinStackTok \joinStackTok ;
+    sub \pimejaTok_joinStackTok by \pimejaTok_joinStackTok \joinStackTok ;
+    sub \piniTok_joinStackTok by \piniTok_joinStackTok \joinStackTok ;
+    sub \pipiTok_joinStackTok by \pipiTok_joinStackTok \joinStackTok ;
+    sub \pokaTok_joinStackTok by \pokaTok_joinStackTok \joinStackTok ;
+    sub \pokiTok_joinStackTok by \pokiTok_joinStackTok \joinStackTok ;
+    sub \ponaTok_joinStackTok by \ponaTok_joinStackTok \joinStackTok ;
+    sub \puTok_joinStackTok by \puTok_joinStackTok \joinStackTok ;
+    sub \samaTok_joinStackTok by \samaTok_joinStackTok \joinStackTok ;
+    sub \seliTok_joinStackTok by \seliTok_joinStackTok \joinStackTok ;
+    sub \seloTok_joinStackTok by \seloTok_joinStackTok \joinStackTok ;
+    sub \semeTok_joinStackTok by \semeTok_joinStackTok \joinStackTok ;
+    sub \sewiTok_joinStackTok by \sewiTok_joinStackTok \joinStackTok ;
+    sub \sijeloTok_joinStackTok by \sijeloTok_joinStackTok \joinStackTok ;
+    sub \sikeTok_joinStackTok by \sikeTok_joinStackTok \joinStackTok ;
+    sub \sinTok_joinStackTok by \sinTok_joinStackTok \joinStackTok ;
+    sub \sinaTok_joinStackTok by \sinaTok_joinStackTok \joinStackTok ;
+    sub \sinpinTok_joinStackTok by \sinpinTok_joinStackTok \joinStackTok ;
+    sub \sitelenTok_joinStackTok by \sitelenTok_joinStackTok \joinStackTok ;
+    sub \sonaTok_joinStackTok by \sonaTok_joinStackTok \joinStackTok ;
+    sub \soweliTok_joinStackTok by \soweliTok_joinStackTok \joinStackTok ;
+    sub \suliTok_joinStackTok by \suliTok_joinStackTok \joinStackTok ;
+    sub \sunoTok_joinStackTok by \sunoTok_joinStackTok \joinStackTok ;
+    sub \supaTok_joinStackTok by \supaTok_joinStackTok \joinStackTok ;
+    sub \suwiTok_joinStackTok by \suwiTok_joinStackTok \joinStackTok ;
+    sub \tanTok_joinStackTok by \tanTok_joinStackTok \joinStackTok ;
+    sub \tasoTok_joinStackTok by \tasoTok_joinStackTok \joinStackTok ;
+    sub \tawaTok_joinStackTok by \tawaTok_joinStackTok \joinStackTok ;
+    sub \teloTok_joinStackTok by \teloTok_joinStackTok \joinStackTok ;
+    sub \tenpoTok_joinStackTok by \tenpoTok_joinStackTok \joinStackTok ;
+    sub \tokiTok_joinStackTok by \tokiTok_joinStackTok \joinStackTok ;
+    sub \tomoTok_joinStackTok by \tomoTok_joinStackTok \joinStackTok ;
+    sub \tuTok_joinStackTok by \tuTok_joinStackTok \joinStackTok ;
+    sub \unpaTok_joinStackTok by \unpaTok_joinStackTok \joinStackTok ;
+    sub \utaTok_joinStackTok by \utaTok_joinStackTok \joinStackTok ;
+    sub \utalaTok_joinStackTok by \utalaTok_joinStackTok \joinStackTok ;
+    sub \waloTok_joinStackTok by \waloTok_joinStackTok \joinStackTok ;
+    sub \wanTok_joinStackTok by \wanTok_joinStackTok \joinStackTok ;
+    sub \wasoTok_joinStackTok by \wasoTok_joinStackTok \joinStackTok ;
+    sub \wawaTok_joinStackTok by \wawaTok_joinStackTok \joinStackTok ;
+    sub \wekaTok_joinStackTok by \wekaTok_joinStackTok \joinStackTok ;
+    sub \wileTok_joinStackTok by \wileTok_joinStackTok \joinStackTok ;
+    sub \namakoTok_joinStackTok by \namakoTok_joinStackTok \joinStackTok ;
+    sub \kinTok_joinStackTok by \kinTok_joinStackTok \joinStackTok ;
+    sub \okoTok_joinStackTok by \okoTok_joinStackTok \joinStackTok ;
+    sub \kipisiTok_joinStackTok by \kipisiTok_joinStackTok \joinStackTok ;
+    sub \lekoTok_joinStackTok by \lekoTok_joinStackTok \joinStackTok ;
+    sub \monsutaTok_joinStackTok by \monsutaTok_joinStackTok \joinStackTok ;
+    sub \tonsiTok_joinStackTok by \tonsiTok_joinStackTok \joinStackTok ;
+    sub \jasimaTok_joinStackTok by \jasimaTok_joinStackTok \joinStackTok ;
+    sub \kijetesantakaluTok_joinStackTok by \kijetesantakaluTok_joinStackTok \joinStackTok ;
+    sub \sokoTok_joinStackTok by \sokoTok_joinStackTok \joinStackTok ;
+    sub \mesoTok_joinStackTok by \mesoTok_joinStackTok \joinStackTok ;
+    sub \epikuTok_joinStackTok by \epikuTok_joinStackTok \joinStackTok ;
+    sub \kokosilaTok_joinStackTok by \kokosilaTok_joinStackTok \joinStackTok ;
+    sub \lanpanTok_joinStackTok by \lanpanTok_joinStackTok \joinStackTok ;
+    sub \nTok_joinStackTok by \nTok_joinStackTok \joinStackTok ;
+    sub \misikekeTok_joinStackTok by \misikekeTok_joinStackTok \joinStackTok ;
+    sub \kuTok_joinStackTok by \kuTok_joinStackTok \joinStackTok ;
+    sub \pakeTok_joinStackTok by \pakeTok_joinStackTok \joinStackTok ;
+    sub \apejaTok_joinStackTok by \apejaTok_joinStackTok \joinStackTok ;
+    sub \majunaTok_joinStackTok by \majunaTok_joinStackTok \joinStackTok ;
+    sub \poweTok_joinStackTok by \poweTok_joinStackTok \joinStackTok ;
+    sub \aTok_joinScaleTok by \aTok_joinScaleTok \joinScaleTok ;
+    sub \akesiTok_joinScaleTok by \akesiTok_joinScaleTok \joinScaleTok ;
+    sub \alaTok_joinScaleTok by \alaTok_joinScaleTok \joinScaleTok ;
+    sub \alasaTok_joinScaleTok by \alasaTok_joinScaleTok \joinScaleTok ;
+    sub \aleTok_joinScaleTok by \aleTok_joinScaleTok \joinScaleTok ;
+    sub \anpaTok_joinScaleTok by \anpaTok_joinScaleTok \joinScaleTok ;
+    sub \anteTok_joinScaleTok by \anteTok_joinScaleTok \joinScaleTok ;
+    sub \anuTok_joinScaleTok by \anuTok_joinScaleTok \joinScaleTok ;
+    sub \awenTok_joinScaleTok by \awenTok_joinScaleTok \joinScaleTok ;
+    sub \eTok_joinScaleTok by \eTok_joinScaleTok \joinScaleTok ;
+    sub \enTok_joinScaleTok by \enTok_joinScaleTok \joinScaleTok ;
+    sub \esunTok_joinScaleTok by \esunTok_joinScaleTok \joinScaleTok ;
+    sub \ijoTok_joinScaleTok by \ijoTok_joinScaleTok \joinScaleTok ;
+    sub \ikeTok_joinScaleTok by \ikeTok_joinScaleTok \joinScaleTok ;
+    sub \iloTok_joinScaleTok by \iloTok_joinScaleTok \joinScaleTok ;
+    sub \insaTok_joinScaleTok by \insaTok_joinScaleTok \joinScaleTok ;
+    sub \jakiTok_joinScaleTok by \jakiTok_joinScaleTok \joinScaleTok ;
+    sub \janTok_joinScaleTok by \janTok_joinScaleTok \joinScaleTok ;
+    sub \jeloTok_joinScaleTok by \jeloTok_joinScaleTok \joinScaleTok ;
+    sub \joTok_joinScaleTok by \joTok_joinScaleTok \joinScaleTok ;
+    sub \kalaTok_joinScaleTok by \kalaTok_joinScaleTok \joinScaleTok ;
+    sub \kalamaTok_joinScaleTok by \kalamaTok_joinScaleTok \joinScaleTok ;
+    sub \kamaTok_joinScaleTok by \kamaTok_joinScaleTok \joinScaleTok ;
+    sub \kasiTok_joinScaleTok by \kasiTok_joinScaleTok \joinScaleTok ;
+    sub \kenTok_joinScaleTok by \kenTok_joinScaleTok \joinScaleTok ;
+    sub \kepekenTok_joinScaleTok by \kepekenTok_joinScaleTok \joinScaleTok ;
+    sub \kiliTok_joinScaleTok by \kiliTok_joinScaleTok \joinScaleTok ;
+    sub \kiwenTok_joinScaleTok by \kiwenTok_joinScaleTok \joinScaleTok ;
+    sub \koTok_joinScaleTok by \koTok_joinScaleTok \joinScaleTok ;
+    sub \konTok_joinScaleTok by \konTok_joinScaleTok \joinScaleTok ;
+    sub \kuleTok_joinScaleTok by \kuleTok_joinScaleTok \joinScaleTok ;
+    sub \kulupuTok_joinScaleTok by \kulupuTok_joinScaleTok \joinScaleTok ;
+    sub \kuteTok_joinScaleTok by \kuteTok_joinScaleTok \joinScaleTok ;
+    sub \laTok_joinScaleTok by \laTok_joinScaleTok \joinScaleTok ;
+    sub \lapeTok_joinScaleTok by \lapeTok_joinScaleTok \joinScaleTok ;
+    sub \lasoTok_joinScaleTok by \lasoTok_joinScaleTok \joinScaleTok ;
+    sub \lawaTok_joinScaleTok by \lawaTok_joinScaleTok \joinScaleTok ;
+    sub \lenTok_joinScaleTok by \lenTok_joinScaleTok \joinScaleTok ;
+    sub \leteTok_joinScaleTok by \leteTok_joinScaleTok \joinScaleTok ;
+    sub \liTok_joinScaleTok by \liTok_joinScaleTok \joinScaleTok ;
+    sub \liliTok_joinScaleTok by \liliTok_joinScaleTok \joinScaleTok ;
+    sub \linjaTok_joinScaleTok by \linjaTok_joinScaleTok \joinScaleTok ;
+    sub \lipuTok_joinScaleTok by \lipuTok_joinScaleTok \joinScaleTok ;
+    sub \lojeTok_joinScaleTok by \lojeTok_joinScaleTok \joinScaleTok ;
+    sub \lonTok_joinScaleTok by \lonTok_joinScaleTok \joinScaleTok ;
+    sub \lukaTok_joinScaleTok by \lukaTok_joinScaleTok \joinScaleTok ;
+    sub \lukinTok_joinScaleTok by \lukinTok_joinScaleTok \joinScaleTok ;
+    sub \lupaTok_joinScaleTok by \lupaTok_joinScaleTok \joinScaleTok ;
+    sub \maTok_joinScaleTok by \maTok_joinScaleTok \joinScaleTok ;
+    sub \mamaTok_joinScaleTok by \mamaTok_joinScaleTok \joinScaleTok ;
+    sub \maniTok_joinScaleTok by \maniTok_joinScaleTok \joinScaleTok ;
+    sub \meliTok_joinScaleTok by \meliTok_joinScaleTok \joinScaleTok ;
+    sub \miTok_joinScaleTok by \miTok_joinScaleTok \joinScaleTok ;
+    sub \mijeTok_joinScaleTok by \mijeTok_joinScaleTok \joinScaleTok ;
+    sub \mokuTok_joinScaleTok by \mokuTok_joinScaleTok \joinScaleTok ;
+    sub \moliTok_joinScaleTok by \moliTok_joinScaleTok \joinScaleTok ;
+    sub \monsiTok_joinScaleTok by \monsiTok_joinScaleTok \joinScaleTok ;
+    sub \muTok_joinScaleTok by \muTok_joinScaleTok \joinScaleTok ;
+    sub \munTok_joinScaleTok by \munTok_joinScaleTok \joinScaleTok ;
+    sub \musiTok_joinScaleTok by \musiTok_joinScaleTok \joinScaleTok ;
+    sub \muteTok_joinScaleTok by \muteTok_joinScaleTok \joinScaleTok ;
+    sub \nanpaTok_joinScaleTok by \nanpaTok_joinScaleTok \joinScaleTok ;
+    sub \nasaTok_joinScaleTok by \nasaTok_joinScaleTok \joinScaleTok ;
+    sub \nasinTok_joinScaleTok by \nasinTok_joinScaleTok \joinScaleTok ;
+    sub \nenaTok_joinScaleTok by \nenaTok_joinScaleTok \joinScaleTok ;
+    sub \niTok_joinScaleTok by \niTok_joinScaleTok \joinScaleTok ;
+    sub \nimiTok_joinScaleTok by \nimiTok_joinScaleTok \joinScaleTok ;
+    sub \nokaTok_joinScaleTok by \nokaTok_joinScaleTok \joinScaleTok ;
+    sub \oTok_joinScaleTok by \oTok_joinScaleTok \joinScaleTok ;
+    sub \olinTok_joinScaleTok by \olinTok_joinScaleTok \joinScaleTok ;
+    sub \onaTok_joinScaleTok by \onaTok_joinScaleTok \joinScaleTok ;
+    sub \openTok_joinScaleTok by \openTok_joinScaleTok \joinScaleTok ;
+    sub \pakalaTok_joinScaleTok by \pakalaTok_joinScaleTok \joinScaleTok ;
+    sub \paliTok_joinScaleTok by \paliTok_joinScaleTok \joinScaleTok ;
+    sub \palisaTok_joinScaleTok by \palisaTok_joinScaleTok \joinScaleTok ;
+    sub \panTok_joinScaleTok by \panTok_joinScaleTok \joinScaleTok ;
+    sub \panaTok_joinScaleTok by \panaTok_joinScaleTok \joinScaleTok ;
+    sub \piTok_joinScaleTok by \piTok_joinScaleTok \joinScaleTok ;
+    sub \pilinTok_joinScaleTok by \pilinTok_joinScaleTok \joinScaleTok ;
+    sub \pimejaTok_joinScaleTok by \pimejaTok_joinScaleTok \joinScaleTok ;
+    sub \piniTok_joinScaleTok by \piniTok_joinScaleTok \joinScaleTok ;
+    sub \pipiTok_joinScaleTok by \pipiTok_joinScaleTok \joinScaleTok ;
+    sub \pokaTok_joinScaleTok by \pokaTok_joinScaleTok \joinScaleTok ;
+    sub \pokiTok_joinScaleTok by \pokiTok_joinScaleTok \joinScaleTok ;
+    sub \ponaTok_joinScaleTok by \ponaTok_joinScaleTok \joinScaleTok ;
+    sub \puTok_joinScaleTok by \puTok_joinScaleTok \joinScaleTok ;
+    sub \samaTok_joinScaleTok by \samaTok_joinScaleTok \joinScaleTok ;
+    sub \seliTok_joinScaleTok by \seliTok_joinScaleTok \joinScaleTok ;
+    sub \seloTok_joinScaleTok by \seloTok_joinScaleTok \joinScaleTok ;
+    sub \semeTok_joinScaleTok by \semeTok_joinScaleTok \joinScaleTok ;
+    sub \sewiTok_joinScaleTok by \sewiTok_joinScaleTok \joinScaleTok ;
+    sub \sijeloTok_joinScaleTok by \sijeloTok_joinScaleTok \joinScaleTok ;
+    sub \sikeTok_joinScaleTok by \sikeTok_joinScaleTok \joinScaleTok ;
+    sub \sinTok_joinScaleTok by \sinTok_joinScaleTok \joinScaleTok ;
+    sub \sinaTok_joinScaleTok by \sinaTok_joinScaleTok \joinScaleTok ;
+    sub \sinpinTok_joinScaleTok by \sinpinTok_joinScaleTok \joinScaleTok ;
+    sub \sitelenTok_joinScaleTok by \sitelenTok_joinScaleTok \joinScaleTok ;
+    sub \sonaTok_joinScaleTok by \sonaTok_joinScaleTok \joinScaleTok ;
+    sub \soweliTok_joinScaleTok by \soweliTok_joinScaleTok \joinScaleTok ;
+    sub \suliTok_joinScaleTok by \suliTok_joinScaleTok \joinScaleTok ;
+    sub \sunoTok_joinScaleTok by \sunoTok_joinScaleTok \joinScaleTok ;
+    sub \supaTok_joinScaleTok by \supaTok_joinScaleTok \joinScaleTok ;
+    sub \suwiTok_joinScaleTok by \suwiTok_joinScaleTok \joinScaleTok ;
+    sub \tanTok_joinScaleTok by \tanTok_joinScaleTok \joinScaleTok ;
+    sub \tasoTok_joinScaleTok by \tasoTok_joinScaleTok \joinScaleTok ;
+    sub \tawaTok_joinScaleTok by \tawaTok_joinScaleTok \joinScaleTok ;
+    sub \teloTok_joinScaleTok by \teloTok_joinScaleTok \joinScaleTok ;
+    sub \tenpoTok_joinScaleTok by \tenpoTok_joinScaleTok \joinScaleTok ;
+    sub \tokiTok_joinScaleTok by \tokiTok_joinScaleTok \joinScaleTok ;
+    sub \tomoTok_joinScaleTok by \tomoTok_joinScaleTok \joinScaleTok ;
+    sub \tuTok_joinScaleTok by \tuTok_joinScaleTok \joinScaleTok ;
+    sub \unpaTok_joinScaleTok by \unpaTok_joinScaleTok \joinScaleTok ;
+    sub \utaTok_joinScaleTok by \utaTok_joinScaleTok \joinScaleTok ;
+    sub \utalaTok_joinScaleTok by \utalaTok_joinScaleTok \joinScaleTok ;
+    sub \waloTok_joinScaleTok by \waloTok_joinScaleTok \joinScaleTok ;
+    sub \wanTok_joinScaleTok by \wanTok_joinScaleTok \joinScaleTok ;
+    sub \wasoTok_joinScaleTok by \wasoTok_joinScaleTok \joinScaleTok ;
+    sub \wawaTok_joinScaleTok by \wawaTok_joinScaleTok \joinScaleTok ;
+    sub \wekaTok_joinScaleTok by \wekaTok_joinScaleTok \joinScaleTok ;
+    sub \wileTok_joinScaleTok by \wileTok_joinScaleTok \joinScaleTok ;
+    sub \namakoTok_joinScaleTok by \namakoTok_joinScaleTok \joinScaleTok ;
+    sub \kinTok_joinScaleTok by \kinTok_joinScaleTok \joinScaleTok ;
+    sub \okoTok_joinScaleTok by \okoTok_joinScaleTok \joinScaleTok ;
+    sub \kipisiTok_joinScaleTok by \kipisiTok_joinScaleTok \joinScaleTok ;
+    sub \lekoTok_joinScaleTok by \lekoTok_joinScaleTok \joinScaleTok ;
+    sub \monsutaTok_joinScaleTok by \monsutaTok_joinScaleTok \joinScaleTok ;
+    sub \tonsiTok_joinScaleTok by \tonsiTok_joinScaleTok \joinScaleTok ;
+    sub \jasimaTok_joinScaleTok by \jasimaTok_joinScaleTok \joinScaleTok ;
+    sub \kijetesantakaluTok_joinScaleTok by \kijetesantakaluTok_joinScaleTok \joinScaleTok ;
+    sub \sokoTok_joinScaleTok by \sokoTok_joinScaleTok \joinScaleTok ;
+    sub \mesoTok_joinScaleTok by \mesoTok_joinScaleTok \joinScaleTok ;
+    sub \epikuTok_joinScaleTok by \epikuTok_joinScaleTok \joinScaleTok ;
+    sub \kokosilaTok_joinScaleTok by \kokosilaTok_joinScaleTok \joinScaleTok ;
+    sub \lanpanTok_joinScaleTok by \lanpanTok_joinScaleTok \joinScaleTok ;
+    sub \nTok_joinScaleTok by \nTok_joinScaleTok \joinScaleTok ;
+    sub \misikekeTok_joinScaleTok by \misikekeTok_joinScaleTok \joinScaleTok ;
+    sub \kuTok_joinScaleTok by \kuTok_joinScaleTok \joinScaleTok ;
+    sub \pakeTok_joinScaleTok by \pakeTok_joinScaleTok \joinScaleTok ;
+    sub \apejaTok_joinScaleTok by \apejaTok_joinScaleTok \joinScaleTok ;
+    sub \majunaTok_joinScaleTok by \majunaTok_joinScaleTok \joinScaleTok ;
+    sub \poweTok_joinScaleTok by \poweTok_joinScaleTok \joinScaleTok ;
+    sub \kala1Tok_joinStackTok by \kala1Tok_joinStackTok \joinStackTok ;
+    sub \kala1Tok_joinScaleTok by \kala1Tok_joinScaleTok \joinScaleTok ;
+    sub \meli1Tok_joinStackTok by \meli1Tok_joinStackTok \joinStackTok ;
+    sub \meli1Tok_joinScaleTok by \meli1Tok_joinScaleTok \joinScaleTok ;
+    sub \mije1Tok_joinStackTok by \mije1Tok_joinStackTok \joinStackTok ;
+    sub \mije1Tok_joinScaleTok by \mije1Tok_joinScaleTok \joinScaleTok ;
+    sub \olin1Tok_joinStackTok by \olin1Tok_joinStackTok \joinStackTok ;
+    sub \olin1Tok_joinScaleTok by \olin1Tok_joinScaleTok \joinScaleTok ;
+    sub \sewi1Tok_joinStackTok by \sewi1Tok_joinStackTok \joinStackTok ;
+    sub \sewi1Tok_joinScaleTok by \sewi1Tok_joinScaleTok \joinScaleTok ;
+    sub \uta1Tok_joinStackTok by \uta1Tok_joinStackTok \joinStackTok ;
+    sub \uta1Tok_joinScaleTok by \uta1Tok_joinScaleTok \joinScaleTok ;
+    sub \wile1Tok_joinStackTok by \wile1Tok_joinStackTok \joinStackTok ;
+    sub \wile1Tok_joinScaleTok by \wile1Tok_joinScaleTok \joinScaleTok ;
+    sub \namako1Tok_joinStackTok by \namako1Tok_joinStackTok \joinStackTok ;
+    sub \namako1Tok_joinScaleTok by \namako1Tok_joinScaleTok \joinScaleTok ;
+    sub \mu1Tok_joinStackTok by \mu1Tok \joinStackTok ;
+    sub \mu1Tok_joinScaleTok by \mu1Tok \joinScaleTok ;
+} ccmpStep2;
+
+lookup ligaStep3 {
+  lookupflag 0;
+    sub \joinStackTok \aTok  by \joinStackTok_aTok;
+    sub \joinStackTok \akesiTok  by \joinStackTok_akesiTok;
+    sub \joinStackTok \alaTok  by \joinStackTok_alaTok;
+    sub \joinStackTok \alasaTok  by \joinStackTok_alasaTok;
+    sub \joinStackTok \aleTok  by \joinStackTok_aleTok;
+    sub \joinStackTok \anpaTok  by \joinStackTok_anpaTok;
+    sub \joinStackTok \anteTok  by \joinStackTok_anteTok;
+    sub \joinStackTok \anuTok  by \joinStackTok_anuTok;
+    sub \joinStackTok \awenTok  by \joinStackTok_awenTok;
+    sub \joinStackTok \eTok  by \joinStackTok_eTok;
+    sub \joinStackTok \enTok  by \joinStackTok_enTok;
+    sub \joinStackTok \esunTok  by \joinStackTok_esunTok;
+    sub \joinStackTok \ijoTok  by \joinStackTok_ijoTok;
+    sub \joinStackTok \ikeTok  by \joinStackTok_ikeTok;
+    sub \joinStackTok \iloTok  by \joinStackTok_iloTok;
+    sub \joinStackTok \insaTok  by \joinStackTok_insaTok;
+    sub \joinStackTok \jakiTok  by \joinStackTok_jakiTok;
+    sub \joinStackTok \janTok  by \joinStackTok_janTok;
+    sub \joinStackTok \jeloTok  by \joinStackTok_jeloTok;
+    sub \joinStackTok \joTok  by \joinStackTok_joTok;
+    sub \joinStackTok \kalaTok  by \joinStackTok_kalaTok;
+    sub \joinStackTok \kalamaTok  by \joinStackTok_kalamaTok;
+    sub \joinStackTok \kamaTok  by \joinStackTok_kamaTok;
+    sub \joinStackTok \kasiTok  by \joinStackTok_kasiTok;
+    sub \joinStackTok \kenTok  by \joinStackTok_kenTok;
+    sub \joinStackTok \kepekenTok  by \joinStackTok_kepekenTok;
+    sub \joinStackTok \kiliTok  by \joinStackTok_kiliTok;
+    sub \joinStackTok \kiwenTok  by \joinStackTok_kiwenTok;
+    sub \joinStackTok \koTok  by \joinStackTok_koTok;
+    sub \joinStackTok \konTok  by \joinStackTok_konTok;
+    sub \joinStackTok \kuleTok  by \joinStackTok_kuleTok;
+    sub \joinStackTok \kulupuTok  by \joinStackTok_kulupuTok;
+    sub \joinStackTok \kuteTok  by \joinStackTok_kuteTok;
+    sub \joinStackTok \laTok  by \joinStackTok_laTok;
+    sub \joinStackTok \lapeTok  by \joinStackTok_lapeTok;
+    sub \joinStackTok \lasoTok  by \joinStackTok_lasoTok;
+    sub \joinStackTok \lawaTok  by \joinStackTok_lawaTok;
+    sub \joinStackTok \lenTok  by \joinStackTok_lenTok;
+    sub \joinStackTok \leteTok  by \joinStackTok_leteTok;
+    sub \joinStackTok \liTok  by \joinStackTok_liTok;
+    sub \joinStackTok \liliTok  by \joinStackTok_liliTok;
+    sub \joinStackTok \linjaTok  by \joinStackTok_linjaTok;
+    sub \joinStackTok \lipuTok  by \joinStackTok_lipuTok;
+    sub \joinStackTok \lojeTok  by \joinStackTok_lojeTok;
+    sub \joinStackTok \lonTok  by \joinStackTok_lonTok;
+    sub \joinStackTok \lukaTok  by \joinStackTok_lukaTok;
+    sub \joinStackTok \lukinTok  by \joinStackTok_lukinTok;
+    sub \joinStackTok \lupaTok  by \joinStackTok_lupaTok;
+    sub \joinStackTok \maTok  by \joinStackTok_maTok;
+    sub \joinStackTok \mamaTok  by \joinStackTok_mamaTok;
+    sub \joinStackTok \maniTok  by \joinStackTok_maniTok;
+    sub \joinStackTok \meliTok  by \joinStackTok_meliTok;
+    sub \joinStackTok \miTok  by \joinStackTok_miTok;
+    sub \joinStackTok \mijeTok  by \joinStackTok_mijeTok;
+    sub \joinStackTok \mokuTok  by \joinStackTok_mokuTok;
+    sub \joinStackTok \moliTok  by \joinStackTok_moliTok;
+    sub \joinStackTok \monsiTok  by \joinStackTok_monsiTok;
+    sub \joinStackTok \muTok  by \joinStackTok_muTok;
+    sub \joinStackTok \munTok  by \joinStackTok_munTok;
+    sub \joinStackTok \musiTok  by \joinStackTok_musiTok;
+    sub \joinStackTok \muteTok  by \joinStackTok_muteTok;
+    sub \joinStackTok \nanpaTok  by \joinStackTok_nanpaTok;
+    sub \joinStackTok \nasaTok  by \joinStackTok_nasaTok;
+    sub \joinStackTok \nasinTok  by \joinStackTok_nasinTok;
+    sub \joinStackTok \nenaTok  by \joinStackTok_nenaTok;
+    sub \joinStackTok \niTok  by \joinStackTok_niTok;
+    sub \joinStackTok \nimiTok  by \joinStackTok_nimiTok;
+    sub \joinStackTok \nokaTok  by \joinStackTok_nokaTok;
+    sub \joinStackTok \oTok  by \joinStackTok_oTok;
+    sub \joinStackTok \olinTok  by \joinStackTok_olinTok;
+    sub \joinStackTok \onaTok  by \joinStackTok_onaTok;
+    sub \joinStackTok \openTok  by \joinStackTok_openTok;
+    sub \joinStackTok \pakalaTok  by \joinStackTok_pakalaTok;
+    sub \joinStackTok \paliTok  by \joinStackTok_paliTok;
+    sub \joinStackTok \palisaTok  by \joinStackTok_palisaTok;
+    sub \joinStackTok \panTok  by \joinStackTok_panTok;
+    sub \joinStackTok \panaTok  by \joinStackTok_panaTok;
+    sub \joinStackTok \piTok  by \joinStackTok_piTok;
+    sub \joinStackTok \pilinTok  by \joinStackTok_pilinTok;
+    sub \joinStackTok \pimejaTok  by \joinStackTok_pimejaTok;
+    sub \joinStackTok \piniTok  by \joinStackTok_piniTok;
+    sub \joinStackTok \pipiTok  by \joinStackTok_pipiTok;
+    sub \joinStackTok \pokaTok  by \joinStackTok_pokaTok;
+    sub \joinStackTok \pokiTok  by \joinStackTok_pokiTok;
+    sub \joinStackTok \ponaTok  by \joinStackTok_ponaTok;
+    sub \joinStackTok \puTok  by \joinStackTok_puTok;
+    sub \joinStackTok \samaTok  by \joinStackTok_samaTok;
+    sub \joinStackTok \seliTok  by \joinStackTok_seliTok;
+    sub \joinStackTok \seloTok  by \joinStackTok_seloTok;
+    sub \joinStackTok \semeTok  by \joinStackTok_semeTok;
+    sub \joinStackTok \sewiTok  by \joinStackTok_sewiTok;
+    sub \joinStackTok \sijeloTok  by \joinStackTok_sijeloTok;
+    sub \joinStackTok \sikeTok  by \joinStackTok_sikeTok;
+    sub \joinStackTok \sinTok  by \joinStackTok_sinTok;
+    sub \joinStackTok \sinaTok  by \joinStackTok_sinaTok;
+    sub \joinStackTok \sinpinTok  by \joinStackTok_sinpinTok;
+    sub \joinStackTok \sitelenTok  by \joinStackTok_sitelenTok;
+    sub \joinStackTok \sonaTok  by \joinStackTok_sonaTok;
+    sub \joinStackTok \soweliTok  by \joinStackTok_soweliTok;
+    sub \joinStackTok \suliTok  by \joinStackTok_suliTok;
+    sub \joinStackTok \sunoTok  by \joinStackTok_sunoTok;
+    sub \joinStackTok \supaTok  by \joinStackTok_supaTok;
+    sub \joinStackTok \suwiTok  by \joinStackTok_suwiTok;
+    sub \joinStackTok \tanTok  by \joinStackTok_tanTok;
+    sub \joinStackTok \tasoTok  by \joinStackTok_tasoTok;
+    sub \joinStackTok \tawaTok  by \joinStackTok_tawaTok;
+    sub \joinStackTok \teloTok  by \joinStackTok_teloTok;
+    sub \joinStackTok \tenpoTok  by \joinStackTok_tenpoTok;
+    sub \joinStackTok \tokiTok  by \joinStackTok_tokiTok;
+    sub \joinStackTok \tomoTok  by \joinStackTok_tomoTok;
+    sub \joinStackTok \tuTok  by \joinStackTok_tuTok;
+    sub \joinStackTok \unpaTok  by \joinStackTok_unpaTok;
+    sub \joinStackTok \utaTok  by \joinStackTok_utaTok;
+    sub \joinStackTok \utalaTok  by \joinStackTok_utalaTok;
+    sub \joinStackTok \waloTok  by \joinStackTok_waloTok;
+    sub \joinStackTok \wanTok  by \joinStackTok_wanTok;
+    sub \joinStackTok \wasoTok  by \joinStackTok_wasoTok;
+    sub \joinStackTok \wawaTok  by \joinStackTok_wawaTok;
+    sub \joinStackTok \wekaTok  by \joinStackTok_wekaTok;
+    sub \joinStackTok \wileTok  by \joinStackTok_wileTok;
+    sub \joinStackTok \namakoTok  by \joinStackTok_namakoTok;
+    sub \joinStackTok \kinTok  by \joinStackTok_kinTok;
+    sub \joinStackTok \okoTok  by \joinStackTok_okoTok;
+    sub \joinStackTok \kipisiTok  by \joinStackTok_kipisiTok;
+    sub \joinStackTok \lekoTok  by \joinStackTok_lekoTok;
+    sub \joinStackTok \monsutaTok  by \joinStackTok_monsutaTok;
+    sub \joinStackTok \tonsiTok  by \joinStackTok_tonsiTok;
+    sub \joinStackTok \jasimaTok  by \joinStackTok_jasimaTok;
+    sub \joinStackTok \kijetesantakaluTok  by \joinStackTok_kijetesantakaluTok;
+    sub \joinStackTok \sokoTok  by \joinStackTok_sokoTok;
+    sub \joinStackTok \mesoTok  by \joinStackTok_mesoTok;
+    sub \joinStackTok \epikuTok  by \joinStackTok_epikuTok;
+    sub \joinStackTok \kokosilaTok  by \joinStackTok_kokosilaTok;
+    sub \joinStackTok \lanpanTok  by \joinStackTok_lanpanTok;
+    sub \joinStackTok \nTok  by \joinStackTok_nTok;
+    sub \joinStackTok \misikekeTok  by \joinStackTok_misikekeTok;
+    sub \joinStackTok \kuTok  by \joinStackTok_kuTok;
+    sub \joinStackTok \pakeTok  by \joinStackTok_pakeTok;
+    sub \joinStackTok \apejaTok  by \joinStackTok_apejaTok;
+    sub \joinStackTok \majunaTok  by \joinStackTok_majunaTok;
+    sub \joinStackTok \poweTok  by \joinStackTok_poweTok;
+    sub \joinScaleTok \kuTok  by \joinScaleTok_kuTok;
+    sub \joinScaleTok \aTok  by \joinScaleTok_aTok;
+    sub \joinScaleTok \akesiTok  by \joinScaleTok_akesiTok;
+    sub \joinScaleTok \alaTok  by \joinScaleTok_alaTok;
+    sub \joinScaleTok \alasaTok  by \joinScaleTok_alasaTok;
+    sub \joinScaleTok \aleTok  by \joinScaleTok_aleTok;
+    sub \joinScaleTok \anpaTok  by \joinScaleTok_anpaTok;
+    sub \joinScaleTok \anteTok  by \joinScaleTok_anteTok;
+    sub \joinScaleTok \anuTok  by \joinScaleTok_anuTok;
+    sub \joinScaleTok \awenTok  by \joinScaleTok_awenTok;
+    sub \joinScaleTok \eTok  by \joinScaleTok_eTok;
+    sub \joinScaleTok \enTok  by \joinScaleTok_enTok;
+    sub \joinScaleTok \esunTok  by \joinScaleTok_esunTok;
+    sub \joinScaleTok \ijoTok  by \joinScaleTok_ijoTok;
+    sub \joinScaleTok \ikeTok  by \joinScaleTok_ikeTok;
+    sub \joinScaleTok \iloTok  by \joinScaleTok_iloTok;
+    sub \joinScaleTok \insaTok  by \joinScaleTok_insaTok;
+    sub \joinScaleTok \jakiTok  by \joinScaleTok_jakiTok;
+    sub \joinScaleTok \janTok  by \joinScaleTok_janTok;
+    sub \joinScaleTok \jeloTok  by \joinScaleTok_jeloTok;
+    sub \joinScaleTok \joTok  by \joinScaleTok_joTok;
+    sub \joinScaleTok \kalaTok  by \joinScaleTok_kalaTok;
+    sub \joinScaleTok \kalamaTok  by \joinScaleTok_kalamaTok;
+    sub \joinScaleTok \kamaTok  by \joinScaleTok_kamaTok;
+    sub \joinScaleTok \kasiTok  by \joinScaleTok_kasiTok;
+    sub \joinScaleTok \kenTok  by \joinScaleTok_kenTok;
+    sub \joinScaleTok \kepekenTok  by \joinScaleTok_kepekenTok;
+    sub \joinScaleTok \kiliTok  by \joinScaleTok_kiliTok;
+    sub \joinScaleTok \kiwenTok  by \joinScaleTok_kiwenTok;
+    sub \joinScaleTok \koTok  by \joinScaleTok_koTok;
+    sub \joinScaleTok \konTok  by \joinScaleTok_konTok;
+    sub \joinScaleTok \kuleTok  by \joinScaleTok_kuleTok;
+    sub \joinScaleTok \kulupuTok  by \joinScaleTok_kulupuTok;
+    sub \joinScaleTok \kuteTok  by \joinScaleTok_kuteTok;
+    sub \joinScaleTok \laTok  by \joinScaleTok_laTok;
+    sub \joinScaleTok \lapeTok  by \joinScaleTok_lapeTok;
+    sub \joinScaleTok \lasoTok  by \joinScaleTok_lasoTok;
+    sub \joinScaleTok \lawaTok  by \joinScaleTok_lawaTok;
+    sub \joinScaleTok \lenTok  by \joinScaleTok_lenTok;
+    sub \joinScaleTok \leteTok  by \joinScaleTok_leteTok;
+    sub \joinScaleTok \liTok  by \joinScaleTok_liTok;
+    sub \joinScaleTok \liliTok  by \joinScaleTok_liliTok;
+    sub \joinScaleTok \linjaTok  by \joinScaleTok_linjaTok;
+    sub \joinScaleTok \lipuTok  by \joinScaleTok_lipuTok;
+    sub \joinScaleTok \lojeTok  by \joinScaleTok_lojeTok;
+    sub \joinScaleTok \lonTok  by \joinScaleTok_lonTok;
+    sub \joinScaleTok \lukaTok  by \joinScaleTok_lukaTok;
+    sub \joinScaleTok \lukinTok  by \joinScaleTok_lukinTok;
+    sub \joinScaleTok \lupaTok  by \joinScaleTok_lupaTok;
+    sub \joinScaleTok \maTok  by \joinScaleTok_maTok;
+    sub \joinScaleTok \mamaTok  by \joinScaleTok_mamaTok;
+    sub \joinScaleTok \maniTok  by \joinScaleTok_maniTok;
+    sub \joinScaleTok \meliTok  by \joinScaleTok_meliTok;
+    sub \joinScaleTok \miTok  by \joinScaleTok_miTok;
+    sub \joinScaleTok \mijeTok  by \joinScaleTok_mijeTok;
+    sub \joinScaleTok \mokuTok  by \joinScaleTok_mokuTok;
+    sub \joinScaleTok \moliTok  by \joinScaleTok_moliTok;
+    sub \joinScaleTok \monsiTok  by \joinScaleTok_monsiTok;
+    sub \joinScaleTok \muTok  by \joinScaleTok_muTok;
+    sub \joinScaleTok \munTok  by \joinScaleTok_munTok;
+    sub \joinScaleTok \musiTok  by \joinScaleTok_musiTok;
+    sub \joinScaleTok \muteTok  by \joinScaleTok_muteTok;
+    sub \joinScaleTok \nanpaTok  by \joinScaleTok_nanpaTok;
+    sub \joinScaleTok \nasaTok  by \joinScaleTok_nasaTok;
+    sub \joinScaleTok \nasinTok  by \joinScaleTok_nasinTok;
+    sub \joinScaleTok \nenaTok  by \joinScaleTok_nenaTok;
+    sub \joinScaleTok \niTok  by \joinScaleTok_niTok;
+    sub \joinScaleTok \nimiTok  by \joinScaleTok_nimiTok;
+    sub \joinScaleTok \nokaTok  by \joinScaleTok_nokaTok;
+    sub \joinScaleTok \oTok  by \joinScaleTok_oTok;
+    sub \joinScaleTok \olinTok  by \joinScaleTok_olinTok;
+    sub \joinScaleTok \onaTok  by \joinScaleTok_onaTok;
+    sub \joinScaleTok \openTok  by \joinScaleTok_openTok;
+    sub \joinScaleTok \pakalaTok  by \joinScaleTok_pakalaTok;
+    sub \joinScaleTok \paliTok  by \joinScaleTok_paliTok;
+    sub \joinScaleTok \palisaTok  by \joinScaleTok_palisaTok;
+    sub \joinScaleTok \panTok  by \joinScaleTok_panTok;
+    sub \joinScaleTok \panaTok  by \joinScaleTok_panaTok;
+    sub \joinScaleTok \piTok  by \joinScaleTok_piTok;
+    sub \joinScaleTok \pilinTok  by \joinScaleTok_pilinTok;
+    sub \joinScaleTok \pimejaTok  by \joinScaleTok_pimejaTok;
+    sub \joinScaleTok \piniTok  by \joinScaleTok_piniTok;
+    sub \joinScaleTok \pipiTok  by \joinScaleTok_pipiTok;
+    sub \joinScaleTok \pokaTok  by \joinScaleTok_pokaTok;
+    sub \joinScaleTok \pokiTok  by \joinScaleTok_pokiTok;
+    sub \joinScaleTok \ponaTok  by \joinScaleTok_ponaTok;
+    sub \joinScaleTok \puTok  by \joinScaleTok_puTok;
+    sub \joinScaleTok \samaTok  by \joinScaleTok_samaTok;
+    sub \joinScaleTok \seliTok  by \joinScaleTok_seliTok;
+    sub \joinScaleTok \seloTok  by \joinScaleTok_seloTok;
+    sub \joinScaleTok \semeTok  by \joinScaleTok_semeTok;
+    sub \joinScaleTok \sewiTok  by \joinScaleTok_sewiTok;
+    sub \joinScaleTok \sijeloTok  by \joinScaleTok_sijeloTok;
+    sub \joinScaleTok \sikeTok  by \joinScaleTok_sikeTok;
+    sub \joinScaleTok \sinTok  by \joinScaleTok_sinTok;
+    sub \joinScaleTok \sinaTok  by \joinScaleTok_sinaTok;
+    sub \joinScaleTok \sinpinTok  by \joinScaleTok_sinpinTok;
+    sub \joinScaleTok \sitelenTok  by \joinScaleTok_sitelenTok;
+    sub \joinScaleTok \sonaTok  by \joinScaleTok_sonaTok;
+    sub \joinScaleTok \soweliTok  by \joinScaleTok_soweliTok;
+    sub \joinScaleTok \suliTok  by \joinScaleTok_suliTok;
+    sub \joinScaleTok \sunoTok  by \joinScaleTok_sunoTok;
+    sub \joinScaleTok \supaTok  by \joinScaleTok_supaTok;
+    sub \joinScaleTok \suwiTok  by \joinScaleTok_suwiTok;
+    sub \joinScaleTok \tanTok  by \joinScaleTok_tanTok;
+    sub \joinScaleTok \tasoTok  by \joinScaleTok_tasoTok;
+    sub \joinScaleTok \tawaTok  by \joinScaleTok_tawaTok;
+    sub \joinScaleTok \teloTok  by \joinScaleTok_teloTok;
+    sub \joinScaleTok \tenpoTok  by \joinScaleTok_tenpoTok;
+    sub \joinScaleTok \tokiTok  by \joinScaleTok_tokiTok;
+    sub \joinScaleTok \tomoTok  by \joinScaleTok_tomoTok;
+    sub \joinScaleTok \tuTok  by \joinScaleTok_tuTok;
+    sub \joinScaleTok \unpaTok  by \joinScaleTok_unpaTok;
+    sub \joinScaleTok \utaTok  by \joinScaleTok_utaTok;
+    sub \joinScaleTok \utalaTok  by \joinScaleTok_utalaTok;
+    sub \joinScaleTok \waloTok  by \joinScaleTok_waloTok;
+    sub \joinScaleTok \wanTok  by \joinScaleTok_wanTok;
+    sub \joinScaleTok \wasoTok  by \joinScaleTok_wasoTok;
+    sub \joinScaleTok \wawaTok  by \joinScaleTok_wawaTok;
+    sub \joinScaleTok \wekaTok  by \joinScaleTok_wekaTok;
+    sub \joinScaleTok \wileTok  by \joinScaleTok_wileTok;
+    sub \joinScaleTok \namakoTok  by \joinScaleTok_namakoTok;
+    sub \joinScaleTok \kinTok  by \joinScaleTok_kinTok;
+    sub \joinScaleTok \okoTok  by \joinScaleTok_okoTok;
+    sub \joinScaleTok \kipisiTok  by \joinScaleTok_kipisiTok;
+    sub \joinScaleTok \lekoTok  by \joinScaleTok_lekoTok;
+    sub \joinScaleTok \monsutaTok  by \joinScaleTok_monsutaTok;
+    sub \joinScaleTok \tonsiTok  by \joinScaleTok_tonsiTok;
+    sub \joinScaleTok \jasimaTok  by \joinScaleTok_jasimaTok;
+    sub \joinScaleTok \kijetesantakaluTok  by \joinScaleTok_kijetesantakaluTok;
+    sub \joinScaleTok \sokoTok  by \joinScaleTok_sokoTok;
+    sub \joinScaleTok \mesoTok  by \joinScaleTok_mesoTok;
+    sub \joinScaleTok \epikuTok  by \joinScaleTok_epikuTok;
+    sub \joinScaleTok \kokosilaTok  by \joinScaleTok_kokosilaTok;
+    sub \joinScaleTok \lanpanTok  by \joinScaleTok_lanpanTok;
+    sub \joinScaleTok \nTok  by \joinScaleTok_nTok;
+    sub \joinScaleTok \misikekeTok  by \joinScaleTok_misikekeTok;
+    sub \joinScaleTok \pakeTok  by \joinScaleTok_pakeTok;
+    sub \joinScaleTok \apejaTok  by \joinScaleTok_apejaTok;
+    sub \joinScaleTok \majunaTok  by \joinScaleTok_majunaTok;
+    sub \joinScaleTok \poweTok  by \joinScaleTok_poweTok;
+    sub \joinStackTok \kala1Tok  by \joinStackTok_kala1Tok;
+    sub \joinScaleTok \kala1Tok  by \joinScaleTok_kala1Tok;
+    sub \joinStackTok \meli1Tok  by \joinStackTok_meli1Tok;
+    sub \joinScaleTok \meli1Tok  by \joinScaleTok_meli1Tok;
+    sub \joinStackTok \mije1Tok  by \joinStackTok_mije1Tok;
+    sub \joinScaleTok \mije1Tok  by \joinScaleTok_mije1Tok;
+    sub \joinStackTok \olin1Tok  by \joinStackTok_olin1Tok;
+    sub \joinScaleTok \olin1Tok  by \joinScaleTok_olin1Tok;
+    sub \joinStackTok \sewi1Tok  by \joinStackTok_sewi1Tok;
+    sub \joinScaleTok \sewi1Tok  by \joinScaleTok_sewi1Tok;
+    sub \joinStackTok \uta1Tok  by \joinStackTok_uta1Tok;
+    sub \joinScaleTok \uta1Tok  by \joinScaleTok_uta1Tok;
+    sub \joinStackTok \wile1Tok  by \joinStackTok_wile1Tok;
+    sub \joinScaleTok \wile1Tok  by \joinScaleTok_wile1Tok;
+    sub \joinStackTok \namako1Tok  by \joinStackTok_namako1Tok;
+    sub \joinScaleTok \namako1Tok  by \joinScaleTok_namako1Tok;
+    sub \joinStackTok \mu1Tok  by \joinStackTok_mu1Tok;
+    sub \joinScaleTok \mu1Tok  by \joinScaleTok_mu1Tok;
+} ligaStep3;
+
+lookup caltCartouchesandContainers {
+  lookupflag 0;
+    @cc7_match_1 = [\aTok \akesiTok \alaTok \alasaTok \aleTok \anpaTok \anteTok \anuTok \awenTok 
+	\eTok \enTok \esunTok \ijoTok \ikeTok \iloTok \insaTok \jakiTok \janTok 
+	\jeloTok \joTok \kalaTok \kalamaTok \kamaTok \kasiTok \kenTok 
+	\kepekenTok \kiliTok \kiwenTok \koTok \konTok \kuleTok \kulupuTok 
+	\kuteTok \laTok \lapeTok \lasoTok \lawaTok \lenTok \leteTok \liTok 
+	\liliTok \linjaTok \lipuTok \lojeTok \lonTok \lukaTok \lukinTok 
+	\lupaTok \maTok \mamaTok \maniTok \meliTok \miTok \mijeTok \mokuTok 
+	\moliTok \monsiTok \muTok \munTok \musiTok \muteTok \nanpaTok \nasaTok 
+	\nasinTok \nenaTok \niTok \nimiTok \nokaTok \oTok \olinTok \onaTok 
+	\openTok \pakalaTok \paliTok \palisaTok \panTok \panaTok \piTok 
+	\pilinTok \pimejaTok \piniTok \pipiTok \pokaTok \pokiTok \ponaTok 
+	\puTok \samaTok \seliTok \seloTok \semeTok \sewiTok \sijeloTok \sikeTok 
+	\sinTok \sinaTok \sinpinTok \sitelenTok \sonaTok \soweliTok \suliTok 
+	\sunoTok \supaTok \suwiTok \tanTok \tasoTok \tawaTok \teloTok \tenpoTok 
+	\tokiTok \tomoTok \tuTok \unpaTok \utaTok \utalaTok \waloTok \wanTok 
+	\wasoTok \wawaTok \wekaTok \wileTok \namakoTok \kinTok \okoTok 
+	\kipisiTok \lekoTok \monsutaTok \tonsiTok \jasimaTok 
+	\kijetesantakaluTok \sokoTok \mesoTok \epikuTok \kokosilaTok 
+	\lanpanTok \nTok \misikekeTok \kuTok \middleDotTok \colonTok 
+	\middleDotTok2 \middleDotTok3 \pakeTok \apejaTok \majunaTok \poweTok 
+	\NameMe.1792 \NameMe.1793 \NameMe.1794 \NameMe.1795 \NameMe.1796 
+	\NameMe.1797 \NameMe.1798 \NameMe.1799 \NameMe.1800 \NameMe.1801 
+	\NameMe.1802 \NameMe.1803 \var1Tok \var2Tok \var3Tok \var4Tok \itanTok 
+	\kulupuKasiTok \lepekaTok \NameMe.1817 \NameMe.1820 \kala1Tok 
+	\meli1Tok \mije1Tok \olin1Tok \sewi1Tok \uta1Tok \wile1Tok \namako1Tok 
+	\mu1Tok ];
+    @cc7_match_2 = [\cartStartTok \cartExtCombTok \aTok.cart \akesiTok.cart \alaTok.cart 
+	\alasaTok.cart \aleTok.cart \anpaTok.cart \anteTok.cart \anuTok.cart 
+	\awenTok.cart \eTok.cart \enTok.cart \esunTok.cart \ijoTok.cart 
+	\ikeTok.cart \iloTok.cart \insaTok.cart \jakiTok.cart \janTok.cart 
+	\jeloTok.cart \joTok.cart \kalaTok.cart \kalamaTok.cart 
+	\kamaTok.cart \kasiTok.cart \kenTok.cart \kepekenTok.cart 
+	\kiliTok.cart \kiwenTok.cart \koTok.cart \konTok.cart \kuleTok.cart 
+	\kulupuTok.cart \kuteTok.cart \laTok.cart \lapeTok.cart 
+	\lasoTok.cart \lawaTok.cart \lenTok.cart \leteTok.cart \liTok.cart 
+	\liliTok.cart \linjaTok.cart \lipuTok.cart \lojeTok.cart 
+	\lonTok.cart \lukaTok.cart \lukinTok.cart \lupaTok.cart \maTok.cart 
+	\mamaTok.cart \maniTok.cart \meliTok.cart \miTok.cart \mijeTok.cart 
+	\mokuTok.cart \moliTok.cart \monsiTok.cart \muTok.cart \munTok.cart 
+	\musiTok.cart \muteTok.cart \nanpaTok.cart \nasaTok.cart 
+	\nasinTok.cart \nenaTok.cart \niTok.cart \nimiTok.cart \nokaTok.cart 
+	\oTok.cart \olinTok.cart \onaTok.cart \openTok.cart \pakalaTok.cart 
+	\paliTok.cart \palisaTok.cart \panTok.cart \panaTok.cart \piTok.cart 
+	\pilinTok.cart \pimejaTok.cart \piniTok.cart \pipiTok.cart 
+	\pokaTok.cart \pokiTok.cart \ponaTok.cart \puTok.cart \samaTok.cart 
+	\seliTok.cart \seloTok.cart \semeTok.cart \sewiTok.cart 
+	\sijeloTok.cart \sikeTok.cart \sinTok.cart \sinaTok.cart 
+	\sinpinTok.cart \sitelenTok.cart \sonaTok.cart \soweliTok.cart 
+	\suliTok.cart \sunoTok.cart \supaTok.cart \suwiTok.cart \tanTok.cart 
+	\tasoTok.cart \tawaTok.cart \teloTok.cart \tenpoTok.cart 
+	\tokiTok.cart \tomoTok.cart \tuTok.cart \unpaTok.cart \utaTok.cart 
+	\utalaTok.cart \waloTok.cart \wanTok.cart \wasoTok.cart 
+	\wawaTok.cart \wekaTok.cart \wileTok.cart \namakoTok.cart 
+	\kinTok.cart \okoTok.cart \kipisiTok.cart \lekoTok.cart 
+	\monsutaTok.cart \tonsiTok.cart \jasimaTok.cart 
+	\kijetesantakaluTok.cart \sokoTok.cart \mesoTok.cart \epikuTok.cart 
+	\kokosilaTok.cart \lanpanTok.cart \nTok.cart \misikekeTok.cart 
+	\kuTok.cart \middleDotTok.cart \colonTok.cart \middleDotTok2.cart 
+	\middleDotTok3.cart \pakeTok.cart \apejaTok.cart \majunaTok.cart 
+	\poweTok.cart \itanTok.cart \kulupuKasiTok.cart \lepekaTok.cart 
+	\NameMe.1818 \NameMe.1821 \kala1Tok.cart \meli1Tok.cart 
+	\mije1Tok.cart \olin1Tok.cart \sewi1Tok.cart \uta1Tok.cart 
+	\wile1Tok.cart \namako1Tok.cart \mu1Tok.cart ];
+    @cc7_match_3 = [\contExtCombTok \contStartTok \aTok.cont \akesiTok.cont \alaTok.cont 
+	\alasaTok.cont \aleTok.cont \anpaTok.cont \anteTok.cont \anuTok.cont 
+	\awenTok.cont \eTok.cont \enTok.cont \esunTok.cont \ijoTok.cont 
+	\ikoTok.cont \iloTok.cont \insaTok.cont \jakiTok.cont \janTok.cont 
+	\jeloTok.cont \joTok.cont \kalaTok.cont \kalamaTok.cont 
+	\kamaTok.cont \kasiTok.cont \kenTok.cont \kepekenTok.cont 
+	\kiliTok.cont \kiwenTok.cont \koTok.cont \konTok.cont \kuleTok.cont 
+	\kulupuTok.cont \kuteTok.cont \laTok.cont \lapeTok.cont 
+	\lasoTok.cont \lawaTok.cont \lenTok.cont \leteTok.cont \liTok.cont 
+	\liliTok.cont \linjaTok.cont \lipuTok.cont \lojeTok.cont 
+	\lonTok.cont \lukaTok.cont \lukinTok.cont \lupaTok.cont \maTok.cont 
+	\mamaTok.cont \maniTok.cont \meliTok.cont \miTok.cont \mijeTok.cont 
+	\mokuTok.cont \moliTok.cont \monsiTok.cont \muTok.cont \munTok.cont 
+	\musiTok.cont \muteTok.cont \nanpaTok.cont \nasaTok.cont 
+	\nasinTok.cont \nenaTok.cont \niTok.cont \nimiTok.cont \nokaTok.cont 
+	\oTok.cont \olinTok.cont \onaTok.cont \openTok.cont \pakalaTok.cont 
+	\paliTok.cont \palisaTok.cont \panTok.cont \panaTok.cont \piTok.cont 
+	\pilinTok.cont \pimejaTok.cont \piniTok.cont \pipiTok.cont 
+	\pokaTok.cont \pokiTok.cont \ponaTok.cont \puTok.cont \samaTok.cont 
+	\seliTok.cont \seloTok.cont \semeTok.cont \sewiTok.cont 
+	\sijeloTok.cont \sikeTok.cont \sinTok.cont \sinaTok.cont 
+	\sinpinTok.cont \sitelenTok.cont \sonaTok.cont \soweliTok.cont 
+	\suliTok.cont \sunoTok.cont \supaTok.cont \suwiTok.cont \tanTok.cont 
+	\tasoTok.cont \tawaTok.cont \teloTok.cont \tenpoTok.cont 
+	\tokiTok.cont \tomoTok.cont \tuTok.cont \unpaTok.cont \utaTok.cont 
+	\utalaTok.cont \waloTok.cont \wanTok.cont \wasoTok.cont 
+	\wawaTok.cont \wekaTok.cont \wileTok.cont \namakoTok.cont 
+	\kinTok.cont \okoTok.cont \kipisiTok.cont \lekoTok.cont 
+	\monsutaTok.cont \tonsiTok.cont \jasimTok.cont 
+	\kijetesantakaluTok.cont \sokoTok.cont \mesoTok.cont \epikuTok.cont 
+	\kokosilaTok.cont \lanpanTok.cont \nTok.cont \misikekeTok.cont 
+	\kuTok.cont \piTok_contStartCombTok \tawaTok_contStartCombTok 
+	\lonTok_contStartCombTok \pakeTok.cont \apejaTok.cont 
+	\majunaTok.cont \poweTok.cont \itanTok.cont \kulupuKasiTok.cont 
+	\lepekaTok.cont \NameMe.1819 \NameMe.1822 \kala1Tok.cont 
+	\meli1Tok.cont \mije1Tok.cont \olin1Tok.cont \sewi1Tok.cont 
+	\uta1Tok.cont \wile1Tok.cont \namako1Tok.cont \mu1Tok.cont ];
+    @cc7_back_1 = [\aTok \akesiTok \alaTok \alasaTok \aleTok \anpaTok \anteTok \anuTok \awenTok 
+	\eTok \enTok \esunTok \ijoTok \ikeTok \iloTok \insaTok \jakiTok \janTok 
+	\jeloTok \joTok \kalaTok \kalamaTok \kamaTok \kasiTok \kenTok 
+	\kepekenTok \kiliTok \kiwenTok \koTok \konTok \kuleTok \kulupuTok 
+	\kuteTok \laTok \lapeTok \lasoTok \lawaTok \lenTok \leteTok \liTok 
+	\liliTok \linjaTok \lipuTok \lojeTok \lonTok \lukaTok \lukinTok 
+	\lupaTok \maTok \mamaTok \maniTok \meliTok \miTok \mijeTok \mokuTok 
+	\moliTok \monsiTok \muTok \munTok \musiTok \muteTok \nanpaTok \nasaTok 
+	\nasinTok \nenaTok \niTok \nimiTok \nokaTok \oTok \olinTok \onaTok 
+	\openTok \pakalaTok \paliTok \palisaTok \panTok \panaTok \piTok 
+	\pilinTok \pimejaTok \piniTok \pipiTok \pokaTok \pokiTok \ponaTok 
+	\puTok \samaTok \seliTok \seloTok \semeTok \sewiTok \sijeloTok \sikeTok 
+	\sinTok \sinaTok \sinpinTok \sitelenTok \sonaTok \soweliTok \suliTok 
+	\sunoTok \supaTok \suwiTok \tanTok \tasoTok \tawaTok \teloTok \tenpoTok 
+	\tokiTok \tomoTok \tuTok \unpaTok \utaTok \utalaTok \waloTok \wanTok 
+	\wasoTok \wawaTok \wekaTok \wileTok \namakoTok \kinTok \okoTok 
+	\kipisiTok \lekoTok \monsutaTok \tonsiTok \jasimaTok 
+	\kijetesantakaluTok \sokoTok \mesoTok \epikuTok \kokosilaTok 
+	\lanpanTok \nTok \misikekeTok \kuTok \middleDotTok \colonTok 
+	\middleDotTok2 \middleDotTok3 \pakeTok \apejaTok \majunaTok \poweTok 
+	\NameMe.1792 \NameMe.1793 \NameMe.1794 \NameMe.1795 \NameMe.1796 
+	\NameMe.1797 \NameMe.1798 \NameMe.1799 \NameMe.1800 \NameMe.1801 
+	\NameMe.1802 \NameMe.1803 \var1Tok \var2Tok \var3Tok \var4Tok \itanTok 
+	\kulupuKasiTok \lepekaTok \NameMe.1817 \NameMe.1820 \kala1Tok 
+	\meli1Tok \mije1Tok \olin1Tok \sewi1Tok \uta1Tok \wile1Tok \namako1Tok 
+	\mu1Tok ];
+    @cc7_back_2 = [\cartStartTok \cartExtCombTok \aTok.cart \akesiTok.cart \alaTok.cart 
+	\alasaTok.cart \aleTok.cart \anpaTok.cart \anteTok.cart \anuTok.cart 
+	\awenTok.cart \eTok.cart \enTok.cart \esunTok.cart \ijoTok.cart 
+	\ikeTok.cart \iloTok.cart \insaTok.cart \jakiTok.cart \janTok.cart 
+	\jeloTok.cart \joTok.cart \kalaTok.cart \kalamaTok.cart 
+	\kamaTok.cart \kasiTok.cart \kenTok.cart \kepekenTok.cart 
+	\kiliTok.cart \kiwenTok.cart \koTok.cart \konTok.cart \kuleTok.cart 
+	\kulupuTok.cart \kuteTok.cart \laTok.cart \lapeTok.cart 
+	\lasoTok.cart \lawaTok.cart \lenTok.cart \leteTok.cart \liTok.cart 
+	\liliTok.cart \linjaTok.cart \lipuTok.cart \lojeTok.cart 
+	\lonTok.cart \lukaTok.cart \lukinTok.cart \lupaTok.cart \maTok.cart 
+	\mamaTok.cart \maniTok.cart \meliTok.cart \miTok.cart \mijeTok.cart 
+	\mokuTok.cart \moliTok.cart \monsiTok.cart \muTok.cart \munTok.cart 
+	\musiTok.cart \muteTok.cart \nanpaTok.cart \nasaTok.cart 
+	\nasinTok.cart \nenaTok.cart \niTok.cart \nimiTok.cart \nokaTok.cart 
+	\oTok.cart \olinTok.cart \onaTok.cart \openTok.cart \pakalaTok.cart 
+	\paliTok.cart \palisaTok.cart \panTok.cart \panaTok.cart \piTok.cart 
+	\pilinTok.cart \pimejaTok.cart \piniTok.cart \pipiTok.cart 
+	\pokaTok.cart \pokiTok.cart \ponaTok.cart \puTok.cart \samaTok.cart 
+	\seliTok.cart \seloTok.cart \semeTok.cart \sewiTok.cart 
+	\sijeloTok.cart \sikeTok.cart \sinTok.cart \sinaTok.cart 
+	\sinpinTok.cart \sitelenTok.cart \sonaTok.cart \soweliTok.cart 
+	\suliTok.cart \sunoTok.cart \supaTok.cart \suwiTok.cart \tanTok.cart 
+	\tasoTok.cart \tawaTok.cart \teloTok.cart \tenpoTok.cart 
+	\tokiTok.cart \tomoTok.cart \tuTok.cart \unpaTok.cart \utaTok.cart 
+	\utalaTok.cart \waloTok.cart \wanTok.cart \wasoTok.cart 
+	\wawaTok.cart \wekaTok.cart \wileTok.cart \namakoTok.cart 
+	\kinTok.cart \okoTok.cart \kipisiTok.cart \lekoTok.cart 
+	\monsutaTok.cart \tonsiTok.cart \jasimaTok.cart 
+	\kijetesantakaluTok.cart \sokoTok.cart \mesoTok.cart \epikuTok.cart 
+	\kokosilaTok.cart \lanpanTok.cart \nTok.cart \misikekeTok.cart 
+	\kuTok.cart \middleDotTok.cart \colonTok.cart \middleDotTok2.cart 
+	\middleDotTok3.cart \pakeTok.cart \apejaTok.cart \majunaTok.cart 
+	\poweTok.cart \itanTok.cart \kulupuKasiTok.cart \lepekaTok.cart 
+	\NameMe.1818 \NameMe.1821 \kala1Tok.cart \meli1Tok.cart 
+	\mije1Tok.cart \olin1Tok.cart \sewi1Tok.cart \uta1Tok.cart 
+	\wile1Tok.cart \namako1Tok.cart \mu1Tok.cart ];
+    @cc7_back_3 = [\contExtCombTok \contStartTok \aTok.cont \akesiTok.cont \alaTok.cont 
+	\alasaTok.cont \aleTok.cont \anpaTok.cont \anteTok.cont \anuTok.cont 
+	\awenTok.cont \eTok.cont \enTok.cont \esunTok.cont \ijoTok.cont 
+	\ikoTok.cont \iloTok.cont \insaTok.cont \jakiTok.cont \janTok.cont 
+	\jeloTok.cont \joTok.cont \kalaTok.cont \kalamaTok.cont 
+	\kamaTok.cont \kasiTok.cont \kenTok.cont \kepekenTok.cont 
+	\kiliTok.cont \kiwenTok.cont \koTok.cont \konTok.cont \kuleTok.cont 
+	\kulupuTok.cont \kuteTok.cont \laTok.cont \lapeTok.cont 
+	\lasoTok.cont \lawaTok.cont \lenTok.cont \leteTok.cont \liTok.cont 
+	\liliTok.cont \linjaTok.cont \lipuTok.cont \lojeTok.cont 
+	\lonTok.cont \lukaTok.cont \lukinTok.cont \lupaTok.cont \maTok.cont 
+	\mamaTok.cont \maniTok.cont \meliTok.cont \miTok.cont \mijeTok.cont 
+	\mokuTok.cont \moliTok.cont \monsiTok.cont \muTok.cont \munTok.cont 
+	\musiTok.cont \muteTok.cont \nanpaTok.cont \nasaTok.cont 
+	\nasinTok.cont \nenaTok.cont \niTok.cont \nimiTok.cont \nokaTok.cont 
+	\oTok.cont \olinTok.cont \onaTok.cont \openTok.cont \pakalaTok.cont 
+	\paliTok.cont \palisaTok.cont \panTok.cont \panaTok.cont \piTok.cont 
+	\pilinTok.cont \pimejaTok.cont \piniTok.cont \pipiTok.cont 
+	\pokaTok.cont \pokiTok.cont \ponaTok.cont \puTok.cont \samaTok.cont 
+	\seliTok.cont \seloTok.cont \semeTok.cont \sewiTok.cont 
+	\sijeloTok.cont \sikeTok.cont \sinTok.cont \sinaTok.cont 
+	\sinpinTok.cont \sitelenTok.cont \sonaTok.cont \soweliTok.cont 
+	\suliTok.cont \sunoTok.cont \supaTok.cont \suwiTok.cont \tanTok.cont 
+	\tasoTok.cont \tawaTok.cont \teloTok.cont \tenpoTok.cont 
+	\tokiTok.cont \tomoTok.cont \tuTok.cont \unpaTok.cont \utaTok.cont 
+	\utalaTok.cont \waloTok.cont \wanTok.cont \wasoTok.cont 
+	\wawaTok.cont \wekaTok.cont \wileTok.cont \namakoTok.cont 
+	\kinTok.cont \okoTok.cont \kipisiTok.cont \lekoTok.cont 
+	\monsutaTok.cont \tonsiTok.cont \jasimTok.cont 
+	\kijetesantakaluTok.cont \sokoTok.cont \mesoTok.cont \epikuTok.cont 
+	\kokosilaTok.cont \lanpanTok.cont \nTok.cont \misikekeTok.cont 
+	\kuTok.cont \piTok_contStartCombTok \tawaTok_contStartCombTok 
+	\lonTok_contStartCombTok \pakeTok.cont \apejaTok.cont 
+	\majunaTok.cont \poweTok.cont \itanTok.cont \kulupuKasiTok.cont 
+	\lepekaTok.cont \NameMe.1819 \NameMe.1822 \kala1Tok.cont 
+	\meli1Tok.cont \mije1Tok.cont \olin1Tok.cont \sewi1Tok.cont 
+	\uta1Tok.cont \wile1Tok.cont \namako1Tok.cont \mu1Tok.cont ];
+    @cc7_ahead_1 = [\aTok \akesiTok \alaTok \alasaTok \aleTok \anpaTok \anteTok \anuTok \awenTok 
+	\eTok \enTok \esunTok \ijoTok \ikeTok \iloTok \insaTok \jakiTok \janTok 
+	\jeloTok \joTok \kalaTok \kalamaTok \kamaTok \kasiTok \kenTok 
+	\kepekenTok \kiliTok \kiwenTok \koTok \konTok \kuleTok \kulupuTok 
+	\kuteTok \laTok \lapeTok \lasoTok \lawaTok \lenTok \leteTok \liTok 
+	\liliTok \linjaTok \lipuTok \lojeTok \lonTok \lukaTok \lukinTok 
+	\lupaTok \maTok \mamaTok \maniTok \meliTok \miTok \mijeTok \mokuTok 
+	\moliTok \monsiTok \muTok \munTok \musiTok \muteTok \nanpaTok \nasaTok 
+	\nasinTok \nenaTok \niTok \nimiTok \nokaTok \oTok \olinTok \onaTok 
+	\openTok \pakalaTok \paliTok \palisaTok \panTok \panaTok \piTok 
+	\pilinTok \pimejaTok \piniTok \pipiTok \pokaTok \pokiTok \ponaTok 
+	\puTok \samaTok \seliTok \seloTok \semeTok \sewiTok \sijeloTok \sikeTok 
+	\sinTok \sinaTok \sinpinTok \sitelenTok \sonaTok \soweliTok \suliTok 
+	\sunoTok \supaTok \suwiTok \tanTok \tasoTok \tawaTok \teloTok \tenpoTok 
+	\tokiTok \tomoTok \tuTok \unpaTok \utaTok \utalaTok \waloTok \wanTok 
+	\wasoTok \wawaTok \wekaTok \wileTok \namakoTok \kinTok \okoTok 
+	\kipisiTok \lekoTok \monsutaTok \tonsiTok \jasimaTok 
+	\kijetesantakaluTok \sokoTok \mesoTok \epikuTok \kokosilaTok 
+	\lanpanTok \nTok \misikekeTok \kuTok \middleDotTok \colonTok 
+	\middleDotTok2 \middleDotTok3 \pakeTok \apejaTok \majunaTok \poweTok 
+	\NameMe.1792 \NameMe.1793 \NameMe.1794 \NameMe.1795 \NameMe.1796 
+	\NameMe.1797 \NameMe.1798 \NameMe.1799 \NameMe.1800 \NameMe.1801 
+	\NameMe.1802 \NameMe.1803 \var1Tok \var2Tok \var3Tok \var4Tok \itanTok 
+	\kulupuKasiTok \lepekaTok \NameMe.1817 \NameMe.1820 \kala1Tok 
+	\meli1Tok \mije1Tok \olin1Tok \sewi1Tok \uta1Tok \wile1Tok \namako1Tok 
+	\mu1Tok ];
+    @cc7_ahead_2 = [\cartStartTok \cartExtCombTok \aTok.cart \akesiTok.cart \alaTok.cart 
+	\alasaTok.cart \aleTok.cart \anpaTok.cart \anteTok.cart \anuTok.cart 
+	\awenTok.cart \eTok.cart \enTok.cart \esunTok.cart \ijoTok.cart 
+	\ikeTok.cart \iloTok.cart \insaTok.cart \jakiTok.cart \janTok.cart 
+	\jeloTok.cart \joTok.cart \kalaTok.cart \kalamaTok.cart 
+	\kamaTok.cart \kasiTok.cart \kenTok.cart \kepekenTok.cart 
+	\kiliTok.cart \kiwenTok.cart \koTok.cart \konTok.cart \kuleTok.cart 
+	\kulupuTok.cart \kuteTok.cart \laTok.cart \lapeTok.cart 
+	\lasoTok.cart \lawaTok.cart \lenTok.cart \leteTok.cart \liTok.cart 
+	\liliTok.cart \linjaTok.cart \lipuTok.cart \lojeTok.cart 
+	\lonTok.cart \lukaTok.cart \lukinTok.cart \lupaTok.cart \maTok.cart 
+	\mamaTok.cart \maniTok.cart \meliTok.cart \miTok.cart \mijeTok.cart 
+	\mokuTok.cart \moliTok.cart \monsiTok.cart \muTok.cart \munTok.cart 
+	\musiTok.cart \muteTok.cart \nanpaTok.cart \nasaTok.cart 
+	\nasinTok.cart \nenaTok.cart \niTok.cart \nimiTok.cart \nokaTok.cart 
+	\oTok.cart \olinTok.cart \onaTok.cart \openTok.cart \pakalaTok.cart 
+	\paliTok.cart \palisaTok.cart \panTok.cart \panaTok.cart \piTok.cart 
+	\pilinTok.cart \pimejaTok.cart \piniTok.cart \pipiTok.cart 
+	\pokaTok.cart \pokiTok.cart \ponaTok.cart \puTok.cart \samaTok.cart 
+	\seliTok.cart \seloTok.cart \semeTok.cart \sewiTok.cart 
+	\sijeloTok.cart \sikeTok.cart \sinTok.cart \sinaTok.cart 
+	\sinpinTok.cart \sitelenTok.cart \sonaTok.cart \soweliTok.cart 
+	\suliTok.cart \sunoTok.cart \supaTok.cart \suwiTok.cart \tanTok.cart 
+	\tasoTok.cart \tawaTok.cart \teloTok.cart \tenpoTok.cart 
+	\tokiTok.cart \tomoTok.cart \tuTok.cart \unpaTok.cart \utaTok.cart 
+	\utalaTok.cart \waloTok.cart \wanTok.cart \wasoTok.cart 
+	\wawaTok.cart \wekaTok.cart \wileTok.cart \namakoTok.cart 
+	\kinTok.cart \okoTok.cart \kipisiTok.cart \lekoTok.cart 
+	\monsutaTok.cart \tonsiTok.cart \jasimaTok.cart 
+	\kijetesantakaluTok.cart \sokoTok.cart \mesoTok.cart \epikuTok.cart 
+	\kokosilaTok.cart \lanpanTok.cart \nTok.cart \misikekeTok.cart 
+	\kuTok.cart \middleDotTok.cart \colonTok.cart \middleDotTok2.cart 
+	\middleDotTok3.cart \pakeTok.cart \apejaTok.cart \majunaTok.cart 
+	\poweTok.cart \itanTok.cart \kulupuKasiTok.cart \lepekaTok.cart 
+	\NameMe.1818 \NameMe.1821 \kala1Tok.cart \meli1Tok.cart 
+	\mije1Tok.cart \olin1Tok.cart \sewi1Tok.cart \uta1Tok.cart 
+	\wile1Tok.cart \namako1Tok.cart \mu1Tok.cart ];
+    @cc7_ahead_3 = [\contExtCombTok \contStartTok \aTok.cont \akesiTok.cont \alaTok.cont 
+	\alasaTok.cont \aleTok.cont \anpaTok.cont \anteTok.cont \anuTok.cont 
+	\awenTok.cont \eTok.cont \enTok.cont \esunTok.cont \ijoTok.cont 
+	\ikoTok.cont \iloTok.cont \insaTok.cont \jakiTok.cont \janTok.cont 
+	\jeloTok.cont \joTok.cont \kalaTok.cont \kalamaTok.cont 
+	\kamaTok.cont \kasiTok.cont \kenTok.cont \kepekenTok.cont 
+	\kiliTok.cont \kiwenTok.cont \koTok.cont \konTok.cont \kuleTok.cont 
+	\kulupuTok.cont \kuteTok.cont \laTok.cont \lapeTok.cont 
+	\lasoTok.cont \lawaTok.cont \lenTok.cont \leteTok.cont \liTok.cont 
+	\liliTok.cont \linjaTok.cont \lipuTok.cont \lojeTok.cont 
+	\lonTok.cont \lukaTok.cont \lukinTok.cont \lupaTok.cont \maTok.cont 
+	\mamaTok.cont \maniTok.cont \meliTok.cont \miTok.cont \mijeTok.cont 
+	\mokuTok.cont \moliTok.cont \monsiTok.cont \muTok.cont \munTok.cont 
+	\musiTok.cont \muteTok.cont \nanpaTok.cont \nasaTok.cont 
+	\nasinTok.cont \nenaTok.cont \niTok.cont \nimiTok.cont \nokaTok.cont 
+	\oTok.cont \olinTok.cont \onaTok.cont \openTok.cont \pakalaTok.cont 
+	\paliTok.cont \palisaTok.cont \panTok.cont \panaTok.cont \piTok.cont 
+	\pilinTok.cont \pimejaTok.cont \piniTok.cont \pipiTok.cont 
+	\pokaTok.cont \pokiTok.cont \ponaTok.cont \puTok.cont \samaTok.cont 
+	\seliTok.cont \seloTok.cont \semeTok.cont \sewiTok.cont 
+	\sijeloTok.cont \sikeTok.cont \sinTok.cont \sinaTok.cont 
+	\sinpinTok.cont \sitelenTok.cont \sonaTok.cont \soweliTok.cont 
+	\suliTok.cont \sunoTok.cont \supaTok.cont \suwiTok.cont \tanTok.cont 
+	\tasoTok.cont \tawaTok.cont \teloTok.cont \tenpoTok.cont 
+	\tokiTok.cont \tomoTok.cont \tuTok.cont \unpaTok.cont \utaTok.cont 
+	\utalaTok.cont \waloTok.cont \wanTok.cont \wasoTok.cont 
+	\wawaTok.cont \wekaTok.cont \wileTok.cont \namakoTok.cont 
+	\kinTok.cont \okoTok.cont \kipisiTok.cont \lekoTok.cont 
+	\monsutaTok.cont \tonsiTok.cont \jasimTok.cont 
+	\kijetesantakaluTok.cont \sokoTok.cont \mesoTok.cont \epikuTok.cont 
+	\kokosilaTok.cont \lanpanTok.cont \nTok.cont \misikekeTok.cont 
+	\kuTok.cont \piTok_contStartCombTok \tawaTok_contStartCombTok 
+	\lonTok_contStartCombTok \pakeTok.cont \apejaTok.cont 
+	\majunaTok.cont \poweTok.cont \itanTok.cont \kulupuKasiTok.cont 
+	\lepekaTok.cont \NameMe.1819 \NameMe.1822 \kala1Tok.cont 
+	\meli1Tok.cont \mije1Tok.cont \olin1Tok.cont \sewi1Tok.cont 
+	\uta1Tok.cont \wile1Tok.cont \namako1Tok.cont \mu1Tok.cont ];
+    sub @cc7_back_2 @cc7_match_1'  by [\aTok.cart \akesiTok.cart \alaTok.cart \alasaTok.cart \aleTok.cart \anpaTok.cart \anteTok.cart \anuTok.cart \awenTok.cart \eTok.cart \enTok.cart \esunTok.cart \ijoTok.cart \ikeTok.cart \iloTok.cart \insaTok.cart \jakiTok.cart \janTok.cart \jeloTok.cart \joTok.cart \kalaTok.cart \kalamaTok.cart \kamaTok.cart \kasiTok.cart \kenTok.cart \kepekenTok.cart \kiliTok.cart \kiwenTok.cart \koTok.cart \konTok.cart \kuleTok.cart \kulupuTok.cart \kuteTok.cart \laTok.cart \lapeTok.cart \lasoTok.cart \lawaTok.cart \lenTok.cart \leteTok.cart \liTok.cart \liliTok.cart \linjaTok.cart \lipuTok.cart \lojeTok.cart \lonTok.cart \lukaTok.cart \lukinTok.cart \lupaTok.cart \maTok.cart \mamaTok.cart \maniTok.cart \meliTok.cart \miTok.cart \mijeTok.cart \mokuTok.cart \moliTok.cart \monsiTok.cart \muTok.cart \munTok.cart \musiTok.cart \muteTok.cart \nanpaTok.cart \nasaTok.cart \nasinTok.cart \nenaTok.cart \niTok.cart \nimiTok.cart \nokaTok.cart \oTok.cart \olinTok.cart \onaTok.cart \openTok.cart \pakalaTok.cart \paliTok.cart \palisaTok.cart \panTok.cart \panaTok.cart \piTok.cart \pilinTok.cart \pimejaTok.cart \piniTok.cart \pipiTok.cart \pokaTok.cart \pokiTok.cart \ponaTok.cart \puTok.cart \samaTok.cart \seliTok.cart \seloTok.cart \semeTok.cart \sewiTok.cart \sijeloTok.cart \sikeTok.cart \sinTok.cart \sinaTok.cart \sinpinTok.cart \sitelenTok.cart \sonaTok.cart \soweliTok.cart \suliTok.cart \sunoTok.cart \supaTok.cart \suwiTok.cart \tanTok.cart \tasoTok.cart \tawaTok.cart \teloTok.cart \tenpoTok.cart \tokiTok.cart \tomoTok.cart \tuTok.cart \unpaTok.cart \utaTok.cart \utalaTok.cart \waloTok.cart \wanTok.cart \wasoTok.cart \wawaTok.cart \wekaTok.cart \wileTok.cart \namakoTok.cart \kinTok.cart \okoTok.cart \kipisiTok.cart \lekoTok.cart \monsutaTok.cart \tonsiTok.cart \jasimaTok.cart \kijetesantakaluTok.cart \sokoTok.cart \mesoTok.cart \epikuTok.cart \kokosilaTok.cart \lanpanTok.cart \nTok.cart \misikekeTok.cart \kuTok.cart \middleDotTok.cart \colonTok.cart \middleDotTok2.cart \middleDotTok3.cart \pakeTok.cart \apejaTok.cart \majunaTok.cart \poweTok.cart NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL \itanTok.cart \kulupuKasiTok.cart \lepekaTok.cart NULL NULL \kala1Tok.cart \meli1Tok.cart \mije1Tok.cart \olin1Tok.cart \sewi1Tok.cart \uta1Tok.cart \wile1Tok.cart \namako1Tok.cart \mu1Tok.cart ] ;
+    sub @cc7_back_3 @cc7_match_1'  by [\aTok.cont \akesiTok.cont \alaTok.cont \alasaTok.cont \aleTok.cont \anpaTok.cont \anteTok.cont \anuTok.cont \awenTok.cont \eTok.cont \enTok.cont \esunTok.cont \ijoTok.cont NULL \iloTok.cont \insaTok.cont \jakiTok.cont \janTok.cont \jeloTok.cont \joTok.cont \kalaTok.cont \kalamaTok.cont \kamaTok.cont \kasiTok.cont \kenTok.cont \kepekenTok.cont \kiliTok.cont \kiwenTok.cont \koTok.cont \konTok.cont \kuleTok.cont \kulupuTok.cont \kuteTok.cont \laTok.cont \lapeTok.cont \lasoTok.cont \lawaTok.cont \lenTok.cont \leteTok.cont \liTok.cont \liliTok.cont \linjaTok.cont \lipuTok.cont \lojeTok.cont \lonTok.cont \lukaTok.cont \lukinTok.cont \lupaTok.cont \maTok.cont \mamaTok.cont \maniTok.cont \meliTok.cont \miTok.cont \mijeTok.cont \mokuTok.cont \moliTok.cont \monsiTok.cont \muTok.cont \munTok.cont \musiTok.cont \muteTok.cont \nanpaTok.cont \nasaTok.cont \nasinTok.cont \nenaTok.cont \niTok.cont \nimiTok.cont \nokaTok.cont \oTok.cont \olinTok.cont \onaTok.cont \openTok.cont \pakalaTok.cont \paliTok.cont \palisaTok.cont \panTok.cont \panaTok.cont \piTok.cont \pilinTok.cont \pimejaTok.cont \piniTok.cont \pipiTok.cont \pokaTok.cont \pokiTok.cont \ponaTok.cont \puTok.cont \samaTok.cont \seliTok.cont \seloTok.cont \semeTok.cont \sewiTok.cont \sijeloTok.cont \sikeTok.cont \sinTok.cont \sinaTok.cont \sinpinTok.cont \sitelenTok.cont \sonaTok.cont \soweliTok.cont \suliTok.cont \sunoTok.cont \supaTok.cont \suwiTok.cont \tanTok.cont \tasoTok.cont \tawaTok.cont \teloTok.cont \tenpoTok.cont \tokiTok.cont \tomoTok.cont \tuTok.cont \unpaTok.cont \utaTok.cont \utalaTok.cont \waloTok.cont \wanTok.cont \wasoTok.cont \wawaTok.cont \wekaTok.cont \wileTok.cont \namakoTok.cont \kinTok.cont \okoTok.cont \kipisiTok.cont \lekoTok.cont \monsutaTok.cont \tonsiTok.cont NULL \kijetesantakaluTok.cont \sokoTok.cont \mesoTok.cont \epikuTok.cont \kokosilaTok.cont \lanpanTok.cont \nTok.cont \misikekeTok.cont \kuTok.cont NULL NULL NULL NULL \pakeTok.cont \apejaTok.cont \majunaTok.cont \poweTok.cont NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL \itanTok.cont \kulupuKasiTok.cont \lepekaTok.cont NULL NULL \kala1Tok.cont \meli1Tok.cont \mije1Tok.cont \olin1Tok.cont \sewi1Tok.cont \uta1Tok.cont \wile1Tok.cont \namako1Tok.cont \mu1Tok.cont ] ;
+} caltCartouchesandContainers;
+
+lookup ss01CartoucheLines {
+  lookupflag 0;
+    sub \aTok by \aTok.cart ;
+    sub \akesiTok by \akesiTok.cart ;
+    sub \alaTok by \alaTok.cart ;
+    sub \alasaTok by \alasaTok.cart ;
+    sub \aleTok by \aleTok.cart ;
+    sub \anpaTok by \anpaTok.cart ;
+    sub \anteTok by \anteTok.cart ;
+    sub \anuTok by \anuTok.cart ;
+    sub \awenTok by \awenTok.cart ;
+    sub \eTok by \eTok.cart ;
+    sub \enTok by \enTok.cart ;
+    sub \esunTok by \esunTok.cart ;
+    sub \ijoTok by \ijoTok.cart ;
+    sub \ikeTok by \ikeTok.cart ;
+    sub \iloTok by \iloTok.cart ;
+    sub \insaTok by \insaTok.cart ;
+    sub \jakiTok by \jakiTok.cart ;
+    sub \janTok by \janTok.cart ;
+    sub \jeloTok by \jeloTok.cart ;
+    sub \joTok by \joTok.cart ;
+    sub \kalaTok by \kalaTok.cart ;
+    sub \kalamaTok by \kalamaTok.cart ;
+    sub \kamaTok by \kamaTok.cart ;
+    sub \kasiTok by \kasiTok.cart ;
+    sub \kenTok by \kenTok.cart ;
+    sub \kepekenTok by \kepekenTok.cart ;
+    sub \kiliTok by \kiliTok.cart ;
+    sub \kiwenTok by \kiwenTok.cart ;
+    sub \koTok by \koTok.cart ;
+    sub \konTok by \konTok.cart ;
+    sub \kuleTok by \kuleTok.cart ;
+    sub \kulupuTok by \kulupuTok.cart ;
+    sub \kuteTok by \kuteTok.cart ;
+    sub \laTok by \laTok.cart ;
+    sub \lapeTok by \lapeTok.cart ;
+    sub \lasoTok by \lasoTok.cart ;
+    sub \lawaTok by \lawaTok.cart ;
+    sub \lenTok by \lenTok.cart ;
+    sub \leteTok by \leteTok.cart ;
+    sub \liTok by \liTok.cart ;
+    sub \liliTok by \liliTok.cart ;
+    sub \linjaTok by \linjaTok.cart ;
+    sub \lipuTok by \lipuTok.cart ;
+    sub \lojeTok by \lojeTok.cart ;
+    sub \lonTok by \lonTok.cart ;
+    sub \lukaTok by \lukaTok.cart ;
+    sub \lukinTok by \lukinTok.cart ;
+    sub \lupaTok by \lupaTok.cart ;
+    sub \maTok by \maTok.cart ;
+    sub \mamaTok by \mamaTok.cart ;
+    sub \maniTok by \maniTok.cart ;
+    sub \meliTok by \meliTok.cart ;
+    sub \miTok by \miTok.cart ;
+    sub \mijeTok by \mijeTok.cart ;
+    sub \mokuTok by \mokuTok.cart ;
+    sub \moliTok by \moliTok.cart ;
+    sub \monsiTok by \monsiTok.cart ;
+    sub \muTok by \muTok.cart ;
+    sub \munTok by \munTok.cart ;
+    sub \musiTok by \musiTok.cart ;
+    sub \muteTok by \muteTok.cart ;
+    sub \nanpaTok by \nanpaTok.cart ;
+    sub \nasaTok by \nasaTok.cart ;
+    sub \nasinTok by \nasinTok.cart ;
+    sub \nenaTok by \nenaTok.cart ;
+    sub \niTok by \niTok.cart ;
+    sub \nimiTok by \nimiTok.cart ;
+    sub \nokaTok by \nokaTok.cart ;
+    sub \oTok by \oTok.cart ;
+    sub \olinTok by \olinTok.cart ;
+    sub \onaTok by \onaTok.cart ;
+    sub \openTok by \openTok.cart ;
+    sub \pakalaTok by \pakalaTok.cart ;
+    sub \paliTok by \paliTok.cart ;
+    sub \palisaTok by \palisaTok.cart ;
+    sub \panTok by \panTok.cart ;
+    sub \panaTok by \panaTok.cart ;
+    sub \piTok by \piTok.cart ;
+    sub \pilinTok by \pilinTok.cart ;
+    sub \pimejaTok by \pimejaTok.cart ;
+    sub \piniTok by \piniTok.cart ;
+    sub \pipiTok by \pipiTok.cart ;
+    sub \pokaTok by \pokaTok.cart ;
+    sub \pokiTok by \pokiTok.cart ;
+    sub \ponaTok by \ponaTok.cart ;
+    sub \puTok by \puTok.cart ;
+    sub \samaTok by \samaTok.cart ;
+    sub \seliTok by \seliTok.cart ;
+    sub \seloTok by \seloTok.cart ;
+    sub \semeTok by \semeTok.cart ;
+    sub \sewiTok by \sewiTok.cart ;
+    sub \sijeloTok by \sijeloTok.cart ;
+    sub \sikeTok by \sikeTok.cart ;
+    sub \sinTok by \sinTok.cart ;
+    sub \sinaTok by \sinaTok.cart ;
+    sub \sinpinTok by \sinpinTok.cart ;
+    sub \sitelenTok by \sitelenTok.cart ;
+    sub \sonaTok by \sonaTok.cart ;
+    sub \soweliTok by \soweliTok.cart ;
+    sub \suliTok by \suliTok.cart ;
+    sub \sunoTok by \sunoTok.cart ;
+    sub \supaTok by \supaTok.cart ;
+    sub \suwiTok by \suwiTok.cart ;
+    sub \tanTok by \tanTok.cart ;
+    sub \tasoTok by \tasoTok.cart ;
+    sub \tawaTok by \tawaTok.cart ;
+    sub \teloTok by \teloTok.cart ;
+    sub \tenpoTok by \tenpoTok.cart ;
+    sub \tokiTok by \tokiTok.cart ;
+    sub \tomoTok by \tomoTok.cart ;
+    sub \tuTok by \tuTok.cart ;
+    sub \unpaTok by \unpaTok.cart ;
+    sub \utaTok by \utaTok.cart ;
+    sub \utalaTok by \utalaTok.cart ;
+    sub \waloTok by \waloTok.cart ;
+    sub \wanTok by \wanTok.cart ;
+    sub \wasoTok by \wasoTok.cart ;
+    sub \wawaTok by \wawaTok.cart ;
+    sub \wekaTok by \wekaTok.cart ;
+    sub \wileTok by \wileTok.cart ;
+    sub \namakoTok by \namakoTok.cart ;
+    sub \kinTok by \kinTok.cart ;
+    sub \okoTok by \okoTok.cart ;
+    sub \kipisiTok by \kipisiTok.cart ;
+    sub \lekoTok by \lekoTok.cart ;
+    sub \monsutaTok by \monsutaTok.cart ;
+    sub \tonsiTok by \tonsiTok.cart ;
+    sub \jasimaTok by \jasimaTok.cart ;
+    sub \kijetesantakaluTok by \kijetesantakaluTok.cart ;
+    sub \sokoTok by \sokoTok.cart ;
+    sub \mesoTok by \mesoTok.cart ;
+    sub \epikuTok by \epikuTok.cart ;
+    sub \kokosilaTok by \kokosilaTok.cart ;
+    sub \lanpanTok by \lanpanTok.cart ;
+    sub \nTok by \nTok.cart ;
+    sub \misikekeTok by \misikekeTok.cart ;
+    sub \kuTok by \kuTok.cart ;
+    sub \middleDotTok by \middleDotTok.cart ;
+    sub \colonTok by \colonTok.cart ;
+    sub \middleDotTok2 by \middleDotTok2.cart ;
+    sub \middleDotTok3 by \middleDotTok3.cart ;
+    sub \pakeTok by \pakeTok.cart ;
+    sub \apejaTok by \apejaTok.cart ;
+    sub \majunaTok by \majunaTok.cart ;
+    sub \poweTok by \poweTok.cart ;
+    sub \itanTok by \itanTok.cart ;
+    sub \kulupuKasiTok by \kulupuKasiTok.cart ;
+    sub \lepekaTok by \lepekaTok.cart ;
+    sub \kala1Tok by \kala1Tok.cart ;
+    sub \meli1Tok by \meli1Tok.cart ;
+    sub \mije1Tok by \mije1Tok.cart ;
+    sub \olin1Tok by \olin1Tok.cart ;
+    sub \sewi1Tok by \sewi1Tok.cart ;
+    sub \uta1Tok by \uta1Tok.cart ;
+    sub \wile1Tok by \wile1Tok.cart ;
+    sub \namako1Tok by \namako1Tok.cart ;
+    sub \mu1Tok by \mu1Tok.cart ;
+} ss01CartoucheLines;
+
+lookup ss02ContainerLines {
+  lookupflag 0;
+    sub \aTok by \aTok.cont ;
+    sub \akesiTok by \akesiTok.cont ;
+    sub \alaTok by \alaTok.cont ;
+    sub \alasaTok by \alasaTok.cont ;
+    sub \aleTok by \aleTok.cont ;
+    sub \anpaTok by \anpaTok.cont ;
+    sub \anteTok by \anteTok.cont ;
+    sub \anuTok by \anuTok.cont ;
+    sub \awenTok by \awenTok.cont ;
+    sub \eTok by \eTok.cont ;
+    sub \enTok by \enTok.cont ;
+    sub \esunTok by \esunTok.cont ;
+    sub \ijoTok by \ijoTok.cont ;
+    sub \iloTok by \iloTok.cont ;
+    sub \insaTok by \insaTok.cont ;
+    sub \jakiTok by \jakiTok.cont ;
+    sub \janTok by \janTok.cont ;
+    sub \jeloTok by \jeloTok.cont ;
+    sub \joTok by \joTok.cont ;
+    sub \kalaTok by \kalaTok.cont ;
+    sub \kalamaTok by \kalamaTok.cont ;
+    sub \kamaTok by \kamaTok.cont ;
+    sub \kasiTok by \kasiTok.cont ;
+    sub \kenTok by \kenTok.cont ;
+    sub \kepekenTok by \kepekenTok.cont ;
+    sub \kiliTok by \kiliTok.cont ;
+    sub \kiwenTok by \kiwenTok.cont ;
+    sub \koTok by \koTok.cont ;
+    sub \konTok by \konTok.cont ;
+    sub \kuleTok by \kuleTok.cont ;
+    sub \kulupuTok by \kulupuTok.cont ;
+    sub \kuteTok by \kuteTok.cont ;
+    sub \laTok by \laTok.cont ;
+    sub \lapeTok by \lapeTok.cont ;
+    sub \lasoTok by \lasoTok.cont ;
+    sub \lawaTok by \lawaTok.cont ;
+    sub \lenTok by \lenTok.cont ;
+    sub \leteTok by \leteTok.cont ;
+    sub \liTok by \liTok.cont ;
+    sub \liliTok by \liliTok.cont ;
+    sub \linjaTok by \linjaTok.cont ;
+    sub \lipuTok by \lipuTok.cont ;
+    sub \lojeTok by \lojeTok.cont ;
+    sub \lonTok by \lonTok.cont ;
+    sub \lukaTok by \lukaTok.cont ;
+    sub \lukinTok by \lukinTok.cont ;
+    sub \lupaTok by \lupaTok.cont ;
+    sub \maTok by \maTok.cont ;
+    sub \mamaTok by \mamaTok.cont ;
+    sub \maniTok by \maniTok.cont ;
+    sub \meliTok by \meliTok.cont ;
+    sub \miTok by \miTok.cont ;
+    sub \mijeTok by \mijeTok.cont ;
+    sub \mokuTok by \mokuTok.cont ;
+    sub \moliTok by \moliTok.cont ;
+    sub \monsiTok by \monsiTok.cont ;
+    sub \muTok by \muTok.cont ;
+    sub \munTok by \munTok.cont ;
+    sub \musiTok by \musiTok.cont ;
+    sub \muteTok by \muteTok.cont ;
+    sub \nanpaTok by \nanpaTok.cont ;
+    sub \nasaTok by \nasaTok.cont ;
+    sub \nasinTok by \nasinTok.cont ;
+    sub \nenaTok by \nenaTok.cont ;
+    sub \niTok by \niTok.cont ;
+    sub \nimiTok by \nimiTok.cont ;
+    sub \nokaTok by \nokaTok.cont ;
+    sub \oTok by \oTok.cont ;
+    sub \olinTok by \olinTok.cont ;
+    sub \onaTok by \onaTok.cont ;
+    sub \openTok by \openTok.cont ;
+    sub \pakalaTok by \pakalaTok.cont ;
+    sub \paliTok by \paliTok.cont ;
+    sub \palisaTok by \palisaTok.cont ;
+    sub \panTok by \panTok.cont ;
+    sub \panaTok by \panaTok.cont ;
+    sub \piTok by \piTok.cont ;
+    sub \pilinTok by \pilinTok.cont ;
+    sub \pimejaTok by \pimejaTok.cont ;
+    sub \piniTok by \piniTok.cont ;
+    sub \pipiTok by \pipiTok.cont ;
+    sub \pokaTok by \pokaTok.cont ;
+    sub \pokiTok by \pokiTok.cont ;
+    sub \ponaTok by \ponaTok.cont ;
+    sub \puTok by \puTok.cont ;
+    sub \samaTok by \samaTok.cont ;
+    sub \seliTok by \seliTok.cont ;
+    sub \seloTok by \seloTok.cont ;
+    sub \semeTok by \semeTok.cont ;
+    sub \sewiTok by \sewiTok.cont ;
+    sub \sijeloTok by \sijeloTok.cont ;
+    sub \sikeTok by \sikeTok.cont ;
+    sub \sinTok by \sinTok.cont ;
+    sub \sinaTok by \sinaTok.cont ;
+    sub \sinpinTok by \sinpinTok.cont ;
+    sub \sitelenTok by \sitelenTok.cont ;
+    sub \sonaTok by \sonaTok.cont ;
+    sub \soweliTok by \soweliTok.cont ;
+    sub \suliTok by \suliTok.cont ;
+    sub \sunoTok by \sunoTok.cont ;
+    sub \supaTok by \supaTok.cont ;
+    sub \suwiTok by \suwiTok.cont ;
+    sub \tanTok by \tanTok.cont ;
+    sub \tasoTok by \tasoTok.cont ;
+    sub \tawaTok by \tawaTok.cont ;
+    sub \teloTok by \teloTok.cont ;
+    sub \tenpoTok by \tenpoTok.cont ;
+    sub \tokiTok by \tokiTok.cont ;
+    sub \tomoTok by \tomoTok.cont ;
+    sub \tuTok by \tuTok.cont ;
+    sub \unpaTok by \unpaTok.cont ;
+    sub \utaTok by \utaTok.cont ;
+    sub \utalaTok by \utalaTok.cont ;
+    sub \waloTok by \waloTok.cont ;
+    sub \wanTok by \wanTok.cont ;
+    sub \wasoTok by \wasoTok.cont ;
+    sub \wawaTok by \wawaTok.cont ;
+    sub \wekaTok by \wekaTok.cont ;
+    sub \wileTok by \wileTok.cont ;
+    sub \namakoTok by \namakoTok.cont ;
+    sub \kinTok by \kinTok.cont ;
+    sub \okoTok by \okoTok.cont ;
+    sub \kipisiTok by \kipisiTok.cont ;
+    sub \lekoTok by \lekoTok.cont ;
+    sub \monsutaTok by \monsutaTok.cont ;
+    sub \tonsiTok by \tonsiTok.cont ;
+    sub \kijetesantakaluTok by \kijetesantakaluTok.cont ;
+    sub \sokoTok by \sokoTok.cont ;
+    sub \mesoTok by \mesoTok.cont ;
+    sub \epikuTok by \epikuTok.cont ;
+    sub \kokosilaTok by \kokosilaTok.cont ;
+    sub \lanpanTok by \lanpanTok.cont ;
+    sub \nTok by \nTok.cont ;
+    sub \misikekeTok by \misikekeTok.cont ;
+    sub \kuTok by \kuTok.cont ;
+    sub \pakeTok by \pakeTok.cont ;
+    sub \apejaTok by \apejaTok.cont ;
+    sub \majunaTok by \majunaTok.cont ;
+    sub \poweTok by \poweTok.cont ;
+    sub \itanTok by \itanTok.cont ;
+    sub \kulupuKasiTok by \kulupuKasiTok.cont ;
+    sub \lepekaTok by \lepekaTok.cont ;
+    sub \kala1Tok by \kala1Tok.cont ;
+    sub \meli1Tok by \meli1Tok.cont ;
+    sub \mije1Tok by \mije1Tok.cont ;
+    sub \olin1Tok by \olin1Tok.cont ;
+    sub \sewi1Tok by \sewi1Tok.cont ;
+    sub \uta1Tok by \uta1Tok.cont ;
+    sub \wile1Tok by \wile1Tok.cont ;
+    sub \namako1Tok by \namako1Tok.cont ;
+    sub \mu1Tok by \mu1Tok.cont ;
+} ss02ContainerLines;
+
+feature liga {
+
+ script DFLT;
+     language dflt ;
+      lookup ligaLatintoTP;
+      lookup ligaAlternatives;
+      lookup ligaContainerStartCombination;
+      lookup ligaZWJtojoinStack;
+      lookup ligaStep1;
+      lookup ligaStep3;
+
+ script latn;
+     language dflt ;
+      lookup ligaLatintoTP;
+} liga;
+
+feature ccmp {
+
+ script DFLT;
+     language dflt ;
+      lookup ccmpStep2;
+} ccmp;
+
+feature calt {
+
+ script DFLT;
+     language dflt ;
+      lookup caltCartouchesandContainers;
+} calt;
+
+feature ss01 {
+
+ script DFLT;
+     language dflt ;
+      lookup ss01CartoucheLines;
+} ss01;
+
+feature ss02 {
+
+ script DFLT;
+     language dflt ;
+      lookup ss02ContainerLines;
+} ss02;
+
+# GPOS 
+
+
+lookup kernHorizontalKerninglookup0 {
+  lookupflag 0;
+    @kc10_first_1 = [\space ];
+    @kc10_first_2 = [\aTok_joinStackTok \akesiTok_joinStackTok \alaTok_joinStackTok 
+	\alasaTok_joinStackTok \aleTok_joinStackTok \anpaTok_joinStackTok 
+	\anteTok_joinStackTok \anuTok_joinStackTok \awenTok_joinStackTok 
+	\eTok_joinStackTok \enTok_joinStackTok \esunTok_joinStackTok 
+	\ijoTok_joinStackTok \ikeTok_joinStackTok \iloTok_joinStackTok 
+	\insaTok_joinStackTok \jakiTok_joinStackTok \janTok_joinStackTok 
+	\jeloTok_joinStackTok \joTok_joinStackTok \kalaTok_joinStackTok 
+	\kalamaTok_joinStackTok \kamaTok_joinStackTok 
+	\kasiTok_joinStackTok \kenTok_joinStackTok 
+	\kepekenTok_joinStackTok \kiliTok_joinStackTok 
+	\kiwenTok_joinStackTok \koTok_joinStackTok \konTok_joinStackTok 
+	\kuleTok_joinStackTok \kulupuTok_joinStackTok 
+	\kuteTok_joinStackTok \laTok_joinStackTok \lapeTok_joinStackTok 
+	\lasoTok_joinStackTok \lawaTok_joinStackTok \lenTok_joinStackTok 
+	\leteTok_joinStackTok \liTok_joinStackTok \liliTok_joinStackTok 
+	\linjaTok_joinStackTok \lipuTok_joinStackTok \lojeTok_joinStackTok 
+	\lonTok_joinStackTok \lukaTok_joinStackTok \lukinTok_joinStackTok 
+	\lupaTok_joinStackTok \maTok_joinStackTok \mamaTok_joinStackTok 
+	\maniTok_joinStackTok \meliTok_joinStackTok \miTok_joinStackTok 
+	\mijeTok_joinStackTok \mokuTok_joinStackTok \moliTok_joinStackTok 
+	\monsiTok_joinStackTok \muTok_joinStackTok \munTok_joinStackTok 
+	\musiTok_joinStackTok \muteTok_joinStackTok \nanpaTok_joinStackTok 
+	\nasaTok_joinStackTok \nasinTok_joinStackTok \nenaTok_joinStackTok 
+	\niTok_joinStackTok \nimiTok_joinStackTok \nokaTok_joinStackTok 
+	\oTok_joinStackTok \olinTok_joinStackTok \onaTok_joinStackTok 
+	\openTok_joinStackTok \pakalaTok_joinStackTok 
+	\paliTok_joinStackTok \palisaTok_joinStackTok \panTok_joinStackTok 
+	\panaTok_joinStackTok \piTok_joinStackTok \pilinTok_joinStackTok 
+	\pimejaTok_joinStackTok \piniTok_joinStackTok 
+	\pipiTok_joinStackTok \pokaTok_joinStackTok \pokiTok_joinStackTok 
+	\ponaTok_joinStackTok \puTok_joinStackTok \samaTok_joinStackTok 
+	\seliTok_joinStackTok \seloTok_joinStackTok \semeTok_joinStackTok 
+	\sewiTok_joinStackTok \sijeloTok_joinStackTok 
+	\sikeTok_joinStackTok \sinTok_joinStackTok \sinaTok_joinStackTok 
+	\sinpinTok_joinStackTok \sitelenTok_joinStackTok 
+	\sonaTok_joinStackTok \soweliTok_joinStackTok 
+	\suliTok_joinStackTok \sunoTok_joinStackTok \supaTok_joinStackTok 
+	\suwiTok_joinStackTok \tanTok_joinStackTok \tasoTok_joinStackTok 
+	\tawaTok_joinStackTok \teloTok_joinStackTok \tenpoTok_joinStackTok 
+	\tokiTok_joinStackTok \tomoTok_joinStackTok \tuTok_joinStackTok 
+	\unpaTok_joinStackTok \utaTok_joinStackTok \utalaTok_joinStackTok 
+	\waloTok_joinStackTok \wanTok_joinStackTok \wasoTok_joinStackTok 
+	\wawaTok_joinStackTok \wekaTok_joinStackTok \wileTok_joinStackTok 
+	\namakoTok_joinStackTok \kinTok_joinStackTok \okoTok_joinStackTok 
+	\kipisiTok_joinStackTok \lekoTok_joinStackTok 
+	\monsutaTok_joinStackTok \tonsiTok_joinStackTok 
+	\jasimaTok_joinStackTok \kijetesantakaluTok_joinStackTok 
+	\sokoTok_joinStackTok \mesoTok_joinStackTok \epikuTok_joinStackTok 
+	\kokosilaTok_joinStackTok \lanpanTok_joinStackTok 
+	\nTok_joinStackTok \misikekeTok_joinStackTok \kuTok_joinStackTok 
+	\pakeTok_joinStackTok \apejaTok_joinStackTok 
+	\majunaTok_joinStackTok \poweTok_joinStackTok 
+	\kala1Tok_joinStackTok \meli1Tok_joinStackTok 
+	\mije1Tok_joinStackTok \olin1Tok_joinStackTok 
+	\sewi1Tok_joinStackTok \uta1Tok_joinStackTok 
+	\wile1Tok_joinStackTok \namako1Tok_joinStackTok ];
+    @kc10_first_3 = [\aTok_joinScaleTok \akesiTok_joinScaleTok \alaTok_joinScaleTok 
+	\alasaTok_joinScaleTok \aleTok_joinScaleTok \anpaTok_joinScaleTok 
+	\anteTok_joinScaleTok \anuTok_joinScaleTok \awenTok_joinScaleTok 
+	\eTok_joinScaleTok \enTok_joinScaleTok \esunTok_joinScaleTok 
+	\ijoTok_joinScaleTok \ikeTok_joinScaleTok \iloTok_joinScaleTok 
+	\insaTok_joinScaleTok \jakiTok_joinScaleTok \janTok_joinScaleTok 
+	\jeloTok_joinScaleTok \joTok_joinScaleTok \kalaTok_joinScaleTok 
+	\kalamaTok_joinScaleTok \kamaTok_joinScaleTok 
+	\kasiTok_joinScaleTok \kenTok_joinScaleTok 
+	\kepekenTok_joinScaleTok \kiliTok_joinScaleTok 
+	\kiwenTok_joinScaleTok \koTok_joinScaleTok \konTok_joinScaleTok 
+	\kuleTok_joinScaleTok \kulupuTok_joinScaleTok 
+	\kuteTok_joinScaleTok \laTok_joinScaleTok \lapeTok_joinScaleTok 
+	\lasoTok_joinScaleTok \lawaTok_joinScaleTok \lenTok_joinScaleTok 
+	\leteTok_joinScaleTok \liTok_joinScaleTok \liliTok_joinScaleTok 
+	\linjaTok_joinScaleTok \lipuTok_joinScaleTok \lojeTok_joinScaleTok 
+	\lonTok_joinScaleTok \lukaTok_joinScaleTok \lukinTok_joinScaleTok 
+	\lupaTok_joinScaleTok \maTok_joinScaleTok \mamaTok_joinScaleTok 
+	\maniTok_joinScaleTok \meliTok_joinScaleTok \miTok_joinScaleTok 
+	\mijeTok_joinScaleTok \mokuTok_joinScaleTok \moliTok_joinScaleTok 
+	\monsiTok_joinScaleTok \muTok_joinScaleTok \munTok_joinScaleTok 
+	\musiTok_joinScaleTok \muteTok_joinScaleTok \nanpaTok_joinScaleTok 
+	\nasaTok_joinScaleTok \nasinTok_joinScaleTok \nenaTok_joinScaleTok 
+	\niTok_joinScaleTok \nimiTok_joinScaleTok \nokaTok_joinScaleTok 
+	\oTok_joinScaleTok \olinTok_joinScaleTok \onaTok_joinScaleTok 
+	\openTok_joinScaleTok \pakalaTok_joinScaleTok 
+	\paliTok_joinScaleTok \palisaTok_joinScaleTok \panTok_joinScaleTok 
+	\panaTok_joinScaleTok \piTok_joinScaleTok \pilinTok_joinScaleTok 
+	\pimejaTok_joinScaleTok \piniTok_joinScaleTok 
+	\pipiTok_joinScaleTok \pokaTok_joinScaleTok \pokiTok_joinScaleTok 
+	\ponaTok_joinScaleTok \puTok_joinScaleTok \samaTok_joinScaleTok 
+	\seliTok_joinScaleTok \seloTok_joinScaleTok \semeTok_joinScaleTok 
+	\sewiTok_joinScaleTok \sijeloTok_joinScaleTok 
+	\sikeTok_joinScaleTok \sinTok_joinScaleTok \sinaTok_joinScaleTok 
+	\sinpinTok_joinScaleTok \sitelenTok_joinScaleTok 
+	\sonaTok_joinScaleTok \soweliTok_joinScaleTok 
+	\suliTok_joinScaleTok \sunoTok_joinScaleTok \supaTok_joinScaleTok 
+	\suwiTok_joinScaleTok \tanTok_joinScaleTok \tasoTok_joinScaleTok 
+	\tawaTok_joinScaleTok \teloTok_joinScaleTok \tenpoTok_joinScaleTok 
+	\tokiTok_joinScaleTok \tomoTok_joinScaleTok \tuTok_joinScaleTok 
+	\unpaTok_joinScaleTok \utaTok_joinScaleTok \utalaTok_joinScaleTok 
+	\waloTok_joinScaleTok \wanTok_joinScaleTok \wasoTok_joinScaleTok 
+	\wawaTok_joinScaleTok \wekaTok_joinScaleTok \wileTok_joinScaleTok 
+	\namakoTok_joinScaleTok \kinTok_joinScaleTok \okoTok_joinScaleTok 
+	\kipisiTok_joinScaleTok \lekoTok_joinScaleTok 
+	\monsutaTok_joinScaleTok \tonsiTok_joinScaleTok 
+	\jasimaTok_joinScaleTok \kijetesantakaluTok_joinScaleTok 
+	\sokoTok_joinScaleTok \mesoTok_joinScaleTok \epikuTok_joinScaleTok 
+	\kokosilaTok_joinScaleTok \lanpanTok_joinScaleTok 
+	\nTok_joinScaleTok \misikekeTok_joinScaleTok \kuTok_joinScaleTok 
+	\pakeTok_joinScaleTok \apejaTok_joinScaleTok 
+	\majunaTok_joinScaleTok \poweTok_joinScaleTok 
+	\kala1Tok_joinScaleTok \meli1Tok_joinScaleTok 
+	\mije1Tok_joinScaleTok \olin1Tok_joinScaleTok 
+	\sewi1Tok_joinScaleTok \uta1Tok_joinScaleTok 
+	\wile1Tok_joinScaleTok \namako1Tok_joinScaleTok ];
+    @kc10_first_4 = [\aTok \akesiTok \alaTok \alasaTok \aleTok \anpaTok \anteTok \anuTok \awenTok 
+	\eTok \enTok \esunTok \ijoTok \ikeTok \iloTok \insaTok \jakiTok \janTok 
+	\jeloTok \joTok \kalaTok \kalamaTok \kamaTok \kasiTok \kenTok 
+	\kepekenTok \kiliTok \kiwenTok \koTok \konTok \kuleTok \kulupuTok 
+	\kuteTok \laTok \lapeTok \lasoTok \lawaTok \lenTok \leteTok \liTok 
+	\liliTok \linjaTok \lipuTok \lojeTok \lonTok \lukaTok \lukinTok 
+	\lupaTok \maTok \mamaTok \maniTok \meliTok \miTok \mijeTok \mokuTok 
+	\moliTok \monsiTok \muTok \munTok \musiTok \muteTok \nanpaTok \nasaTok 
+	\nasinTok \nenaTok \niTok \nimiTok \nokaTok \oTok \olinTok \onaTok 
+	\openTok \pakalaTok \paliTok \palisaTok \panTok \panaTok \piTok 
+	\pilinTok \pimejaTok \piniTok \pipiTok \pokaTok \pokiTok \ponaTok 
+	\puTok \samaTok \seliTok \seloTok \semeTok \sewiTok \sijeloTok \sikeTok 
+	\sinTok \sinaTok \sinpinTok \sitelenTok \sonaTok \soweliTok \suliTok 
+	\sunoTok \supaTok \suwiTok \tanTok \tasoTok \tawaTok \teloTok \tenpoTok 
+	\tokiTok \tomoTok \tuTok \unpaTok \utaTok \utalaTok \waloTok \wanTok 
+	\wasoTok \wawaTok \wekaTok \wileTok \namakoTok \kinTok \okoTok 
+	\kipisiTok \lekoTok \monsutaTok \tonsiTok \jasimaTok 
+	\kijetesantakaluTok \sokoTok \mesoTok \epikuTok \kokosilaTok 
+	\lanpanTok \nTok \misikekeTok \kuTok \pakeTok \apejaTok \majunaTok 
+	\poweTok ];
+    @kc10_second_1 = [\space ];
+    @kc10_second_2 = [\joinStackTok_aTok \joinStackTok_akesiTok \joinStackTok_alaTok 
+	\joinStackTok_alasaTok \joinStackTok_aleTok \joinStackTok_anpaTok 
+	\joinStackTok_anteTok \joinStackTok_anuTok \joinStackTok_awenTok 
+	\joinStackTok_eTok \joinStackTok_enTok \joinStackTok_esunTok 
+	\joinStackTok_ijoTok \joinStackTok_ikeTok \joinStackTok_iloTok 
+	\joinStackTok_insaTok \joinStackTok_jakiTok \joinStackTok_janTok 
+	\joinStackTok_jeloTok \joinStackTok_joTok \joinStackTok_kalaTok 
+	\joinStackTok_kalamaTok \joinStackTok_kamaTok 
+	\joinStackTok_kasiTok \joinStackTok_kenTok 
+	\joinStackTok_kepekenTok \joinStackTok_kiliTok 
+	\joinStackTok_kiwenTok \joinStackTok_koTok \joinStackTok_konTok 
+	\joinStackTok_kuleTok \joinStackTok_kulupuTok 
+	\joinStackTok_kuteTok \joinStackTok_laTok \joinStackTok_lapeTok 
+	\joinStackTok_lasoTok \joinStackTok_lawaTok \joinStackTok_lenTok 
+	\joinStackTok_leteTok \joinStackTok_liTok \joinStackTok_liliTok 
+	\joinStackTok_linjaTok \joinStackTok_lipuTok \joinStackTok_lojeTok 
+	\joinStackTok_lonTok \joinStackTok_lukaTok \joinStackTok_lukinTok 
+	\joinStackTok_lupaTok \joinStackTok_maTok \joinStackTok_mamaTok 
+	\joinStackTok_maniTok \joinStackTok_meliTok \joinStackTok_miTok 
+	\joinStackTok_mijeTok \joinStackTok_mokuTok \joinStackTok_moliTok 
+	\joinStackTok_monsiTok \joinStackTok_muTok \joinStackTok_munTok 
+	\joinStackTok_musiTok \joinStackTok_muteTok \joinStackTok_nanpaTok 
+	\joinStackTok_nasaTok \joinStackTok_nasinTok \joinStackTok_nenaTok 
+	\joinStackTok_niTok \joinStackTok_nimiTok \joinStackTok_nokaTok 
+	\joinStackTok_oTok \joinStackTok_olinTok \joinStackTok_onaTok 
+	\joinStackTok_openTok \joinStackTok_pakalaTok 
+	\joinStackTok_paliTok \joinStackTok_palisaTok \joinStackTok_panTok 
+	\joinStackTok_panaTok \joinStackTok_piTok \joinStackTok_pilinTok 
+	\joinStackTok_pimejaTok \joinStackTok_piniTok 
+	\joinStackTok_pipiTok \joinStackTok_pokaTok \joinStackTok_pokiTok 
+	\joinStackTok_ponaTok \joinStackTok_puTok \joinStackTok_samaTok 
+	\joinStackTok_seliTok \joinStackTok_seloTok \joinStackTok_semeTok 
+	\joinStackTok_sewiTok \joinStackTok_sijeloTok 
+	\joinStackTok_sikeTok \joinStackTok_sinTok \joinStackTok_sinaTok 
+	\joinStackTok_sinpinTok \joinStackTok_sitelenTok 
+	\joinStackTok_sonaTok \joinStackTok_soweliTok 
+	\joinStackTok_suliTok \joinStackTok_sunoTok \joinStackTok_supaTok 
+	\joinStackTok_suwiTok \joinStackTok_tanTok \joinStackTok_tasoTok 
+	\joinStackTok_tawaTok \joinStackTok_teloTok \joinStackTok_tenpoTok 
+	\joinStackTok_tokiTok \joinStackTok_tomoTok \joinStackTok_tuTok 
+	\joinStackTok_unpaTok \joinStackTok_utaTok \joinStackTok_utalaTok 
+	\joinStackTok_waloTok \joinStackTok_wanTok \joinStackTok_wasoTok 
+	\joinStackTok_wawaTok \joinStackTok_wekaTok \joinStackTok_wileTok 
+	\joinStackTok_namakoTok \joinStackTok_kinTok \joinStackTok_okoTok 
+	\joinStackTok_kipisiTok \joinStackTok_lekoTok 
+	\joinStackTok_monsutaTok \joinStackTok_tonsiTok 
+	\joinStackTok_jasimaTok \joinStackTok_kijetesantakaluTok 
+	\joinStackTok_sokoTok \joinStackTok_mesoTok \joinStackTok_epikuTok 
+	\joinStackTok_kokosilaTok \joinStackTok_lanpanTok 
+	\joinStackTok_nTok \joinStackTok_misikekeTok \joinStackTok_kuTok 
+	\joinStackTok_pakeTok \joinStackTok_apejaTok 
+	\joinStackTok_majunaTok \joinStackTok_poweTok 
+	\joinStackTok_kala1Tok \joinStackTok_meli1Tok 
+	\joinStackTok_mije1Tok \joinStackTok_olin1Tok 
+	\joinStackTok_sewi1Tok \joinStackTok_uta1Tok 
+	\joinStackTok_wile1Tok \joinStackTok_namako1Tok ];
+    @kc10_second_3 = [\joinScaleTok_aTok \joinScaleTok_akesiTok \joinScaleTok_alaTok 
+	\joinScaleTok_alasaTok \joinScaleTok_aleTok \joinScaleTok_anpaTok 
+	\joinScaleTok_anteTok \joinScaleTok_anuTok \joinScaleTok_awenTok 
+	\joinScaleTok_eTok \joinScaleTok_enTok \joinScaleTok_esunTok 
+	\joinScaleTok_ijoTok \joinScaleTok_ikeTok \joinScaleTok_iloTok 
+	\joinScaleTok_insaTok \joinScaleTok_jakiTok \joinScaleTok_janTok 
+	\joinScaleTok_jeloTok \joinScaleTok_joTok \joinScaleTok_kalaTok 
+	\joinScaleTok_kalamaTok \joinScaleTok_kamaTok 
+	\joinScaleTok_kasiTok \joinScaleTok_kenTok 
+	\joinScaleTok_kepekenTok \joinScaleTok_kiliTok 
+	\joinScaleTok_kiwenTok \joinScaleTok_koTok \joinScaleTok_konTok 
+	\joinScaleTok_kuleTok \joinScaleTok_kulupuTok 
+	\joinScaleTok_kuteTok \joinScaleTok_laTok \joinScaleTok_lapeTok 
+	\joinScaleTok_lasoTok \joinScaleTok_lawaTok \joinScaleTok_lenTok 
+	\joinScaleTok_leteTok \joinScaleTok_liTok \joinScaleTok_liliTok 
+	\joinScaleTok_linjaTok \joinScaleTok_lipuTok \joinScaleTok_lojeTok 
+	\joinScaleTok_lonTok \joinScaleTok_lukaTok \joinScaleTok_lukinTok 
+	\joinScaleTok_lupaTok \joinScaleTok_maTok \joinScaleTok_mamaTok 
+	\joinScaleTok_maniTok \joinScaleTok_meliTok \joinScaleTok_miTok 
+	\joinScaleTok_mijeTok \joinScaleTok_mokuTok \joinScaleTok_moliTok 
+	\joinScaleTok_monsiTok \joinScaleTok_muTok \joinScaleTok_munTok 
+	\joinScaleTok_musiTok \joinScaleTok_muteTok \joinScaleTok_nanpaTok 
+	\joinScaleTok_nasaTok \joinScaleTok_nasinTok \joinScaleTok_nenaTok 
+	\joinScaleTok_niTok \joinScaleTok_nimiTok \joinScaleTok_nokaTok 
+	\joinScaleTok_oTok \joinScaleTok_olinTok \joinScaleTok_onaTok 
+	\joinScaleTok_openTok \joinScaleTok_pakalaTok 
+	\joinScaleTok_paliTok \joinScaleTok_palisaTok \joinScaleTok_panTok 
+	\joinScaleTok_panaTok \joinScaleTok_piTok \joinScaleTok_pilinTok 
+	\joinScaleTok_pimejaTok \joinScaleTok_piniTok 
+	\joinScaleTok_pipiTok \joinScaleTok_pokaTok \joinScaleTok_pokiTok 
+	\joinScaleTok_ponaTok \joinScaleTok_puTok \joinScaleTok_samaTok 
+	\joinScaleTok_seliTok \joinScaleTok_seloTok \joinScaleTok_semeTok 
+	\joinScaleTok_sewiTok \joinScaleTok_sijeloTok 
+	\joinScaleTok_sikeTok \joinScaleTok_sinTok \joinScaleTok_sinaTok 
+	\joinScaleTok_sinpinTok \joinScaleTok_sitelenTok 
+	\joinScaleTok_sonaTok \joinScaleTok_soweliTok 
+	\joinScaleTok_suliTok \joinScaleTok_sunoTok \joinScaleTok_supaTok 
+	\joinScaleTok_suwiTok \joinScaleTok_tanTok \joinScaleTok_tasoTok 
+	\joinScaleTok_tawaTok \joinScaleTok_teloTok \joinScaleTok_tenpoTok 
+	\joinScaleTok_tokiTok \joinScaleTok_tomoTok \joinScaleTok_tuTok 
+	\joinScaleTok_unpaTok \joinScaleTok_utaTok \joinScaleTok_utalaTok 
+	\joinScaleTok_waloTok \joinScaleTok_wanTok \joinScaleTok_wasoTok 
+	\joinScaleTok_wawaTok \joinScaleTok_wekaTok \joinScaleTok_wileTok 
+	\joinScaleTok_namakoTok \joinScaleTok_kinTok \joinScaleTok_okoTok 
+	\joinScaleTok_kipisiTok \joinScaleTok_lekoTok 
+	\joinScaleTok_monsutaTok \joinScaleTok_tonsiTok 
+	\joinScaleTok_jasimaTok \joinScaleTok_kijetesantakaluTok 
+	\joinScaleTok_sokoTok \joinScaleTok_mesoTok \joinScaleTok_epikuTok 
+	\joinScaleTok_kokosilaTok \joinScaleTok_lanpanTok 
+	\joinScaleTok_nTok \joinScaleTok_misikekeTok \joinScaleTok_kuTok 
+	\joinScaleTok_pakeTok \joinScaleTok_apejaTok 
+	\joinScaleTok_majunaTok \joinScaleTok_poweTok 
+	\joinScaleTok_kala1Tok \joinScaleTok_meli1Tok 
+	\joinScaleTok_mije1Tok \joinScaleTok_olin1Tok 
+	\joinScaleTok_sewi1Tok \joinScaleTok_uta1Tok 
+	\joinScaleTok_wile1Tok \joinScaleTok_namako1Tok ];
+    @kc10_second_4 = [\aTok \akesiTok \alaTok \alasaTok \aleTok \anpaTok \anteTok \anuTok \awenTok 
+	\eTok \enTok \esunTok \ijoTok \ikeTok \iloTok \insaTok \jakiTok \janTok 
+	\jeloTok \joTok \kalaTok \kalamaTok \kamaTok \kasiTok \kenTok 
+	\kepekenTok \kiliTok \kiwenTok \koTok \konTok \kuleTok \kulupuTok 
+	\kuteTok \laTok \lapeTok \lasoTok \lawaTok \lenTok \leteTok \liTok 
+	\liliTok \linjaTok \lipuTok \lojeTok \lonTok \lukaTok \lukinTok 
+	\lupaTok \maTok \mamaTok \maniTok \meliTok \miTok \mijeTok \mokuTok 
+	\moliTok \monsiTok \muTok \munTok \musiTok \muteTok \nanpaTok \nasaTok 
+	\nasinTok \nenaTok \niTok \nimiTok \nokaTok \oTok \olinTok \onaTok 
+	\openTok \pakalaTok \paliTok \palisaTok \panTok \panaTok \piTok 
+	\pilinTok \pimejaTok \piniTok \pipiTok \pokaTok \pokiTok \ponaTok 
+	\puTok \samaTok \seliTok \seloTok \semeTok \sewiTok \sijeloTok \sikeTok 
+	\sinTok \sinaTok \sinpinTok \sitelenTok \sonaTok \soweliTok \suliTok 
+	\sunoTok \supaTok \suwiTok \tanTok \tasoTok \tawaTok \teloTok \tenpoTok 
+	\tokiTok \tomoTok \tuTok \unpaTok \utaTok \utalaTok \waloTok \wanTok 
+	\wasoTok \wawaTok \wekaTok \wileTok \namakoTok \kinTok \okoTok 
+	\kipisiTok \lekoTok \monsutaTok \tonsiTok \jasimaTok 
+	\kijetesantakaluTok \sokoTok \mesoTok \epikuTok \kokosilaTok 
+	\lanpanTok \nTok \misikekeTok \kuTok \pakeTok \apejaTok \majunaTok 
+	\poweTok ];
+    pos @kc10_first_1 @kc10_second_2 -500;
+    pos @kc10_first_1 @kc10_second_3 -500;
+    pos @kc10_first_1 @kc10_second_4 -500;
+    pos @kc10_first_2 @kc10_second_1 -500;
+    pos @kc10_first_2 @kc10_second_2 -1000;
+    pos @kc10_first_3 @kc10_second_1 -500;
+    pos @kc10_first_3 @kc10_second_3 -1000;
+    pos @kc10_first_4 @kc10_second_1 -500;
+} kernHorizontalKerninglookup0;
+
+feature kern {
+
+ script DFLT;
+     language dflt ;
+      lookup kernHorizontalKerninglookup0;
+} kern;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\enTok \NameMe.139 \ZWJ \spaceTok \NameMe.142 \cartStartTok 
+	\cartEndTok \cartExtCombTok \oldLongPi \oldLongExtPi \joinScaleTok 
+	\contStartCombTok \contEndTok \contExtCombTok \contStartTok \contEndCombTok 
+	\colonTok \aTok.cart \akesiTok.cart \alaTok.cart \alasaTok.cart \aleTok.cart 
+	\anpaTok.cart \anteTok.cart \anuTok.cart \awenTok.cart \eTok.cart \enTok.cart 
+	\esunTok.cart \ijoTok.cart \ikeTok.cart \iloTok.cart \insaTok.cart 
+	\jakiTok.cart \janTok.cart \jeloTok.cart \joTok.cart \kalaTok.cart 
+	\kalamaTok.cart \kamaTok.cart \kasiTok.cart \kenTok.cart \kepekenTok.cart 
+	\kiliTok.cart \kiwenTok.cart \koTok.cart \konTok.cart \kuTok.cart 
+	\kuleTok.cart \kulupuTok.cart \kuteTok.cart \laTok.cart \lapeTok.cart 
+	\lasoTok.cart \lawaTok.cart \lenTok.cart \leteTok.cart \liTok.cart 
+	\liliTok.cart \linjaTok.cart \lipuTok.cart \lojeTok.cart \lonTok.cart 
+	\lukaTok.cart \lukinTok.cart \lupaTok.cart \maTok.cart \mamaTok.cart 
+	\maniTok.cart \meliTok.cart \miTok.cart \mijeTok.cart \mokuTok.cart 
+	\moliTok.cart \monsiTok.cart \muTok.cart \munTok.cart \musiTok.cart 
+	\muteTok.cart \nanpaTok.cart \nasaTok.cart \nasinTok.cart \nenaTok.cart 
+	\niTok.cart \nimiTok.cart \nokaTok.cart \oTok.cart \olinTok.cart \onaTok.cart 
+	\openTok.cart \pakalaTok.cart \paliTok.cart \palisaTok.cart \panTok.cart 
+	\panaTok.cart \piTok.cart \pilinTok.cart \pimejaTok.cart \piniTok.cart 
+	\pipiTok.cart \pokaTok.cart \pokiTok.cart \ponaTok.cart \puTok.cart 
+	\samaTok.cart \seliTok.cart \seloTok.cart \semeTok.cart \sewiTok.cart 
+	\sijeloTok.cart \sikeTok.cart \sinTok.cart \sinaTok.cart \sinpinTok.cart 
+	\sitelenTok.cart \sonaTok.cart \soweliTok.cart \suliTok.cart \sunoTok.cart 
+	\supaTok.cart \suwiTok.cart \tanTok.cart \tasoTok.cart \tawaTok.cart 
+	\teloTok.cart \tenpoTok.cart \tokiTok.cart \tomoTok.cart \tuTok.cart 
+	\unpaTok.cart \utaTok.cart \utalaTok.cart \waloTok.cart \wanTok.cart 
+	\wasoTok.cart \wawaTok.cart \wekaTok.cart \wileTok.cart \namakoTok.cart 
+	\kinTok.cart \okoTok.cart \kipisiTok.cart \lekoTok.cart \monsutaTok.cart 
+	\tonsiTok.cart \jasimaTok.cart \kijetesantakaluTok.cart \sokoTok.cart 
+	\mesoTok.cart \epikuTok.cart \kokosilaTok.cart \lanpanTok.cart \nTok.cart 
+	\misikekeTok.cart \NameMe.393 \NameMe.394 \NameMe.395 \NameMe.396 \NameMe.397 
+	\colonTok.cart_ \NameMe.399 \NameMe.400 \NameMe.401 \NameMe.402 \NameMe.403 
+	\NameMe.404 \NameMe.405 \NameMe.406 \NameMe.407 \NameMe.408 \NameMe.409 
+	\NameMe.410 \NameMe.411 \middleDotTok.cart \colonTok.cart 
+	\middleDotTok2.cart \middleDotTok3.cart \pakeTok.cart \apejaTok.cart 
+	\majunaTok.cart \poweTok.cart \aTok.cont \akesiTok.cont \alaTok.cont 
+	\kuTok.cont \NameMe.164 \NameMe.165 \NameMe.166 \NameMe.167 \NameMe.168 
+	\NameMe.169 \NameMe.170 \NameMe.171 \NameMe.172 \NameMe.173 \NameMe.174 
+	\NameMe.175 \NameMe.176 \NameMe.177 \NameMe.178 \NameMe.179 \NameMe.180 
+	\NameMe.181 \NameMe.182 \NameMe.183 \NameMe.184 \NameMe.185 \NameMe.186 
+	\NameMe.187 \NameMe.188 \NameMe.189 \NameMe.190 \NameMe.191 \NameMe.192 
+	\NameMe.193 \NameMe.194 \NameMe.195 \NameMe.196 \NameMe.197 \NameMe.198 
+	\NameMe.199 \NameMe.200 \NameMe.201 \NameMe.202 \NameMe.203 \NameMe.204 
+	\NameMe.205 \NameMe.206 \NameMe.207 \NameMe.208 \NameMe.209 \NameMe.210 
+	\NameMe.211 \NameMe.212 \NameMe.213 \NameMe.214 \NameMe.215 \NameMe.216 
+	\NameMe.217 \NameMe.218 \NameMe.219 \NameMe.220 \NameMe.221 \NameMe.222 
+	\NameMe.223 \NameMe.224 \NameMe.225 \NameMe.226 \NameMe.227 \NameMe.228 
+	\NameMe.229 \NameMe.230 \NameMe.231 \NameMe.232 \NameMe.233 \NameMe.234 
+	\NameMe.235 \NameMe.236 \NameMe.237 \NameMe.238 \NameMe.239 \NameMe.240 
+	\NameMe.241 \NameMe.242 \NameMe.243 \NameMe.244 \NameMe.245 \NameMe.246 
+	\NameMe.247 \NameMe.248 \NameMe.249 \NameMe.250 \NameMe.251 \NameMe.252 
+	\NameMe.253 \NameMe.254 \NameMe.255 \NameMe.420 \NameMe.421 \NameMe.422 
+	\NameMe.423 \NameMe.424 \NameMe.425 \NameMe.426 \NameMe.427 \NameMe.428 
+	\NameMe.429 \NameMe.430 \NameMe.431 \NameMe.432 \NameMe.433 \NameMe.434 
+	\NameMe.435 \NameMe.436 \NameMe.437 \NameMe.438 \NameMe.439 \NameMe.440 
+	\NameMe.441 \NameMe.442 \NameMe.443 \NameMe.444 \NameMe.445 \NameMe.446 
+	\NameMe.447 \NameMe.448 \NameMe.449 \NameMe.450 \NameMe.451 \NameMe.452 
+	\NameMe.453 \NameMe.454 \NameMe.455 \NameMe.456 \NameMe.457 \NameMe.458 
+	\NameMe.459 \NameMe.460 \NameMe.461 \NameMe.462 \NameMe.463 \NameMe.464 
+	\NameMe.465 \NameMe.466 \NameMe.467 \NameMe.468 \NameMe.469 \NameMe.470 
+	\NameMe.471 \NameMe.472 \NameMe.473 \NameMe.474 \NameMe.475 \NameMe.476 
+	\NameMe.477 \NameMe.478 \NameMe.479 \NameMe.480 \NameMe.481 \NameMe.482 
+	\NameMe.483 \NameMe.484 \NameMe.485 \NameMe.486 \NameMe.487 \NameMe.488 
+	\NameMe.489 \NameMe.490 \NameMe.491 \NameMe.492 \NameMe.493 \NameMe.494 
+	\NameMe.495 \NameMe.496 \NameMe.497 \NameMe.498 \NameMe.499 \NameMe.500 
+	\NameMe.501 \NameMe.502 \NameMe.503 \NameMe.504 \NameMe.505 \NameMe.506 
+	\NameMe.507 \NameMe.508 \NameMe.509 \NameMe.510 \NameMe.511 \alasaTok.cont 
+	\aleTok.cont \anpaTok.cont \anteTok.cont \anuTok.cont \awenTok.cont 
+	\eTok.cont \enTok.cont \esunTok.cont \ijoTok.cont \ikoTok.cont \iloTok.cont 
+	\insaTok.cont \jakiTok.cont \janTok.cont \jeloTok.cont \joTok.cont 
+	\kalaTok.cont \kalamaTok.cont \kamaTok.cont \kasiTok.cont \kenTok.cont 
+	\kepekenTok.cont \kiliTok.cont \kiwenTok.cont \koTok.cont \konTok.cont 
+	\kuleTok.cont \kulupuTok.cont \kuteTok.cont \laTok.cont \lapeTok.cont 
+	\lasoTok.cont \lawaTok.cont \lenTok.cont \leteTok.cont \liTok.cont 
+	\liliTok.cont \linjaTok.cont \lipuTok.cont \lojeTok.cont \lonTok.cont 
+	\lukaTok.cont \lukinTok.cont \lupaTok.cont \maTok.cont \mamaTok.cont 
+	\maniTok.cont \meliTok.cont \miTok.cont \mijeTok.cont \mokuTok.cont 
+	\moliTok.cont \monsiTok.cont \muTok.cont \munTok.cont \musiTok.cont 
+	\muteTok.cont \nanpaTok.cont \nasaTok.cont \nasinTok.cont \nenaTok.cont 
+	\niTok.cont \nimiTok.cont \nokaTok.cont \oTok.cont \olinTok.cont \onaTok.cont 
+	\openTok.cont \pakalaTok.cont \paliTok.cont \palisaTok.cont \panTok.cont 
+	\panaTok.cont \piTok.cont \pilinTok.cont \pimejaTok.cont \piniTok.cont 
+	\pipiTok.cont \pokaTok.cont \pokiTok.cont \ponaTok.cont \puTok.cont 
+	\samaTok.cont \seliTok.cont \seloTok.cont \semeTok.cont \sewiTok.cont 
+	\sijeloTok.cont \sikeTok.cont \sinTok.cont \sinaTok.cont \sinpinTok.cont 
+	\sitelenTok.cont \sonaTok.cont \soweliTok.cont \suliTok.cont \sunoTok.cont 
+	\supaTok.cont \suwiTok.cont \tanTok.cont \tasoTok.cont \tawaTok.cont 
+	\teloTok.cont \tenpoTok.cont \tokiTok.cont \tomoTok.cont \tuTok.cont 
+	\unpaTok.cont \utaTok.cont \utalaTok.cont \waloTok.cont \wanTok.cont 
+	\wasoTok.cont \wawaTok.cont \wekaTok.cont \wileTok.cont \namakoTok.cont 
+	\kinTok.cont \okoTok.cont \kipisiTok.cont \lekoTok.cont \monsutaTok.cont 
+	\tonsiTok.cont \jasimTok.cont \kijetesantakaluTok.cont \sokoTok.cont 
+	\mesoTok.cont \epikuTok.cont \kokosilaTok.cont \lanpanTok.cont \nTok.cont 
+	\misikekeTok.cont \NameMe.649 \NameMe.650 \NameMe.651 \NameMe.652 \NameMe.653 
+	\NameMe.654 \NameMe.655 \NameMe.659 \NameMe.660 \NameMe.661 \NameMe.662 
+	\NameMe.663 \NameMe.664 \NameMe.665 \NameMe.666 \NameMe.667 \NameMe.668 
+	\NameMe.669 \NameMe.670 \NameMe.671 \pakeTok.cont \apejaTok.cont 
+	\majunaTok.cont \poweTok.cont \NameMe.676 \NameMe.677 \NameMe.678 \NameMe.679 
+	\NameMe.680 \NameMe.681 \NameMe.682 \NameMe.683 \NameMe.684 \NameMe.685 
+	\NameMe.686 \NameMe.687 \NameMe.688 \NameMe.689 \NameMe.690 \NameMe.691 
+	\NameMe.692 \NameMe.693 \NameMe.694 \NameMe.695 \NameMe.696 \NameMe.697 
+	\NameMe.698 \NameMe.699 \NameMe.700 \NameMe.701 \NameMe.702 \NameMe.703 
+	\NameMe.704 \NameMe.705 \NameMe.706 \NameMe.707 \NameMe.708 \NameMe.709 
+	\NameMe.710 \NameMe.711 \NameMe.712 \NameMe.713 \NameMe.714 \NameMe.715 
+	\NameMe.716 \NameMe.717 \NameMe.718 \NameMe.719 \NameMe.720 \NameMe.721 
+	\NameMe.722 \NameMe.723 \NameMe.724 \NameMe.725 \NameMe.726 \NameMe.727 
+	\NameMe.728 \NameMe.729 \NameMe.730 \NameMe.731 \NameMe.732 \NameMe.733 
+	\NameMe.734 \NameMe.735 \NameMe.736 \NameMe.737 \NameMe.738 \NameMe.739 
+	\NameMe.740 \NameMe.741 \NameMe.742 \NameMe.743 \NameMe.744 \NameMe.745 
+	\NameMe.746 \NameMe.747 \NameMe.748 \NameMe.749 \NameMe.750 \NameMe.751 
+	\NameMe.752 \NameMe.753 \NameMe.754 \NameMe.755 \NameMe.756 \NameMe.757 
+	\NameMe.758 \NameMe.759 \NameMe.760 \NameMe.761 \NameMe.762 \NameMe.763 
+	\NameMe.764 \NameMe.765 \NameMe.766 \NameMe.767 \NameMe.905 \NameMe.906 
+	\NameMe.907 \NameMe.908 \NameMe.909 \NameMe.910 \NameMe.911 \NameMe.912 
+	\NameMe.913 \NameMe.914 \NameMe.915 \NameMe.916 \NameMe.917 \NameMe.918 
+	\NameMe.919 \NameMe.920 \NameMe.921 \NameMe.922 \NameMe.923 \NameMe.924 
+	\NameMe.925 \NameMe.926 \NameMe.927 \NameMe.932 \NameMe.933 \NameMe.934 
+	\NameMe.935 \NameMe.936 \NameMe.937 \NameMe.938 \NameMe.939 \NameMe.940 
+	\NameMe.941 \NameMe.942 \NameMe.943 \NameMe.944 \NameMe.945 \NameMe.946 
+	\NameMe.947 \NameMe.948 \NameMe.949 \NameMe.950 \NameMe.951 \NameMe.952 
+	\NameMe.953 \NameMe.954 \NameMe.955 \NameMe.956 \NameMe.957 \NameMe.958 
+	\NameMe.959 \NameMe.960 \NameMe.961 \NameMe.962 \NameMe.963 \NameMe.964 
+	\NameMe.965 \NameMe.966 \NameMe.967 \NameMe.968 \NameMe.969 \NameMe.970 
+	\NameMe.971 \NameMe.972 \NameMe.973 \NameMe.974 \NameMe.975 \NameMe.976 
+	\NameMe.977 \NameMe.978 \NameMe.979 \NameMe.980 \NameMe.981 \NameMe.982 
+	\NameMe.983 \NameMe.984 \NameMe.985 \NameMe.986 \NameMe.987 \NameMe.988 
+	\NameMe.989 \NameMe.990 \NameMe.991 \NameMe.992 \NameMe.993 \NameMe.994 
+	\NameMe.995 \NameMe.996 \NameMe.997 \NameMe.998 \NameMe.999 \NameMe.1000 
+	\NameMe.1001 \NameMe.1002 \NameMe.1003 \NameMe.1004 \NameMe.1005 \NameMe.1006 
+	\NameMe.1007 \NameMe.1008 \NameMe.1009 \NameMe.1010 \NameMe.1011 \NameMe.1012 
+	\NameMe.1013 \NameMe.1014 \NameMe.1015 \NameMe.1016 \NameMe.1017 \NameMe.1018 
+	\NameMe.1019 \NameMe.1020 \NameMe.1021 \NameMe.1022 \NameMe.1023 \NameMe.1161 
+	\NameMe.1162 \NameMe.1163 \NameMe.1164 \NameMe.1165 \NameMe.1166 \NameMe.1167 
+	\NameMe.1168 \NameMe.1169 \NameMe.1170 \NameMe.1171 \NameMe.1172 \NameMe.1173 
+	\NameMe.1174 \NameMe.1175 \NameMe.1176 \NameMe.1177 \NameMe.1178 \NameMe.1179 
+	\NameMe.1180 \NameMe.1181 \NameMe.1182 \NameMe.1183 \NameMe.1188 \NameMe.1189 
+	\NameMe.1190 \NameMe.1191 \NameMe.1192 \NameMe.1193 \NameMe.1194 \NameMe.1195 
+	\NameMe.1196 \NameMe.1197 \NameMe.1198 \NameMe.1199 \NameMe.1200 \NameMe.1201 
+	\NameMe.1202 \NameMe.1203 \NameMe.1204 \NameMe.1205 \NameMe.1206 \NameMe.1207 
+	\NameMe.1208 \NameMe.1209 \NameMe.1210 \NameMe.1211 \NameMe.1212 \NameMe.1213 
+	\NameMe.1214 \NameMe.1215 \NameMe.1216 \NameMe.1217 \NameMe.1218 \NameMe.1219 
+	\NameMe.1220 \NameMe.1221 \NameMe.1222 \NameMe.1223 \NameMe.1224 \NameMe.1225 
+	\NameMe.1226 \NameMe.1227 \NameMe.1228 \NameMe.1229 \NameMe.1230 \NameMe.1231 
+	\NameMe.1232 \NameMe.1233 \NameMe.1234 \NameMe.1235 \NameMe.1236 \NameMe.1237 
+	\NameMe.1238 \NameMe.1239 \NameMe.1240 \NameMe.1241 \NameMe.1242 \NameMe.1243 
+	\NameMe.1244 \NameMe.1245 \NameMe.1246 \NameMe.1247 \NameMe.1248 \NameMe.1249 
+	\NameMe.1250 \NameMe.1251 \NameMe.1252 \NameMe.1253 \NameMe.1254 \NameMe.1255 
+	\NameMe.1256 \NameMe.1257 \NameMe.1258 \NameMe.1259 \NameMe.1260 \NameMe.1261 
+	\NameMe.1262 \NameMe.1263 \NameMe.1264 \NameMe.1265 \NameMe.1266 \NameMe.1267 
+	\NameMe.1268 \NameMe.1269 \NameMe.1270 \NameMe.1271 \NameMe.1272 \NameMe.1273 
+	\NameMe.1274 \NameMe.1275 \NameMe.1276 \NameMe.1277 \NameMe.1278 \NameMe.1279 
+	\NameMe.1417 \NameMe.1418 \NameMe.1419 \NameMe.1420 \NameMe.1421 \NameMe.1422 
+	\NameMe.1423 \NameMe.1424 \NameMe.1425 \NameMe.1426 \NameMe.1427 \NameMe.1428 
+	\NameMe.1429 \NameMe.1430 \NameMe.1431 \NameMe.1432 \NameMe.1433 \NameMe.1434 
+	\NameMe.1435 \NameMe.1436 \NameMe.1437 \NameMe.1438 \NameMe.1439 \NameMe.1444 
+	\NameMe.1445 \NameMe.1446 \NameMe.1447 \NameMe.1448 \NameMe.1449 \NameMe.1450 
+	\NameMe.1451 \NameMe.1452 \NameMe.1453 \NameMe.1454 \NameMe.1455 \NameMe.1456 
+	\NameMe.1457 \NameMe.1458 \NameMe.1459 \NameMe.1460 \NameMe.1461 \NameMe.1462 
+	\NameMe.1463 \NameMe.1464 \NameMe.1465 \NameMe.1466 \NameMe.1467 \NameMe.1468 
+	\NameMe.1469 \NameMe.1470 \NameMe.1471 \NameMe.1472 \NameMe.1473 \NameMe.1474 
+	\NameMe.1475 \NameMe.1476 \NameMe.1477 \NameMe.1478 \NameMe.1479 \NameMe.1480 
+	\NameMe.1481 \NameMe.1482 \NameMe.1483 \NameMe.1484 \NameMe.1485 \NameMe.1486 
+	\NameMe.1487 \NameMe.1488 \NameMe.1489 \NameMe.1490 \NameMe.1491 \NameMe.1492 
+	\NameMe.1493 \NameMe.1494 \NameMe.1495 \NameMe.1496 \NameMe.1497 \NameMe.1498 
+	\NameMe.1499 \NameMe.1500 \NameMe.1501 \NameMe.1502 \NameMe.1503 \NameMe.1504 
+	\NameMe.1505 \NameMe.1506 \NameMe.1507 \NameMe.1508 \NameMe.1509 \NameMe.1510 
+	\NameMe.1511 \NameMe.1512 \NameMe.1513 \NameMe.1514 \NameMe.1515 \NameMe.1516 
+	\NameMe.1517 \NameMe.1518 \NameMe.1519 \NameMe.1520 \NameMe.1521 \NameMe.1522 
+	\NameMe.1523 \NameMe.1524 \NameMe.1525 \NameMe.1526 \NameMe.1527 \NameMe.1528 
+	\NameMe.1529 \NameMe.1530 \NameMe.1531 \NameMe.1532 \NameMe.1533 \NameMe.1534 
+	\NameMe.1535 \NameMe.1673 \NameMe.1674 \NameMe.1675 \NameMe.1676 \NameMe.1677 
+	\NameMe.1678 \NameMe.1679 \NameMe.1680 \NameMe.1681 \NameMe.1682 \NameMe.1683 
+	\NameMe.1684 \NameMe.1685 \NameMe.1686 \NameMe.1687 \NameMe.1688 \NameMe.1689 
+	\NameMe.1690 \NameMe.1691 \NameMe.1692 \NameMe.1693 \NameMe.1694 \NameMe.1695 
+	\NameMe.1700 \NameMe.1701 \NameMe.1702 \NameMe.1703 \NameMe.1704 \NameMe.1705 
+	\NameMe.1706 \NameMe.1707 \NameMe.1708 \NameMe.1709 \NameMe.1710 \NameMe.1711 
+	\NameMe.1712 \NameMe.1713 \NameMe.1714 \NameMe.1715 \NameMe.1716 \NameMe.1717 
+	\NameMe.1718 \NameMe.1719 \NameMe.1720 \NameMe.1721 \NameMe.1722 \NameMe.1723 
+	\NameMe.1724 \NameMe.1725 \NameMe.1726 \NameMe.1727 \NameMe.1728 \NameMe.1729 
+	\NameMe.1730 \NameMe.1731 \NameMe.1732 \NameMe.1733 \NameMe.1734 \NameMe.1735 
+	\NameMe.1736 \NameMe.1737 \NameMe.1738 \NameMe.1739 \NameMe.1740 \NameMe.1741 
+	\NameMe.1742 \NameMe.1743 \NameMe.1744 \NameMe.1745 \NameMe.1746 \NameMe.1747 
+	\NameMe.1748 \NameMe.1749 \NameMe.1750 \NameMe.1751 \NameMe.1752 \NameMe.1753 
+	\NameMe.1754 \NameMe.1755 \NameMe.1756 \NameMe.1757 \NameMe.1758 \NameMe.1759 
+	\NameMe.1760 \NameMe.1761 \NameMe.1762 \NameMe.1763 \NameMe.1764 \NameMe.1765 
+	\NameMe.1766 \NameMe.1767 \NameMe.1768 \NameMe.1769 \NameMe.1770 \NameMe.1771 
+	\NameMe.1772 \NameMe.1773 \NameMe.1774 \NameMe.1775 \NameMe.1776 \NameMe.1777 
+	\NameMe.1778 \NameMe.1779 \NameMe.1780 \NameMe.1781 \NameMe.1782 \NameMe.1783 
+	\NameMe.1784 \NameMe.1785 \NameMe.1786 \NameMe.1787 \NameMe.1788 \NameMe.1789 
+	\NameMe.1790 \NameMe.1791 \NameMe.138 \NameMe.137 \NameMe.1792 \NameMe.1793 
+	\NameMe.1794 \NameMe.1795 \NameMe.1796 \NameMe.1797 \NameMe.1798 \NameMe.1799 
+	\NameMe.1800 \NameMe.1801 \NameMe.1802 \NameMe.1803 \var1Tok \var2Tok \var3Tok 
+	\var4Tok \itanTok.cart \itanTok.cont \kulupuKasiTok.cart \kulupuKasiTok.cont 
+	\lepekaTok.cart \lepekaTok.cont \NameMe.1817 \NameMe.1818 \NameMe.1819 
+	\NameMe.1820 \NameMe.1821 \NameMe.1822 \NameMe.1823 \kala1Tok.cart 
+	\kala1Tok.cont \NameMe.1831 \meli1Tok.cart \meli1Tok.cont \NameMe.1839 
+	\mije1Tok.cart \mije1Tok.cont \NameMe.1847 \olin1Tok.cart \olin1Tok.cont 
+	\NameMe.1855 \sewi1Tok.cart \sewi1Tok.cont \NameMe.1863 \uta1Tok.cart 
+	\uta1Tok.cont \NameMe.1871 \wile1Tok.cart \wile1Tok.cont \NameMe.1879 
+	\namako1Tok.cart \namako1Tok.cont \NameMe.1887 \mu1Tok.cart \mu1Tok.cont 
+	\NameMe.1895 \NameMe.1896 \NameMe.1897 \NameMe.1898 \NameMe.1899 \NameMe.1900 
+	\NameMe.1901 \NameMe.1902 \NameMe.1903 \uni0000 \space \exclam \quotedbl 
+	\numbersign \dollar \percent \ampersand \quotesingle \parenleft \parenright 
+	\asterisk \plus \comma \hyphen \period \slash \zero \one \two \three \four \five 
+	\six \seven \eight \nine \colon \semicolon \less \equal \greater \question \at \A \B 
+	\C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T \U \V \W \X \Y \Z \bracketleft \backslash 
+	\bracketright \asciicircum \underscore \grave \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o 
+	\p \q \r \s \t \u \v \w \x \y \z \braceleft \bar \braceright \asciitilde ];
+@GDEF_Ligature = [\aTok \akesiTok \alaTok \alasaTok \aleTok \anpaTok \anteTok 
+	\anuTok \awenTok \eTok \esunTok \ijoTok \ikeTok \iloTok \insaTok \jakiTok \janTok 
+	\jeloTok \joTok \kalaTok \kalamaTok \kamaTok \kasiTok \kenTok \kepekenTok 
+	\kiliTok \kiwenTok \koTok \konTok \kuleTok \kulupuTok \kuteTok \laTok \lapeTok 
+	\lasoTok \lawaTok \lenTok \leteTok \liTok \liliTok \linjaTok \lipuTok \lojeTok 
+	\lonTok \lukaTok \lukinTok \lupaTok \maTok \mamaTok \maniTok \meliTok \miTok 
+	\mijeTok \mokuTok \moliTok \monsiTok \muTok \munTok \musiTok \muteTok \nanpaTok 
+	\nasaTok \nasinTok \nenaTok \niTok \nimiTok \nokaTok \oTok \olinTok \onaTok 
+	\openTok \pakalaTok \paliTok \palisaTok \panTok \panaTok \piTok \pilinTok 
+	\pimejaTok \piniTok \pipiTok \pokaTok \pokiTok \ponaTok \puTok \samaTok \seliTok 
+	\seloTok \semeTok \sewiTok \sijeloTok \sikeTok \sinTok \sinaTok \sinpinTok 
+	\sitelenTok \sonaTok \soweliTok \suliTok \sunoTok \supaTok \suwiTok \tanTok 
+	\tasoTok \tawaTok \teloTok \tenpoTok \tokiTok \tomoTok \tuTok \unpaTok \utaTok 
+	\utalaTok \waloTok \wanTok \wasoTok \wawaTok \wekaTok \wileTok \namakoTok 
+	\kinTok \okoTok \kipisiTok \lekoTok \monsutaTok \tonsiTok \jasimaTok 
+	\kijetesantakaluTok \sokoTok \mesoTok \epikuTok \kokosilaTok \lanpanTok \nTok 
+	\misikekeTok \kuTok \joinStackTok \middleDotTok \middleDotTok2 \middleDotTok3 
+	\pakeTok \apejaTok \majunaTok \poweTok \piTok_contStartCombTok 
+	\tawaTok_contStartCombTok \lonTok_contStartCombTok \aTok_joinStackTok 
+	\akesiTok_joinStackTok \alaTok_joinStackTok \alasaTok_joinStackTok 
+	\aleTok_joinStackTok \anpaTok_joinStackTok \anteTok_joinStackTok 
+	\anuTok_joinStackTok \awenTok_joinStackTok \eTok_joinStackTok 
+	\enTok_joinStackTok \esunTok_joinStackTok \ijoTok_joinStackTok 
+	\ikeTok_joinStackTok \iloTok_joinStackTok \insaTok_joinStackTok 
+	\jakiTok_joinStackTok \janTok_joinStackTok \jeloTok_joinStackTok 
+	\joTok_joinStackTok \kalaTok_joinStackTok \kalamaTok_joinStackTok 
+	\kamaTok_joinStackTok \kasiTok_joinStackTok \kenTok_joinStackTok 
+	\kepekenTok_joinStackTok \kiliTok_joinStackTok \kiwenTok_joinStackTok 
+	\koTok_joinStackTok \konTok_joinStackTok \kuleTok_joinStackTok 
+	\kulupuTok_joinStackTok \kuteTok_joinStackTok \laTok_joinStackTok 
+	\lapeTok_joinStackTok \lasoTok_joinStackTok \lawaTok_joinStackTok 
+	\lenTok_joinStackTok \leteTok_joinStackTok \liTok_joinStackTok 
+	\liliTok_joinStackTok \linjaTok_joinStackTok \lipuTok_joinStackTok 
+	\lojeTok_joinStackTok \lonTok_joinStackTok \lukaTok_joinStackTok 
+	\lukinTok_joinStackTok \lupaTok_joinStackTok \maTok_joinStackTok 
+	\mamaTok_joinStackTok \maniTok_joinStackTok \meliTok_joinStackTok 
+	\miTok_joinStackTok \mijeTok_joinStackTok \mokuTok_joinStackTok 
+	\moliTok_joinStackTok \monsiTok_joinStackTok \muTok_joinStackTok 
+	\munTok_joinStackTok \musiTok_joinStackTok \muteTok_joinStackTok 
+	\nanpaTok_joinStackTok \nasaTok_joinStackTok \nasinTok_joinStackTok 
+	\nenaTok_joinStackTok \niTok_joinStackTok \nimiTok_joinStackTok 
+	\nokaTok_joinStackTok \oTok_joinStackTok \olinTok_joinStackTok 
+	\onaTok_joinStackTok \openTok_joinStackTok \pakalaTok_joinStackTok 
+	\paliTok_joinStackTok \palisaTok_joinStackTok \panTok_joinStackTok 
+	\panaTok_joinStackTok \piTok_joinStackTok \pilinTok_joinStackTok 
+	\pimejaTok_joinStackTok \piniTok_joinStackTok \pipiTok_joinStackTok 
+	\pokaTok_joinStackTok \pokiTok_joinStackTok \ponaTok_joinStackTok 
+	\puTok_joinStackTok \samaTok_joinStackTok \seliTok_joinStackTok 
+	\seloTok_joinStackTok \semeTok_joinStackTok \sewiTok_joinStackTok 
+	\sijeloTok_joinStackTok \sikeTok_joinStackTok \sinTok_joinStackTok 
+	\sinaTok_joinStackTok \sinpinTok_joinStackTok \sitelenTok_joinStackTok 
+	\sonaTok_joinStackTok \soweliTok_joinStackTok \suliTok_joinStackTok 
+	\sunoTok_joinStackTok \supaTok_joinStackTok \suwiTok_joinStackTok 
+	\tanTok_joinStackTok \tasoTok_joinStackTok \tawaTok_joinStackTok 
+	\teloTok_joinStackTok \tenpoTok_joinStackTok \tokiTok_joinStackTok 
+	\tomoTok_joinStackTok \tuTok_joinStackTok \unpaTok_joinStackTok 
+	\utaTok_joinStackTok \utalaTok_joinStackTok \waloTok_joinStackTok 
+	\wanTok_joinStackTok \wasoTok_joinStackTok \wawaTok_joinStackTok 
+	\wekaTok_joinStackTok \wileTok_joinStackTok \namakoTok_joinStackTok 
+	\kinTok_joinStackTok \okoTok_joinStackTok \kipisiTok_joinStackTok 
+	\lekoTok_joinStackTok \monsutaTok_joinStackTok \tonsiTok_joinStackTok 
+	\jasimaTok_joinStackTok \kijetesantakaluTok_joinStackTok 
+	\sokoTok_joinStackTok \mesoTok_joinStackTok \epikuTok_joinStackTok 
+	\kokosilaTok_joinStackTok \lanpanTok_joinStackTok \nTok_joinStackTok 
+	\misikekeTok_joinStackTok \kuTok_joinStackTok \pakeTok_joinStackTok 
+	\apejaTok_joinStackTok \majunaTok_joinStackTok \poweTok_joinStackTok 
+	\joinStackTok_aTok \joinStackTok_akesiTok \joinStackTok_alaTok 
+	\joinStackTok_alasaTok \joinStackTok_aleTok \joinStackTok_anpaTok 
+	\joinStackTok_anteTok \joinStackTok_anuTok \joinStackTok_awenTok 
+	\joinStackTok_eTok \joinStackTok_enTok \joinStackTok_esunTok 
+	\joinStackTok_ijoTok \joinStackTok_ikeTok \joinStackTok_iloTok 
+	\joinStackTok_insaTok \joinStackTok_jakiTok \joinStackTok_janTok 
+	\joinStackTok_jeloTok \joinStackTok_joTok \joinStackTok_kalaTok 
+	\joinStackTok_kalamaTok \joinStackTok_kamaTok \joinStackTok_kasiTok 
+	\joinStackTok_kenTok \joinStackTok_kepekenTok \joinStackTok_kiliTok 
+	\joinStackTok_kiwenTok \joinStackTok_koTok \joinStackTok_konTok 
+	\joinStackTok_kuleTok \joinStackTok_kulupuTok \joinStackTok_kuteTok 
+	\joinStackTok_laTok \joinStackTok_lapeTok \joinStackTok_lasoTok 
+	\joinStackTok_lawaTok \joinStackTok_lenTok \joinStackTok_leteTok 
+	\joinStackTok_liTok \joinStackTok_liliTok \joinStackTok_linjaTok 
+	\joinStackTok_lipuTok \joinStackTok_lojeTok \joinStackTok_lonTok 
+	\joinStackTok_lukaTok \joinStackTok_lukinTok \joinStackTok_lupaTok 
+	\joinStackTok_maTok \joinStackTok_mamaTok \joinStackTok_maniTok 
+	\joinStackTok_meliTok \joinStackTok_miTok \joinStackTok_mijeTok 
+	\joinStackTok_mokuTok \joinStackTok_moliTok \joinStackTok_monsiTok 
+	\joinStackTok_muTok \joinStackTok_munTok \joinStackTok_musiTok 
+	\joinStackTok_muteTok \joinStackTok_nanpaTok \joinStackTok_nasaTok 
+	\joinStackTok_nasinTok \joinStackTok_nenaTok \joinStackTok_niTok 
+	\joinStackTok_nimiTok \joinStackTok_nokaTok \joinStackTok_oTok 
+	\joinStackTok_olinTok \joinStackTok_onaTok \joinStackTok_openTok 
+	\joinStackTok_pakalaTok \joinStackTok_paliTok \joinStackTok_palisaTok 
+	\joinStackTok_panTok \joinStackTok_panaTok \joinStackTok_piTok 
+	\joinStackTok_pilinTok \joinStackTok_pimejaTok \joinStackTok_piniTok 
+	\joinStackTok_pipiTok \joinStackTok_pokaTok \joinStackTok_pokiTok 
+	\joinStackTok_ponaTok \joinStackTok_puTok \joinStackTok_samaTok 
+	\joinStackTok_seliTok \joinStackTok_seloTok \joinStackTok_semeTok 
+	\joinStackTok_sewiTok \joinStackTok_sijeloTok \joinStackTok_sikeTok 
+	\joinStackTok_sinTok \joinStackTok_sinaTok \joinStackTok_sinpinTok 
+	\joinStackTok_sitelenTok \joinStackTok_sonaTok \joinStackTok_soweliTok 
+	\joinStackTok_suliTok \joinStackTok_sunoTok \joinStackTok_supaTok 
+	\joinStackTok_suwiTok \joinStackTok_tanTok \joinStackTok_tasoTok 
+	\joinStackTok_tawaTok \joinStackTok_teloTok \joinStackTok_tenpoTok 
+	\joinStackTok_tokiTok \joinStackTok_tomoTok \joinStackTok_tuTok 
+	\joinStackTok_unpaTok \joinStackTok_utaTok \joinStackTok_utalaTok 
+	\joinStackTok_waloTok \joinStackTok_wanTok \joinStackTok_wasoTok 
+	\joinStackTok_wawaTok \joinStackTok_wekaTok \joinStackTok_wileTok 
+	\joinStackTok_namakoTok \joinStackTok_kinTok \joinStackTok_okoTok 
+	\joinStackTok_kipisiTok \joinStackTok_lekoTok \joinStackTok_monsutaTok 
+	\joinStackTok_tonsiTok \joinStackTok_jasimaTok 
+	\joinStackTok_kijetesantakaluTok \joinStackTok_sokoTok 
+	\joinStackTok_mesoTok \joinStackTok_epikuTok \joinStackTok_kokosilaTok 
+	\joinStackTok_lanpanTok \joinStackTok_nTok \joinStackTok_misikekeTok 
+	\joinStackTok_kuTok \joinStackTok_pakeTok \joinStackTok_apejaTok 
+	\joinStackTok_majunaTok \joinStackTok_poweTok \aTok_joinScaleTok 
+	\akesiTok_joinScaleTok \alaTok_joinScaleTok \alasaTok_joinScaleTok 
+	\aleTok_joinScaleTok \anpaTok_joinScaleTok \anteTok_joinScaleTok 
+	\anuTok_joinScaleTok \awenTok_joinScaleTok \eTok_joinScaleTok 
+	\enTok_joinScaleTok \esunTok_joinScaleTok \ijoTok_joinScaleTok 
+	\ikeTok_joinScaleTok \iloTok_joinScaleTok \insaTok_joinScaleTok 
+	\jakiTok_joinScaleTok \janTok_joinScaleTok \jeloTok_joinScaleTok 
+	\joTok_joinScaleTok \kalaTok_joinScaleTok \kalamaTok_joinScaleTok 
+	\kamaTok_joinScaleTok \kasiTok_joinScaleTok \kenTok_joinScaleTok 
+	\kepekenTok_joinScaleTok \kiliTok_joinScaleTok \kiwenTok_joinScaleTok 
+	\koTok_joinScaleTok \konTok_joinScaleTok \kuleTok_joinScaleTok 
+	\kulupuTok_joinScaleTok \kuteTok_joinScaleTok \laTok_joinScaleTok 
+	\lapeTok_joinScaleTok \lasoTok_joinScaleTok \lawaTok_joinScaleTok 
+	\lenTok_joinScaleTok \leteTok_joinScaleTok \liTok_joinScaleTok 
+	\liliTok_joinScaleTok \linjaTok_joinScaleTok \lipuTok_joinScaleTok 
+	\lojeTok_joinScaleTok \lonTok_joinScaleTok \lukaTok_joinScaleTok 
+	\lukinTok_joinScaleTok \lupaTok_joinScaleTok \maTok_joinScaleTok 
+	\mamaTok_joinScaleTok \maniTok_joinScaleTok \meliTok_joinScaleTok 
+	\miTok_joinScaleTok \mijeTok_joinScaleTok \mokuTok_joinScaleTok 
+	\moliTok_joinScaleTok \monsiTok_joinScaleTok \muTok_joinScaleTok 
+	\munTok_joinScaleTok \musiTok_joinScaleTok \muteTok_joinScaleTok 
+	\nanpaTok_joinScaleTok \nasaTok_joinScaleTok \nasinTok_joinScaleTok 
+	\nenaTok_joinScaleTok \niTok_joinScaleTok \nimiTok_joinScaleTok 
+	\nokaTok_joinScaleTok \oTok_joinScaleTok \olinTok_joinScaleTok 
+	\onaTok_joinScaleTok \openTok_joinScaleTok \pakalaTok_joinScaleTok 
+	\paliTok_joinScaleTok \palisaTok_joinScaleTok \panTok_joinScaleTok 
+	\panaTok_joinScaleTok \piTok_joinScaleTok \pilinTok_joinScaleTok 
+	\pimejaTok_joinScaleTok \piniTok_joinScaleTok \pipiTok_joinScaleTok 
+	\pokaTok_joinScaleTok \pokiTok_joinScaleTok \ponaTok_joinScaleTok 
+	\puTok_joinScaleTok \samaTok_joinScaleTok \seliTok_joinScaleTok 
+	\seloTok_joinScaleTok \semeTok_joinScaleTok \sewiTok_joinScaleTok 
+	\sijeloTok_joinScaleTok \sikeTok_joinScaleTok \sinTok_joinScaleTok 
+	\sinaTok_joinScaleTok \sinpinTok_joinScaleTok \sitelenTok_joinScaleTok 
+	\sonaTok_joinScaleTok \soweliTok_joinScaleTok \suliTok_joinScaleTok 
+	\sunoTok_joinScaleTok \supaTok_joinScaleTok \suwiTok_joinScaleTok 
+	\tanTok_joinScaleTok \tasoTok_joinScaleTok \tawaTok_joinScaleTok 
+	\teloTok_joinScaleTok \tenpoTok_joinScaleTok \tokiTok_joinScaleTok 
+	\tomoTok_joinScaleTok \tuTok_joinScaleTok \unpaTok_joinScaleTok 
+	\utaTok_joinScaleTok \utalaTok_joinScaleTok \waloTok_joinScaleTok 
+	\wanTok_joinScaleTok \wasoTok_joinScaleTok \wawaTok_joinScaleTok 
+	\wekaTok_joinScaleTok \wileTok_joinScaleTok \namakoTok_joinScaleTok 
+	\kinTok_joinScaleTok \okoTok_joinScaleTok \kipisiTok_joinScaleTok 
+	\lekoTok_joinScaleTok \monsutaTok_joinScaleTok \tonsiTok_joinScaleTok 
+	\jasimaTok_joinScaleTok \kijetesantakaluTok_joinScaleTok 
+	\sokoTok_joinScaleTok \mesoTok_joinScaleTok \epikuTok_joinScaleTok 
+	\kokosilaTok_joinScaleTok \lanpanTok_joinScaleTok \nTok_joinScaleTok 
+	\misikekeTok_joinScaleTok \kuTok_joinScaleTok \pakeTok_joinScaleTok 
+	\apejaTok_joinScaleTok \majunaTok_joinScaleTok \poweTok_joinScaleTok 
+	\joinScaleTok_kuTok \joinScaleTok_aTok \joinScaleTok_akesiTok 
+	\joinScaleTok_alaTok \joinScaleTok_alasaTok \joinScaleTok_aleTok 
+	\joinScaleTok_anpaTok \joinScaleTok_anteTok \joinScaleTok_anuTok 
+	\joinScaleTok_awenTok \joinScaleTok_eTok \joinScaleTok_enTok 
+	\joinScaleTok_esunTok \joinScaleTok_ijoTok \joinScaleTok_ikeTok 
+	\joinScaleTok_iloTok \joinScaleTok_insaTok \joinScaleTok_jakiTok 
+	\joinScaleTok_janTok \joinScaleTok_jeloTok \joinScaleTok_joTok 
+	\joinScaleTok_kalaTok \joinScaleTok_kalamaTok \joinScaleTok_kamaTok 
+	\joinScaleTok_kasiTok \joinScaleTok_kenTok \joinScaleTok_kepekenTok 
+	\joinScaleTok_kiliTok \joinScaleTok_kiwenTok \joinScaleTok_koTok 
+	\joinScaleTok_konTok \joinScaleTok_kuleTok \joinScaleTok_kulupuTok 
+	\joinScaleTok_kuteTok \joinScaleTok_laTok \joinScaleTok_lapeTok 
+	\joinScaleTok_lasoTok \joinScaleTok_lawaTok \joinScaleTok_lenTok 
+	\joinScaleTok_leteTok \joinScaleTok_liTok \joinScaleTok_liliTok 
+	\joinScaleTok_linjaTok \joinScaleTok_lipuTok \joinScaleTok_lojeTok 
+	\joinScaleTok_lonTok \joinScaleTok_lukaTok \joinScaleTok_lukinTok 
+	\joinScaleTok_lupaTok \joinScaleTok_maTok \joinScaleTok_mamaTok 
+	\joinScaleTok_maniTok \joinScaleTok_meliTok \joinScaleTok_miTok 
+	\joinScaleTok_mijeTok \joinScaleTok_mokuTok \joinScaleTok_moliTok 
+	\joinScaleTok_monsiTok \joinScaleTok_muTok \joinScaleTok_munTok 
+	\joinScaleTok_musiTok \joinScaleTok_muteTok \joinScaleTok_nanpaTok 
+	\joinScaleTok_nasaTok \joinScaleTok_nasinTok \joinScaleTok_nenaTok 
+	\joinScaleTok_niTok \joinScaleTok_nimiTok \joinScaleTok_nokaTok 
+	\joinScaleTok_oTok \joinScaleTok_olinTok \joinScaleTok_onaTok 
+	\joinScaleTok_openTok \joinScaleTok_pakalaTok \joinScaleTok_paliTok 
+	\joinScaleTok_palisaTok \joinScaleTok_panTok \joinScaleTok_panaTok 
+	\joinScaleTok_piTok \joinScaleTok_pilinTok \joinScaleTok_pimejaTok 
+	\joinScaleTok_piniTok \joinScaleTok_pipiTok \joinScaleTok_pokaTok 
+	\joinScaleTok_pokiTok \joinScaleTok_ponaTok \joinScaleTok_puTok 
+	\joinScaleTok_samaTok \joinScaleTok_seliTok \joinScaleTok_seloTok 
+	\joinScaleTok_semeTok \joinScaleTok_sewiTok \joinScaleTok_sijeloTok 
+	\joinScaleTok_sikeTok \joinScaleTok_sinTok \joinScaleTok_sinaTok 
+	\joinScaleTok_sinpinTok \joinScaleTok_sitelenTok \joinScaleTok_sonaTok 
+	\joinScaleTok_soweliTok \joinScaleTok_suliTok \joinScaleTok_sunoTok 
+	\joinScaleTok_supaTok \joinScaleTok_suwiTok \joinScaleTok_tanTok 
+	\joinScaleTok_tasoTok \joinScaleTok_tawaTok \joinScaleTok_teloTok 
+	\joinScaleTok_tenpoTok \joinScaleTok_tokiTok \joinScaleTok_tomoTok 
+	\joinScaleTok_tuTok \joinScaleTok_unpaTok \joinScaleTok_utaTok 
+	\joinScaleTok_utalaTok \joinScaleTok_waloTok \joinScaleTok_wanTok 
+	\joinScaleTok_wasoTok \joinScaleTok_wawaTok \joinScaleTok_wekaTok 
+	\joinScaleTok_wileTok \joinScaleTok_namakoTok \joinScaleTok_kinTok 
+	\joinScaleTok_okoTok \joinScaleTok_kipisiTok \joinScaleTok_lekoTok 
+	\joinScaleTok_monsutaTok \joinScaleTok_tonsiTok \joinScaleTok_jasimaTok 
+	\joinScaleTok_kijetesantakaluTok \joinScaleTok_sokoTok 
+	\joinScaleTok_mesoTok \joinScaleTok_epikuTok \joinScaleTok_kokosilaTok 
+	\joinScaleTok_lanpanTok \joinScaleTok_nTok \joinScaleTok_misikekeTok 
+	\joinScaleTok_pakeTok \joinScaleTok_apejaTok \joinScaleTok_majunaTok 
+	\joinScaleTok_poweTok \itanTok \kulupuKasiTok \lepekaTok \kala1Tok 
+	\kala1Tok_joinStackTok \kala1Tok_joinScaleTok \joinStackTok_kala1Tok 
+	\joinScaleTok_kala1Tok \meli1Tok \meli1Tok_joinStackTok 
+	\meli1Tok_joinScaleTok \joinStackTok_meli1Tok \joinScaleTok_meli1Tok 
+	\mije1Tok \mije1Tok_joinStackTok \mije1Tok_joinScaleTok 
+	\joinStackTok_mije1Tok \joinScaleTok_mije1Tok \olin1Tok 
+	\olin1Tok_joinStackTok \olin1Tok_joinScaleTok \joinStackTok_olin1Tok 
+	\joinScaleTok_olin1Tok \sewi1Tok \sewi1Tok_joinStackTok 
+	\sewi1Tok_joinScaleTok \joinStackTok_sewi1Tok \joinScaleTok_sewi1Tok 
+	\uta1Tok \uta1Tok_joinStackTok \uta1Tok_joinScaleTok \joinStackTok_uta1Tok 
+	\joinScaleTok_uta1Tok \wile1Tok \wile1Tok_joinStackTok 
+	\wile1Tok_joinScaleTok \joinStackTok_wile1Tok \joinScaleTok_wile1Tok 
+	\namako1Tok \namako1Tok_joinStackTok \namako1Tok_joinScaleTok 
+	\joinStackTok_namako1Tok \joinScaleTok_namako1Tok \mu1Tok 
+	\mu1Tok_joinStackTok \mu1Tok_joinScaleTok \joinStackTok_mu1Tok 
+	\joinScaleTok_mu1Tok ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, , ;
+
+} GDEF;
+
