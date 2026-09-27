@@ -41,7 +41,7 @@ Hotstring("EndChars", "``")
 ::jaki::{U+F1910} ; 󱤐
 ::jelo::{U+F1912} ; 󱤒
 ::kala::{U+F1914} ; 󱤔
-::kama::{U+F1916} ; 󱤕
+::kama::{U+F1916} ; 󱤖
 ::kasi::{U+F1917} ; 󱤗
 ::kili::{U+F191A} ; 󱤚
 ::kule::{U+F191E} ; 󱤞
