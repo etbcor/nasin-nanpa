@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "nasin-nanpa";
+    /*unicode-range: U+F19??;*/
+    src: url("https://cdn.jsdelivr.net/gh/ETBCOR/nasin-nanpa/versions/nasin-nanpa-2.8.029.otf");
+}
+.sp{font-family:"nasin-nanpa";} 
